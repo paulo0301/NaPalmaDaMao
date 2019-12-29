@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "montserr", sans-serif;
+    }
+    .preload{
+        width: 80px;
+        height: 80px;
+        /* background-color: red; */
+        box-sizing: border-box;
+        border-radius: 50%;
+        border-top: 10px solid #72bfb5;
+        position: relative;
+        animation: a1 2s linear infinite;
+    }
+    .preload::after, .preload::before{
+        content: " ";
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 0;
+        top: -10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+    }
+    .preload::before{
+        border-top: 10px solid #4f828c;
+        transform: rotate(120deg);
+    }
+    .preload::after{
+        border-top: 10px solid #32968b;
+        transform: rotate(240deg);
+    }
+    @keyframes a1{
+        to{
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body>
+    <div class="preload"></div>
+</body>
+</html>
