@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista</title>
+</head>
+<body>
+    <form action="" autocomplete="off">
+        <div class="questao">
+            <p>a) 1 m tem</p>
+            <input type="text" id="ex01">
+            <p>cm</p>
+            <span id="rs01"></span>
+        </div>
+        <div class="questao">
+            <p>b) 3 m tem</p>
+            <input type="text" id="ex02" >
+            <p>cm</p>
+            <span id="rs02"></span>
+        </div>
+        <div class="questao">
+            <p>c) 1 km tem</p>
+            <input type="text" id="ex03">
+            <p>m</p>
+            <span id="rs03"></span>
+        </div>
+        <div class="questao">
+            <p>d) 10 km tem</p>
+            <input type="text" id="ex04">
+            <p>m</p>
+            <span id="rs04"></span>
+        </div>
+        <div class="questao">
+            <p>e) 1 h tem</p>
+            <input type="text" id="ex05">
+            <p>min</p>
+            <span id="rs05"></span>
+        </div>
+        <input type="button" id="confirmar" value="Confirmar">
+    </form>
+    <div id="resultado">
+        <div class="nota">
+            <p>Acertos</p>
+            <p id="acertos">0</p>
+        </div>
+        <div class="nota">
+            <p>Erros</p>
+            <p id="erros">0</p>
+        </div>
+    </div>
+    <script src="confResposta.js"></script>
+</body>
+</html>
