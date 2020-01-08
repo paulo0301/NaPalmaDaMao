@@ -1,0 +1,150 @@
+﻿/*nnnnnnnnn Atividade ângulo nnnnnnnn*/
+body{
+	
+	font-family: verdana, sans-serif;
+}
+
+p{
+	line-height:25px;
+	color:#273c75;
+}
+
+main{
+	background-image: url("../imagens/papel.png");
+	background-repeat: repeat-y;
+	background-position: left;
+	background-color: white;
+	width: 45em;
+	height: 25em;
+	margin: 2em auto;
+	padding: 1em 3em;
+}
+
+section{
+	margin: 1.5em 0;
+	margin-bottom: 4em;
+}
+
+h3{
+	color: #40739e;
+	text-align: left;
+	margin: 1em 0;
+}
+
+h4{
+	font-weight: bolder;
+	color: #40739e;
+	background-color: #f1f1f1;
+	padding: 0.3em 0;
+	margin-bottom: 1em;
+}
+
+form{
+    width: 19em;
+}
+div.questao{
+    display: flex;
+	width:450px;
+height: 20px;
+    align-items: center;
+    margin: 20px 2px;
+    justify-content: flex-start;
+}
+div.questao p{
+    margin: 0 5px;
+}
+div.questao input{
+    height: 1.5em;    
+    text-align: center;
+	margin-top:0px;	
+	width:6em;	
+	background-color:#f5f6fa;	
+	padding:3px;
+	font-weight:bold;
+	font-size: 15px;
+	text-align:center;
+}
+div#resultado{
+    width: 19em;
+    display: flex;
+	justify-content: space-around;
+	margin: 2em auto;
+	font-weight: bold;
+}
+#acertos, #erros{
+	display: flex;
+	justify-content: center;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.texto{
+	width:300px;
+}
+
+/* GERALDO ------------- */
+.botao{
+	margin-top: 1em;
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	display: inline-block;	
+	color: white;
+
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: 0px;
+	border-radius: 4px;
+	position:relative;
+	top:5px;
+}
+.botao.num{
+	background: rgba(149, 165, 166,1.0);
+}
+
+.botao:hover {	
+	cursor: pointer;	
+}
+
+section label{
+	font-weight: bold;
+	color: #34495e;
+}
+
+section input{
+	width: 4em;
+	font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(0,0,100);
+}
+
+.azul{
+    width: 7em;
+    background-color: #30ad23;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    padding: 0.5em 0;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.laranja{
+	text-align: center;
+	background-color: #d3d3d3;
+	color: white;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	border-radius: 0.5em;
+	
+}
+
+

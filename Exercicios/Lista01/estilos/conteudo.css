@@ -1,5 +1,4 @@
-﻿/*nnnnnnnnn Atividade ângulo nnnnnnnn*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body{
 	background-color: #f2f2f2;
@@ -89,13 +88,24 @@ section li{
 }
 
 object{
-	margin: 1em 0;
+	margin: 0;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 figure{
 	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
 	line-height: 0;
 }
+figure img{
+	filter: brightness(110%);
+}
+
+
 .img-pequena-centro{
 	display: inline-block;
 	position: relative;
@@ -114,4 +124,75 @@ figure{
 
 .margemobj{
 	margin: 1em 80px;
+}
+
+/*-------------------------------- css do html das questoes---------------------------------- */
+
+.containerQuestoes{
+	width: 300px;
+	height: 180px;
+	font-family: 'Open Sans', sans-serif;
+	color: #34495e;
+	background-color: transparent;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 1em 0;
+	margin: 0;
+}
+.containerQuestoes form{
+	line-height: 3em;
+	width: 190px;
+	margin: 0 auto;
+}
+.containerQuestoes form div{
+	margin: 0 auto;
+	width: 190px;
+}
+.containerQuestoes input[type="text"]{
+	height: 1.3em;
+    text-align: center;
+    width: 3em;
+    background-color: #f5f6fa;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 15px;
+}
+span#avaliacao{
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+.botao{
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	display: inline-block;	
+	color: white;
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: none;
+	border-radius: 4px;
+}
+.botao:hover{	
+	cursor: pointer;	
+}
+.azul{
+	background: #00a8ff;
+}	
+.laranja{
+	background:#e84118;
+}
+.containerQuestoes span{
+	font-weight: 900;
+	font-size: 1.2em;
+	margin-left: 1em;
+}
+.errado{
+	color: #c0392b;
+}
+.correto{
+	color: #27ae60;
 }

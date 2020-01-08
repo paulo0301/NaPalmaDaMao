@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<canvas id="myCanvas" width="640px" height="360px"></canvas>
+<link rel="stylesheet" href="cssAnimation.css">
+<script src="JSauxiliar.js"></script>
+<script src="PSlibrary2019.2.js"></script> 
+<!-- <script src="http://napalmadamao.ifrn.edu.br/PSlibrary2019.2.js"></script> -->
+<body>
+<script>
+//***********************************************//
+// VARIÁVEIS ---------------------------------
+<!--   -->
+//***********************************************//
+//Coordenadas (0,0);
+var x0 = 160;
+var y0 = 180;
+
+//Quadro de cores
+var corBorda = '#7f8fa6';
+var corR1 = '#2e86de';
+var corR2 = '#e84118'//'#ff9f43';
+var corTexto = '#747d8c';
+var corArco = 'rgba(236, 240, 241,0.7)';
+
+//Variáveis gerais
+var ang1 = 0;
+var raio = 120;
+var correcao = "";
+var j = 0;
+var xc;
+var yc;
+var dx;
+var dy;
+
+//Vetor com valores das atividades
+var R = [30, 60, -35, 180, -180, -45, 45, 100, 160, -200];
+
+function escala (x0, y0){
+	var x0; y0;
+	textBold('0°', '7','verdana',x0 - 3, y0 + 150, darkcolor);
+	textBold('+360°', '7','verdana',x0 + 72, y0 + 150, darkcolor);
+	textBold('+180°', '7','verdana',x0 + 26, y0 + 150, darkcolor);
+	textBold('-360°', '7','verdana',x0 - 105, y0 + 150, darkcolor);	
+	textBold('-180°', '7','verdana',x0 - 60, y0 + 150, darkcolor);	
+	lineAngle(x0 - 90, y0 + 155, 5, 90, 1, darkcolor);
+	lineAngle(x0 - 45, y0 + 155, 5, 90, 1, darkcolor);
+	lineAngle(x0, y0 + 155, 5, 90, 1, darkcolor);
+	lineAngle(x0 + 45, y0 + 155, 5, 90, 1, darkcolor);
+	lineAngle(x0 + 90, y0 + 155, 5, 90, 1, darkcolor);		
+}
+
+function desenhar(){	
+	clear();
+	//rectangle(0, 0, canvas.width, canvas.height, 2.5, 0, darkcolor, nocolor); //MARCAÇÃO DAS BORDAS DA TELA	
+	rectangleRound(2, canvas.height - 2, canvas.width - 4, canvas.height - 4, 5, 2, corBorda, nocolor);
+	//**********************//	
+	//CONTEÚDO -------------------------//	
+	circle(x0, y0, 5, 1, darkcolor, darkcolor);
+	transfer360(x0, y0, raio, 0, true, false, false); 
+	textBold('0°', '8','verdana',x0 + raio + 10, y0 + 2,corTexto);
+	
+	
+	if(ang1 > 0){
+		arcCircle1(x0, y0, 50, -ang1, 0, 1, nocolor, corArco);
+	}else{
+		arcCircle1(x0, y0, 50, 0, -ang1, 1, nocolor, corArco);
+	}
+	
+		
+	//Escala sobre o botão de arrastar
+	textBold('Escala de Ângulos', '8','verdana',430, 60, darkcolor);
+	escala (482, -60);
+		
+	//Rotação do segmento de reta
+	ang1 = document.getElementById("ang1").value*1;
+	lineAngle(x0, y0, raio, -ang1, 2.5, corR1);	
+	
+	//Pergunta	
+	dx = 420;
+	dy = 210;
+	textBold('Ângulo:', '11','verdana',dx, dy, redcolor);
+	textBold(R[j] + '°', '11','verdana',dx + 75, dy, redcolor);	
+	textBold('Girar até:', '8','verdana',dx + 30, dy - 37, darkcolor);	
+	rectangleRound(dx - 20, dy + 17, 160, 45, 5, 2, '#95afc0', nocolor);
+	
+	//Texto de validação da atividade
+	xc = 440;
+	yc = 320;
+	textStyle2(correcao, '12','verdana',xc,yc, '#222f3e');
+	//**********************//	
+	animationFrame(desenhar); 	
+}
+draw(desenhar);
+</script>
+<!-- -------------------------------------------- -->
+
+<div style="touch-action: none">
+	<!-- SLIDER  -->	
+	<input type="range" id="ang1" min="-360" max="360" value="0" step="5" class="slider1" 
+	style="left:var(--left1); top:var(--top1); width:195px" onmousedown="limpar()">	
+	
+	<div >
+		<input style="left:var(--left1A); top:var(--top1A)" class="btnAjuste cor1" type="button" onclick="maisAng1()" value = ">">
+	</div>	
+	<div >
+		<input style="left:var(--left1B); top:var(--top1A)" class="btnAjuste cor1" type="button" onclick="menosAng1()" value = "<">
+	</div>	
+	
+	<!-- BUTTON  -->	
+	
+	<div >
+		<input style="left:var(--left3); top:var(--top3); width:100px" class="confirmarBtn blue" type="button" onclick="confirmar()" value = "Confirmar">
+	</div>		
+	<div >	
+		<input style="left:var(--left4); top:var(--top4); width:100px" class="confirmarBtn orange" type="button" onclick="proximo()" value = "Próximo">
+	</div>		
+</div>
+<!--   -->
+
+</body>		
+</html>
+
+
+
+
+
+
+
+
+

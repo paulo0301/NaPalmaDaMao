@@ -32,3 +32,8 @@ function verificar(altCorreta){
         a.classList.add("letra-pequena");
     }
 }
+
+document.querySelectorAll("input[type='radio']").forEach(item => {item.addEventListener("click", funcao => {
+    var a = document.getElementById("avaliacao");
+    a.textContent = "";
+})});

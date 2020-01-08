@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<canvas id="myCanvas" width="640px" height="360px"></canvas>
+<link rel="stylesheet" href="styles/classes.css">
+<!--<script src="http://www.fisicainvertida.com/PSlibrary/PSlibrary2019.2.js"></script>	 -->
+<script src="js/PSlibrary2019.2.js"></script> 
+<script src="js/auxiliar.js"></script> 
+<body>
+<script>
+//***********************************************//
+// QUADRO DE CORES ---------------------------------
+var corQuadrado = 'rgba(52, 152, 219,0.5)';
+var cortexto = '#222f3e';
+var corfracao = '#009432';
+//VARIÁVEIS ----------------------------------------
+var px = 20;
+var py  = 220;
+var num = numerador[j];
+var den = denominador[j];
+var texto = '';
+var validarR1 = false;
+var validarR2 = false;
+var validarR3 = false;
+var validarR4 = false;
+var validarR5 = false;
+var validarR6 = false;
+var validarR7 = false;
+var validarR8 = false;
+var validarR9 = false;
+var validarR10 = false;
+var validarR11 = false;
+var validarR12 = false;
+//
+var dx = px + (12 - N)*25;
+var Mx = [];
+Mx[0] = 0;
+//
+function desenhar(){	
+	clear(); 		
+	rectangleRound(5, 355, canvas.width - 10, canvas.height - 10, 5, 1.5, darkcolor, nocolor);	
+	//**********************//	
+	textStyle1('Marque no retângulo a seguinte fração:', '12','verdana',135,60,cortexto);
+	textStyle2(texto, '14','verdana',280,320,cortexto);
+	//
+	fraction(315, 100, num, den, corfracao);	//FRAÇÃO
+	rectangle(dx, py, 50*N, -50, 1, 0, nocolor, darkcolor); //BORDAS DO RETÂNGULO
+	
+	//DIVISÕES DO RETÂNGULO
+	for(var i = 1; i <= N; i++){
+		lineAngle(dx + i*50, py, 50, -90, 1, darkcolor);
+		Mx[i] = Mx[i - 1] + 50;		
+	}	
+	//
+	if(validarR1 == true){
+		rectangle(dx, py, 50, -50, 1, 0, corQuadrado, nocolor);
+	}
+	if(validarR2 == true){
+		rectangle(dx + 50, py, 50, -50, 1, 0, corQuadrado, nocolor);
+	}
+	if(validarR3 == true){
+		rectangle(dx + 100, py, 50, -50, 1, 0, corQuadrado, nocolor);
+	}
+	if(validarR4 == true){
+		rectangle(dx + 150, py, 50, -50, 1, 0, corQuadrado, nocolor);
+	}
+	if(validarR5 == true){
+		rectangle(dx + 200, py, 50, -50, 1, 0, corQuadrado, nocolor);
+	}
+	if(validarR6 == true){
+		rectangle(dx + 250, py, 50, -50, 1, 0, corQuadrado, nocolor);
+	}
+	if(validarR7 == true){
+		rectangle(dx + 300, py, 50, -50, 1, 0, corQuadrado, nocolor);
+	}
+	if(validarR8 == true){
+		rectangle(dx + 350, py, 50, -50, 1, 0, corQuadrado, nocolor);
+	}	
+	if(validarR9 == true){
+		rectangle(dx + 400, py, 50, -50, 1, 0, corQuadrado, nocolor);
+	}	
+	if(validarR10 == true){
+		rectangle(dx + 450, py, 50, -50, 1, 0, corQuadrado, nocolor);
+	}	
+	if(validarR11 == true){
+		rectangle(dx + 500, py, 50, -50, 1, 0, corQuadrado, nocolor);
+	}	
+	if(validarR12 == true){
+		rectangle(dx + 550, py, 50, -50, 1, 0, corQuadrado, nocolor);
+	}	
+	//**********************//	
+	animationFrame(desenhar); 	
+}
+draw(desenhar);
+</script>
+<!-- -------------------------------------------- -->
+
+<div >
+	<input style="left:var(--left3); top:var(--top3); width:100px" class="confirmarBtn blue" type="button" onclick="confirmar()" value = "Confirmar">
+</div>		
+<div >	
+	<input style="left:var(--left4); top:var(--top4); width:100px" class="confirmarBtn orange" type="button" onclick="proximo()" value = "Próximo">
+</div>	
+
+<div >	
+	<input style="left:var(--left2); top:var(--top2); width:100px" class="btnRecomecar clouds" type="button" onclick="recomecar()" value = "Recomeçar">
+</div>		
+
+
+
+</body>		
+</html>
+
+
+
+
+
+
+
+
+

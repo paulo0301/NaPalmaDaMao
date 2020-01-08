@@ -115,3 +115,67 @@ figure{
 .margemobj{
 	margin: 1em 80px;
 }
+
+/*                               css do html das questoes                                       */
+
+.containerQuestoes{
+	background-color: transparent;
+	width: 600px;
+}
+
+.containerQuestoes form{
+	line-height: 2.5em;
+	font-family: 'Open Sans', sans-serif;
+	color: #34495e;
+}
+.containerQuestoes label{
+	display: flex;
+	align-items: center;
+}
+.containerQuestoes figure{
+	box-shadow: none;
+	margin: 0 0 0 10px;
+	height: 50px;
+	border: 3px solid #ffffff;
+}
+.containerQuestoes figure img{
+	filter: brightness(110%);
+}
+.letra-pequena{
+	font-size: 1em;
+}
+.botao{
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	display: inline-block;	
+	color: white;
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: none;
+	border-radius: 4px;
+	margin-top: 15px;
+}
+.botao:hover{	
+	cursor: pointer;	
+}
+.azul{
+	background: #00a8ff;
+}	
+.laranja{
+	background:#e84118;
+}
+.containerQuestoes span{
+	font-weight: 900;
+	font-size: 1.2em;
+	margin-left: 1em;
+}
+.errado{
+	color: #c0392b;
+}
+.correto{
+	color: #27ae60;
+}

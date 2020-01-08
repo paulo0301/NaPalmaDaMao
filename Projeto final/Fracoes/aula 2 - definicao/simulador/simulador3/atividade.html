@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <title>Aula 03</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/cssAnimation.css">  
+</head>
+<body onkeydown="whichButton(event)">
+	
+	<canvas id="myCanvas" width="570px" height="280px">
+		<script src="js/PSlibrary20192.js"></script>
+		<script src="js/aplicativo.js"></script>
+	</canvas> 
+
+	<div>
+		<input style="position:absolute; left:var(--left1b); top:var(--top1)" class="btnVariar cor1" type="button" onclick="denominadorMais()" value = "&#8679;">
+		
+		<input style="position:absolute; left:var(--left1); top:var(--top1)" class="btnVariar cor1" type="button" onclick="denominadorMenos()" value = "&#8681;">
+	</div>	
+		
+	<div >
+		<input style="position:absolute;  left:var(--left2b); top:var(--top2)" class="btnVariar cor2" type="button" onclick="pessoa1Mais()" value = "&#8679;">
+		<input style="position:absolute; left:var(--left2); top:var(--top2)" class="btnVariar cor2" type="button" onclick="pessoa1Menos()" value = "&#8681;">
+	</div>	
+		
+	
+	
+	<div >
+		<input style="position:absolute;  left:var(--left4); top:var(--top4)" class="confirmarBtn green2" type="button" onclick="confirmar()" value = "Confirmar">		
+	</div>	
+
+
+  <!--------------------------------------------------------->
+</body>
+</html>
