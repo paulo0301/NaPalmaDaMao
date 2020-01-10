@@ -106,19 +106,25 @@ figure{
 }
 
 /*                           css html do exercicio                                       */
-.containerQuestoes form{
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-}
 .containerQuestoes{
+	width: 500px;
+	padding: 10px 0;
+	border: 2px solid black;
+	border-radius: 10px;
 	background-color: transparent;
+	display: flex;
+	justify-content: center;
+}
+.containerQuestoes form{
+	width: 300px;
+	min-height: 350px;
 }
 .containerQuestoes div, span{
 	display: flex;
 	align-items: center;
 }
 .containerQuestoes figure{
+	margin: 0;
 	margin-left: 1em;
 	height: 60px;
 	display: inline-block;
@@ -155,7 +161,7 @@ input[type=number]::-webkit-outer-spin-button {
 	transition: all 100ms ease-in-out;
 	display: inline-block;	
 	color: white;
-	
+
 	text-decoration: none;
 	box-sizing: border-box;
 	font-family: Helvetica, Arial, sans-serif;
@@ -171,17 +177,17 @@ input[type=number]::-webkit-outer-spin-button {
 .botao:hover {	
 	cursor: pointer;	
 }
-.azul{
-	width: 7em;
-	background-color: #30ad23;
-	color: white;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	padding: 0.5em 0;
-	border-radius: 10px;
-	border: 0px;
+input[value="Confirmar"]{
+    width: 7em;
+    background-color: #30ad23;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    padding: 0.5em 0;
+    border-radius: 10px;
+    border: 0px;
 }
-.laranja{
+input[value="Limpar"]{
 	text-align: center;
 	background-color: #d3d3d3;
 	color: white;

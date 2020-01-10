@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Ângulos: atividade 1</title>
+	<link rel="icon" href="imagens/iconMathLibras.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" type="text/css" href="estilos/main.css">
+	<link rel="stylesheet" type="text/css" href="estilos/conteudo.css">
+</head>
+
+<body>
+	<div class="containerPreload">
+		<div class="preload"></div>
+	</div>
+	
+	<header>
+		<h1><a href="http://napalmadamao.ifrn.edu.br/"><img src="imagens/logo.png" alt="logo do site"/>EDUCAÇÃO NA <br/>PALMA DA MÃO</a></h1>
+		<h2>Repositório de objetos de aprendizagem</h2>
+		
+		<nav>
+			<ol>
+				<li><a href="#">AULAS</a></li>
+				<li><a href="#">ANIMAÇÕES</a></li>
+				<li><a href="#">LISTAS</a></li>
+				<li><a href="#">OBJETOS</a></li>
+			</ol>
+		</nav>
+	</header>
+	
+	<main>
+		<p><b>Fração correspondente a um número.</b></p>
+		<br><hr><br>
+		<section>		
+			<form action="" autocomplete="off">
+				
+				<!-- 01 -->
+				<div class="questao">					
+					<p class="texto">a) Quanto vale 1/2 de 250?</p>
+					<input type="number" id="ex01">					
+					<p>unid</p>
+					<span class="avaliacao" id="rs01"></span>				
+				</div>				
+				
+				<!-- 02  -->	
+				<div class="questao">
+					<p class="texto">b) Quanto vale 1/3 de 60?</p>
+					<input type="number" id="ex02">					
+					<p>unid</p>
+					<span class="avaliacao" id="rs02"></span>
+				</div>
+				
+				<!-- 03  -->
+				<div class="questao">
+					<p class="texto">c) Quanto vale 1/4 de 300?</p>
+					<input type="number" id="ex03">
+					<p>unid</p>
+					<span class="avaliacao" id="rs03"></span>
+				</div>
+				
+				<!-- 04  -->
+				<div class="questao">
+					<p class="texto">d) Quanto vale 1/8 de 32?</p>
+					<input type="number" id="ex04">					
+					<p>unid</p>
+					<span class="avaliacao" id="rs04"></span>
+				</div>
+				
+				<!-- 05 -->
+				<div class="questao">
+					<p class="texto">e) Quanto vale 1/5 de 60?</p>
+					<input type="number" id="ex05">
+					<p>unid</p>
+					<span class="avaliacao" id="rs05"></span>
+				</div>
+				
+				<!-- CONFIRMAR/LIMPAR -->				
+				<input class="botao laranja" type="button" id="limpar" value="Limpar">
+				<input class="botao azul" type="button" id="confirmar" value="Confirmar">
+			</form>
+			
+			<!-- CONTAGEM DE ERROS E ACERTOS  -->
+			<div id="resultado">
+				<div hidden class="nota">
+					<p>Acertos</p>
+					<p id="acertos">0</p>
+				</div>
+				<div hidden class="nota">
+					<p>Erros</p>
+					<p id="erros">0</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<div class="endereco">
+			<address>
+				<ol>
+					<li><img src="imagens/pointer.png" alt="Endereço físico"> IFRN | Natal - Central</li></br>
+					<li><img src="imagens/telefone.png" alt="Telefone"> (84) 9 8797 - 2102</li></br>
+					<li><img src="imagens/email.png" alt="Email"> geraldo.felipe@ifrn.edu.br</li>
+				</ol>
+			</address>
+		</div>
+		
+		<div class="logo">
+			<h1><a href="http://napalmadamao.ifrn.edu.br/"><img src="imagens/logo.png" alt="logo do site"/>EDUCAÇÃO NA <br/>PALMA DA MÃO</a></h1>
+			<h2>Repositório de objetos de aprendizagem</h2>
+		</div>
+		
+		<div class="creditos">
+			<p>Prof.Geraldo Felipe | IFRN/CNAT</p>
+			<p>Projeto Educação na Palma da Mão | IFRN-CNAT</p>
+			<p>Site em desenvolvimento | Setembro de 2019</p>
+		</div>
+	</footer>
+	<script src="pre.js"></script>
+	<script src="confResposta.js"></script>
+</body>
+</html>
