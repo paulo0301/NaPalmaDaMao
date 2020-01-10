@@ -127,9 +127,43 @@ figure{
 	font-family: 'Open Sans', sans-serif;
 	color: #34495e;
 }
+.containerQuestoes form div{
+	display: flex;
+	align-items: center;
+}
 .containerQuestoes label{
 	display: flex;
 	align-items: center;
+}
+.containerQuestoes input[type="radio"]{
+	display: none;
+}
+.containerQuestoes input[type="radio"] + label{
+	position: relative;
+	padding: 0 0 0 30px;
+	cursor: pointer;
+}
+.containerQuestoes input[type="radio"] + label::before{
+	content: "";
+	border: 2px solid #3f9cef;
+	position: absolute;
+	left: 0px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+}
+.containerQuestoes input[type="radio"] + label::after{
+	content: "";
+	background-color: #3f9cef;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 3px;
+	border-radius: 50%;
+	opacity: 0;
+}
+.containerQuestoes input[type="radio"]:checked + label::after{
+	opacity: 1;
 }
 .containerQuestoes figure{
 	box-shadow: none;
