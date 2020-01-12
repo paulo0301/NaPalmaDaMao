@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8"/>
+<canvas id="myCanvas" width="1200px" height="600px"></canvas>
+<script src="http://www.fisicainvertida.com/PSlibrary/PSlibrary2019.2.js"></script>	
+<script src="C:\Users\Usuario\Documents\PSlibrary2019/PSlibrary20192.js"></script> 
+<script src="PSlibrary20192.js"></script> 
+<script>
+//***********************************************//
+var x0 = 20;
+var y0 = 30;
+var exibir = 0;
+//***********************************************//
+//QUADRO DE CORES
+var corBorda = '#bdc3c7';
+var corAzul = '#3498db';
+
+function desenhar(){		
+	
+	//CARD 01 ------------------------------------------------------------
+	x = 40; 
+	y = 40;
+	xm = x + 180;
+	rectangle(x, y, 360, 220, 1, 0, corBorda, nocolor);	
+	//point(x + 90, y - 5, bluecolor);
+	//point(x + 180, y - 5, bluecolor);
+	//point(x + 270, y - 5, bluecolor);
+	//grid(x,y + 220,18,11,0.2,darkcolor);
+	
+	rectangleRound(x + 120, y + 92, 120, 35, 5, 1.5, '#273c75', nocolor);
+	rectangleRound(x + 73, y + 160, 40, 35, 5, 1.5, '#273c75', nocolor);
+	rectangleRound(x + 240, y + 160, 50, 35, 5, 1.5, '#273c75', nocolor);
+	
+	textStyle1('Conjunto de', '12', 'verdana', x + 125, y + 25, darkcolor);
+	textStyle1('Algarismos', '12', 'verdana', x + 127, y + 47, darkcolor);
+	textStyle1('1, 3, 6, 8, 9', '12', 'verdana', x + 127, y + 80, darkcolor);
+	textStyle1('16', '12', 'verdana', xm - 100, y + 150, darkcolor);
+	textStyle1('811', '12', 'verdana', xm + 68, y + 150, darkcolor);
+	
+	textStyle1('Número com', '10', 'verdana', x + 40, y + 180, darkcolor);
+	textStyle1('2 algarismos', '10', 'verdana', x + 40, y + 195, darkcolor);
+	
+	textStyle1('Número com', '10', 'verdana', x + 220, y + 180, darkcolor);
+	textStyle1('3 algarismos', '10', 'verdana', x + 220, y + 195, darkcolor);		
+	
+	conect90(x + 115, y + 90, 20, -20, 90, 1, '#718093');
+	conect90(x + 245, y + 90, 20, 20, 90, 1, '#718093');
+	
+	//CARD 02 ------------------------------------------------------------
+	x = 435;
+	y = 40;
+	xm = x + 180;
+	rectangle(x, y, 360, 220, 1, 0, corBorda, nocolor);	
+	cor = '#4b7bec';
+	//point(x + 90, y - 5, bluecolor);
+	//point(x + 180, y - 5, bluecolor);
+	//point(x + 270, y - 5, bluecolor);
+	//grid(x,y + 220,18,11,0.2,darkcolor);
+	
+	rectangleRound(x + 120, y + 92, 120, 35, 5, 1.5, '#273c75', nocolor);
+	rectangleRound(x + 73, y + 160, 40, 35, 5, 1.5, '#273c75', nocolor);
+	rectangleRound(x + 240, y + 160, 50, 35, 5, 1.5, '#273c75', nocolor);
+	
+	textStyle1('Conjunto de', '12', 'verdana', x + 125, y + 25, darkcolor);
+	textStyle1('Algarismos', '12', 'verdana', x + 127, y + 47, darkcolor);
+	textStyle1('1, 3, 6, 8, 9', '12', 'verdana', x + 127, y + 80, darkcolor);
+	textStyle1('16', '12', 'verdana', xm - 100, y + 150, darkcolor);
+	textStyle1('811', '12', 'verdana', xm + 68, y + 150, darkcolor);
+	
+	textStyle1('Combinação', '10', 'verdana', x + 40, y + 180, cor);
+	textStyle1('sem repetição', '10', 'verdana', x + 40, y + 195, cor);
+	
+	textStyle1('Combinação', '10', 'verdana', x + 220, y + 180, cor);
+	textStyle1('com repetição', '10', 'verdana', x + 220, y + 195, cor);		
+	
+	conect90(x + 115, y + 90, 20, -20, 90, 1, '#718093');
+	conect90(x + 245, y + 90, 20, 20, 90, 1, '#718093');
+	
+	
+	
+	//CARD 03 ------------------------------------------------------------
+	x = 830;
+	y = 40;
+	xm = x + 180;
+	rectangle(x, y, 360, 220, 1, 0, corBorda, nocolor);	
+	cor = '#4b7bec';
+	cor2 = '#fc5c65';
+	cor3 = '#eb2f06';	
+	//point(x + 90, y - 5, bluecolor);
+	//point(x + 180, y - 5, bluecolor);
+	//point(x + 270, y - 5, bluecolor);
+	//grid(x,y + 220,18,11,0.2,darkcolor);
+	
+	rectangleRound(x + 120, y + 92, 120, 35, 5, 1.5, '#273c75', nocolor);
+	rectangleRound(x + 73, y + 160, 40, 35, 5, 1.5, cor, nocolor);
+	rectangleRound(x + 240, y + 160, 50, 35, 5, 1.5, cor3, nocolor);
+	
+	textStyle1('Conjunto de', '12', 'verdana', x + 125, y + 25, darkcolor);
+	textStyle1('Algarismos', '12', 'verdana', x + 127, y + 47, darkcolor);
+	textStyle1('1, 3, 6, 8, 9', '12', 'verdana', x + 127, y + 80, darkcolor);
+	textStyle1('91', '12', 'verdana', xm - 100, y + 150, cor);
+	textStyle1('258', '12', 'verdana', xm + 68, y + 150, cor3);
+	
+	textStyle1('É uma combinção', '10', 'verdana', x + 20, y + 180, cor);
+	textStyle1('dos algarismos', '10', 'verdana', x + 20, y + 195, cor);
+	
+	textStyle1('Não é uma combinação', '10', 'verdana', x + 180, y + 180, cor3);
+	textStyle1('dos algarismos', '10', 'verdana', x + 180, y + 195, cor3);			
+	
+	conect90(x + 115, y + 90, 20, -20, 90, 1, '#718093');
+	
+	
+	//CARD 04 ------------------------------------------------------------
+	x = 40;
+	y = 300;
+	xm = x + 180;
+	rectangle(x, y, 360, 220, 1, 0, corBorda, nocolor);	
+	cor = '#4b7bec';
+	cor2 = '#fc5c65';
+	//point(x + 90, y - 5, bluecolor);
+	//point(x + 180, y - 5, bluecolor);
+	//point(x + 270, y - 5, bluecolor);
+	//grid(x,y + 220,18,11,0.2,darkcolor);
+	
+	rectangleRound(x + 120, y + 92, 120, 35, 5, 1.5, '#273c75', nocolor);
+	//rectangleRound(x + 73, y + 160, 40, 35, 5, 1.5, cor, nocolor);	
+	
+	textStyle1('Conjunto de', '12', 'verdana', x + 125, y + 25, darkcolor);
+	textStyle1('Algarismos', '12', 'verdana', x + 127, y + 47, darkcolor);
+	textStyle1('1, 3, 6, 8, 9', '12', 'verdana', x + 127, y + 80, darkcolor);
+	
+	conect90(x + 180, y + 100, 30, 0, 90, 1, '#718093');
+	textStyle1('Combinações', '10', 'verdana', x + 190, y + 120, darkcolor);	
+	
+	
+	textStyle1('13     63     89    136    11    833', '12', 'verdana', 82, y + 170, darkcolor);
+	for(var i = 0; i <= 5; i++){
+		rectangleRound(72 + i*50, y + 180, 45, 35, 5, 1.5, cor, nocolor);
+	}
+		
+	//CARD 05
+	x = 435;
+	y = 300;
+	xm = x + 180;
+	rectangle(x, y, 360, 220, 1, 0, corBorda, nocolor);	
+	//point(x + 90, y - 5, bluecolor);
+	//point(x + 180, y - 5, bluecolor);
+	//point(x + 270, y - 5, bluecolor);
+	//grid(x,y + 220,18,11,0.2,darkcolor);
+	
+	rectangleRound(x + 120, y + 92, 120, 35, 5, 1.5, '#273c75', nocolor);
+	
+	
+	textStyle1('Conjunto de', '12', 'verdana', x + 125, y + 25, darkcolor);
+	textStyle1('Algarismos', '12', 'verdana', x + 127, y + 47, darkcolor);
+	textStyle1('1, 3, 6, 8, 9', '12', 'verdana', x + 127, y + 80, darkcolor);
+	
+	
+	//CARD 06
+	x = 830;
+	y = 300;
+	rectangle(x, y, 360, 220, 1, 0, corBorda, nocolor);	
+	
+}
+desenhar();
+</script>
+<!-- ------------------------------------------------------------------------ -->
+</html>
+
+
+
+
+
+
+
+
+

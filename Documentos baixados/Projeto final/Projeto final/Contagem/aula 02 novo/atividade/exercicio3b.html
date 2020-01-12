@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<canvas id="myCanvas" width="380px" height="210px"></canvas>
+<link rel="stylesheet" href="cssAnimation.css">
+<link rel="stylesheet" href="classesE3.css">
+<script src="PSlibrary20192.js"></script>
+<body>	
+<script>
+//***********************************************//
+var validar1 = true;
+var validar2 = true;
+var validar3 = true;
+function validar(){
+	var n1 = document.formulario.resposta1.value;
+	var n2 = document.formulario.resposta2.value;
+	var n3 = document.formulario.resposta3.value;	
+	//
+	document.formulario.resposta1.disabled = 1;	
+	document.formulario.resposta2.disabled = 1;	
+	document.formulario.resposta3.disabled = 1;	
+	//	
+	if(n1 == 4){			
+		validar1 = false;
+	}else{
+		error(x + 100, y, corE);
+	}
+	//
+	if(n2 == 3){			
+		validar2 = false;	
+	}else{
+		error(x + 160, y, corE);
+	} 
+	//
+	if(n3 == 1){				
+		validar3 = false;	
+	}else{
+		error(x + 220, y, corE);
+	} 	
+	desenhar();
+}
+
+function liberar(){	
+	clear();
+	if(validar1 == true){	
+		document.formulario.resposta1.value = "";	
+		document.formulario.resposta1.disabled = 0;
+	}
+	if(validar2 == true){	
+		document.formulario.resposta2.value = "";	
+		document.formulario.resposta2.disabled = 0;	
+	}
+	if(validar3 == true){	
+		document.formulario.resposta3.value = "";	
+		document.formulario.resposta3.disabled = 0;	
+	}
+	if(validar1 == true){	
+		document.formulario.resposta1.value = "";	
+		document.formulario.resposta1.disabled = 0;
+	}	
+	if(validar3 == true){	
+		document.formulario.resposta3.value = "";	
+		document.formulario.resposta3.disabled = 0;	
+	}
+	if(validar1 == false && validar2 == false && validar3 == false){	
+		document.formulario.resposta1.value = "";	
+		document.formulario.resposta1.disabled = 0;
+		document.formulario.resposta2.value = "";	
+		document.formulario.resposta2.disabled = 0;	
+		document.formulario.resposta3.value = "";	
+		document.formulario.resposta3.disabled = 0;
+		validar1 = true;
+		validar2 = true;
+		validar3 = true;
+	}	
+	desenhar();	
+}
+//
+var x = 80;
+var y = 150;
+var corE = '#eb2f06';
+var corC = '#079992';
+function desenhar(){	
+	//clear();	
+	rectangleRound(5, 205, canvas.width - 10, canvas.height - 10, 5, 1.5, 0, nocolor, darkcolor);	
+	if(validar1 == false){	
+		right(x + 100, y, 1, 5, corC);	
+	}
+	if(validar2 == false){	
+		right(x + 160, y, 1, 5, corC);	
+	}
+	if(validar3 == false){	
+		right(x + 220, y, 1, 5, corC);	
+	}
+	
+	
+		
+}
+desenhar();
+</script>
+
+<!-- ------------------------------------------------------------------------ -->
+
+<div class="imagem"></div>	
+
+<form name="formulario">
+	<div style="position:absolute; left:168px; top:105px;" >
+		<input style="width:50px; text-align:center" maxlength="5" autocomplete="off" type="text" name="resposta1" >
+	</div>	
+
+	<div style="position:absolute; left:232px; top:105px;" >
+		<input style="width:50px; text-align:center" maxlength="5" autocomplete="off" type="text" name="resposta2" >
+	</div>	
+	
+	<div style="position:absolute; left:296px; top:105px;" >
+		<input style="width:50px; text-align:center" maxlength="5" autocomplete="off" type="text" name="resposta3" >
+	</div>	
+	
+	<!--   -->
+
+	<div style="position:absolute; left:30px; top:140px">		
+		<input type="button" class="botao" value="Confirmar" onClick="validar();">			
+	</div>		
+	
+	<div style="position:absolute; left:37px; top:170px">		
+		<input type="button" class="botao" value="Apagar" onClick="liberar();">				
+	</div>	
+</form>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <title>Expressões algébrica: atividade 1</title>
+  <link rel="icon" href="imagens/iconMathLibras.png">
+  <meta name="viewport">
+  <link rel="stylesheet" type="text/css" href="estilos/main.css"/>
+  <link rel="stylesheet" type="text/css" href="estilos/conteudo.css">	
+  <script src="js/javascriptDiscursivas.js"></script>	
+</head>
+
+<body>
+	<div class="btn">
+		<button onclick="Mudarfonte(1)">Aumentar fonte [1]</button>
+		<button onclick="Mudarfonte(2)">Diminuir fonte [2]</button>
+	</div>
+
+	<header>
+		<h1><a href="http://napalmadamao.ifrn.edu.br/mathlibras.html"><img src="imagens/MathLibras.png" alt="logo do site"/>Math Libras</a></h1>
+		<h2>Aulas de matemática básica</h2>
+
+		<nav>
+		  <ol>
+		    <li><a href="#">AULAS</a></li>
+		    <li><a href="#">ANIMAÇÕES</a></li>
+		    <li><a href="#">LISTAS</a></li>
+		    <li><a href="#">OBJETOS</a></li>
+		  </ol>
+		</nav>
+	</header>
+
+	<div class="aulas">
+		<a href="#">Exercício anterior</a> <b>|</b>
+		<a href="../Aula 02 novo/exercicio.html">Próximo exercício</a>
+	</div>
+
+	<main>
+		<h3>Expressões algébricas: atividade 1</h3>
+
+		<section>
+			<h4>Exercício 01</h4>
+
+			<div class="instrucoes">
+				<div>
+					<video src="videos/" controls="controls" preload="auto" width="220" height="220"></video>
+				</div>
+
+				<div>
+					<figure>
+						<img src="imagens/exercicio1.png" alt="x + 2 = 20" width="370" height="170" />
+					</figure>
+				</div>
+			</div>
+
+			<form name="formulario1">
+				<div>
+					<label for="x">x = </label>
+					<input class="resposta" onkeypress="return noenter()" type="text" name="resposta"/>
+				</div>
+
+				<div>
+					<label>Avaliação:</label>
+					<output class="saida" type="text" name="VF"/>
+				</div>
+
+				<div class="button"> 
+					<input type="button" class="botao" value="Confirmar" onClick="validar1();"/>
+					<input type="button" class="botao" value="Limpar" onClick = "liberar1()"/>
+				</div>
+			</form>
+		</section>
+
+		<section>
+			<h4>Exercício 02</h4>
+
+			<div class="instrucoes">
+				<div>
+					<video src="videos/" controls="controls" preload="auto" width="220" height="220"></video> 	
+				</div>
+
+				<div>
+					<figure>
+						<img src="imagens/exercicio2.png" alt="x + 2 = 6" width="370" height="170"/>
+					</figure>
+				</div>
+			</div>
+
+			<form name="formulario2">
+				<div>
+					<label for="x">x = </label>
+					<input class="resposta" onkeypress="return noenter()" type="text" name="resposta"/>
+				</div>
+
+				<div>
+					<label>Avaliação:</label>
+					<output class="saida" type="text" name="VF"/>
+				</div>
+
+				<div class="button">
+					<input type="button" class="botao" value="Confirmar" onClick="validar2();"/>	
+					<input type="button" class="botao" value="Limpar" onClick ="liberar2()"/>
+				</div>
+			</form>
+		</section>
+
+		<section>
+			<h4>Exercício 03</h4>
+
+			<div class="instrucoes">
+				<div>
+					<video src="videos/" controls="controls" preload="auto" width="220" height="220"></video> 	
+				</div>
+
+				<div>
+					<figure>
+						<img src="imagens/exercicio3.png" alt="x + 7 = 8" width="370" height="170" />
+					</figure>
+				</div>
+			</div>
+
+			<form name="formulario3">
+				<div>
+					<label for="x">x = </label>
+					<input class="resposta" onkeypress="return noenter()" type="text" name="resposta"/>
+				</div>
+
+				<div>
+					<label>Avaliação:</label>
+					<output class="saida" type="text" name="VF"/>
+				</div>
+
+				<div class="button">
+					<input type="button" class="botao" value="Confirmar" onClick="validar3()"/>
+					<input type="button" class="botao" value="Limpar" onClick = "liberar3()"/>	
+				</div>
+			</form>
+		</section>
+
+		<section>
+			<h4>Exercício 04</h4>
+
+			<div class="instrucoes">
+				<div>
+					<video src="videos/" controls="controls" preload="auto" width="220" height="220"></video> 	
+				</div>
+
+				<div>
+					<figure>
+						<img src="imagens/exercicio4.png" alt="x + 7 = 7" width="370" height="170"/>
+					</figure>
+				</div>
+			</div>
+
+			<form name="formulario4">
+				<div>
+					<label for="x">x = </label>
+					<input class="resposta" onkeypress="return noenter()" type="text" name="resposta"/>
+				</div>
+
+				<div>
+					<label>Avaliação:</label>
+					<output class="saida" type="text" name="VF"/>
+				</div>
+
+				<div class="button">
+					<input type="button" class="botao" value="Confirmar" onClick="validar4()"/>	
+					<input type="button" class="botao" value="Limpar" onClick = "liberar4()"/>
+				</div>
+			</form>
+		</section>
+
+		<section>
+			<h4>Exercício 05</h4>
+
+			<div class="instrucoes">
+				<div>
+					<video src="videos/" controls="controls" preload="auto" width="220" height="220"></video> 	
+				</div>
+
+				<div>
+					<figure>
+						<img src="imagens/exercicio5.png" alt="x - 10 = 20" width="370" height="170" />
+					</figure>
+				</div>
+			</div>
+
+			<form name="formulario5">
+				<div>
+					<label for="x">x = </label>
+					<input class="resposta" onkeypress="return noenter()" type="text" name="resposta" />
+				</div>
+
+				<div>
+					<label>Avaliação:</label>
+					<output class="saida" type="text" name="VF"/>
+				</div>
+
+				<div class="button">
+					<input type="button" class="botao" value="Confirmar" onClick="validar5()"/>	
+					<input type="button" class="botao" value="Limpar" onClick = "liberar5()"/>
+				</div>
+			</form>
+		</section>
+
+		<div class="aulasfooter">
+			<a href="#">Exercício anterior</a> <b>|</b>
+			<a href="../Aula 02 novo/exercicio.html">Próximo exercício</a>
+		</div>
+	</main>
+
+	<footer>
+		<div class="endereco">
+			<address>
+				<ol>
+					<li><img src="imagens/pointer.png" alt="Endereço físico"> IFRN | Natal - Central</li></br>
+					<li><img src="imagens/telefone.png" alt="Telefone"> (84) 9 8797 - 2102</li></br>
+					<li><img src="imagens/email.png" alt="Email"> geraldo.felipe@ifrn.edu.br</li>
+				</ol>
+			</address>
+		</div>
+
+		<div class="logo">
+			<h1><a href="http://napalmadamao.ifrn.edu.br/"><img src="imagens/logo.png" alt="logo do site"/>EDUCAÇÃO NA <br/>PALMA DA MÃO</a></h1>
+			<h2>Repositório de objetos de aprendizagem</h2>
+		</div>
+
+		<div class="creditos">
+			<p>Prof.Geraldo Felipe | IFRN/CNAT</p>
+			<p>Projeto Educação na Palma da Mão | IFRN-CNAT</p>
+			<p>Site em desenvolvimento | Setembro de 2019</p>
+		</div>
+	</footer>
+</body>
+</html>
+

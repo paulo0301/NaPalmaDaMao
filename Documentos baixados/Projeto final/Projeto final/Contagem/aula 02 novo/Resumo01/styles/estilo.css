@@ -1,0 +1,192 @@
+/*
+img_left
+img_center
+quadro
+quadro1
+quadro2
+quadro3
+quadro4
+quadro5
+quadro_peq1
+quadro_peq4
+imagem
+sombra
+*/
+
+/* DESIGN -------------------------------- */
+p{
+	line-height:25px;
+}
+
+.videoLibras{
+	position:relative;
+	left:10px;	
+	width:220px;
+	height:220px;
+	border-style: solid;
+	border-width: 2px;	
+	border-color: #2980b9;		
+}
+
+.img_left{ 
+  display: block; 
+  margin: 0.7em;
+  padding: 0.2em;
+  float: left;
+}
+
+.img_right{
+  position:relative;	
+  top:20px;  
+  display: block; 
+  margin: 0.7em;
+  padding: 0.2em;
+  float: right;  
+}
+
+.img_center{
+  text-align:center;
+  position:relative;
+  top:25px;
+  margin: 0 auto;
+  padding: 0.2em; 
+}
+
+.text_left{ 
+  position:relative;	
+  top:20px;  	
+  width:270px;	
+  display: block; 
+  margin: 0.7em;
+  padding: 0.2em;
+  float: left;
+}
+
+.text_normal{ 
+  position:relative;	
+  top:20px;  	
+  width:600px;	
+  display: block; 
+  margin: 0.7em;
+  padding: 0.2em;
+  float: left;
+}
+
+.quadro{
+  position:relative;	
+  padding: 0.7em;    
+  color: #34495e;  
+}
+
+.quadro1{
+  position:relative;	
+  padding: 0.7em;
+  background-color: #2D5C80;
+  border-radius: 20px 7px 20px 7px;
+  color: white;  
+}
+.quadro2{
+  padding: 0.7em;
+  background-color: #35ACE6;
+  border-radius: 10px 10px 10px 10px;
+  color: black;  
+}
+.quadro3{
+  padding: 0.7em;
+  background-color: #2D7B80;
+  border-radius:  10px 1px 20px 1px;
+  color: white;  
+}
+.quadro4{
+  padding: 0.5em;
+  border: 2px solid #7f8fa6;  
+  color: white;  
+  margin: 0 auto;
+}
+.quadro5{
+  padding: 0.7em;
+  background-color: #2ed573;
+  border-radius: 15px 10px 15px 10px;
+  color: white; 
+ 
+}
+.quadro_peq1{
+  display: inline-flex;
+  max-width: 39em;
+  padding: 0.7em;
+  background-color: #2D5C80;
+  border-radius: 20px 7px 20px 7px;
+  color: white;
+  margin-top:0.5em;
+}
+.quadro_peq4{
+  display: inline-block;
+  max-width: 39em;
+  padding: 0.5em;
+  border: 2px solid #2D5C80;
+  border-radius: 15px 10px 15px 10px;
+  color: black;  
+  margin-top: 0.5em;
+}
+/* diminuir o tamanho do texto em telas menores */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}}
+	
+.fundoAzul1{
+	border-radius: 15px 10px 15px 10px;
+	background-color: #7f8fa6;
+}
+	
+	
+/* ACRESCENTADAS POR GERALDO FELIPE ---------------------   */
+.titulo {
+	width: 100vw;
+    height: 200x;   
+	display: flex;
+    padding-top:25px;
+	padding-bottom:0px;
+    justify-content: center;
+	align-items: center;	
+	color: #40739e;
+}
+
+.imagem {
+ 
+}
+
+.sombra {
+  position:relative;	
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.btnVideo {
+  position:relative;
+  left:40px;
+  -webkit-transition: all 150ms ease-out;
+          transition: all 150ms ease-out;
+  display: inline-block;
+  padding: 7px 10px;
+  background: white;
+  border-radius: 2px;
+  margin: 5px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #5A5858;
+}
+
+.btnVideo:hover {
+	cursor: pointer;
+	color:#2c3e50;
+	background: #ecf0f1;
+	outline: none;
+}
+
+.videoLibras {
+	position:relative;
+	left:40px;
+	top:70px;	
+}

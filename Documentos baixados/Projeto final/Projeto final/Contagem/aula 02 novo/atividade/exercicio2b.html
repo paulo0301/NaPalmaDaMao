@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<canvas id="myCanvas" width="380px" height="110px"></canvas>
+<link rel="stylesheet" href="cssAnimation.css">
+<link rel="stylesheet" href="classes.css">
+<script src="PSlibrary20192.js"></script>	
+<script>
+//***********************************************//
+function validar(){
+	var n1 = document.formulario.resposta1.value;
+	var n2 = document.formulario.resposta2.value;		
+	if(n1 == 1 && n2 == 2){		
+		document.formulario.resposta1.disabled = 1;	
+		document.formulario.resposta2.disabled = 1;			
+		comentario('1');
+	} else{		
+		document.formulario.resposta1.disabled = 1;
+		document.formulario.resposta2.disabled = 1;	
+		comentario('2');
+	}
+}
+
+function liberar(){		
+	document.formulario.resposta1.value = "";	
+	document.formulario.resposta1.disabled = 0;
+	document.formulario.resposta2.value = "";	
+	document.formulario.resposta2.disabled = 0;		
+	comentario('3');	
+}
+
+function comentario(condicao){	
+	var condicao;	
+	if(condicao == '1'){			
+		right(x + 160, y + 0, 1.5, 5, corC);
+	}
+	if(condicao == '2'){
+		clear();
+		error(x + 160, y + 0, corE);
+		desenhar();	
+	}
+	if(condicao == '3'){
+		clear();		
+		desenhar();	
+	}
+}
+
+function error(x, y, color){
+	rectangle(x, y, 30, -5, 1.5, 45, color, color);
+	rectangle(x, y + 18, 30, 5, 1.5, -45, color, color);		
+}
+
+var x = 30;
+var y = 50;
+var valor = 'Correto!';
+var corE = '#eb2f06';
+var corC = '#079992';
+function desenhar(){		
+	// ESTRUTURA ------------------------------	
+	rectangleRound(5, 105, canvas.width - 10, canvas.height - 10, 5, 1.5, 0, nocolor, darkcolor);	
+	textStyle1('Possibilidades', '10', 'verdana', x + 60, y - 25, darkcolor);
+	textStyle1('Calça =', '10', 'verdana', x + 9, y, darkcolor);
+	textStyle1('Camisa =', '10', 'verdana', x, y + 30, darkcolor);	
+	
+}
+desenhar();
+</script>
+
+<!-- ------------------------------------------------------------------------ -->
+<form name="formulario">
+	<div style="position:absolute; left:120px; top:43px;" >
+		<input style="width:50px; text-align:center" maxlength="5" autocomplete="off" type="text" name="resposta1" >
+	</div>	
+
+	<div style="position:absolute; left:120px; top:72px;" >
+		<input style="width:50px; text-align:center" maxlength="5" autocomplete="off" type="text" name="resposta2" >
+	</div>	
+
+	<div style="position:absolute; left:270px; top:30px">		
+		<input type="button" class="botao" value="Confirmar" onClick="validar();">			
+	</div>		
+	
+	<div style="position:absolute; left:280px; top:70px">		
+		<input type="button" class="botao" value="Apagar" onClick="liberar();">				
+	</div>	
+	
+	
+	
+</form>	
+</html>
+
+
+
+
+
+
+
+
+

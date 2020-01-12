@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<canvas id="myCanvas" width="380px" height="310px"></canvas>
+<link rel="stylesheet" href="cssAnimation.css">
+<link rel="stylesheet" href="classesE3.css">
+<script src="PSlibrary20192.js"></script>
+<body>	
+<script>
+//***********************************************//
+var validar1 = true;
+var validar2 = true;
+var validar3 = true;
+var validar4 = true;
+var validar5 = true;
+var validar6 = true;
+var validar7 = true;
+var validar8 = true;
+
+	//var validar1 = false;
+	//var validar2 = false;
+	//var validar3 = false;
+	//var validar4 = false;
+	//var validar5 = false;
+	//var validar6 = false;
+//
+function validar(){
+	
+}
+
+function liberar(){	
+	
+}
+//
+function figura(x, y, letra, color){
+	var x; y; letra; color;
+	textBold(letra, '10', 'verdana', x, y, color);
+}
+//
+var x1 = 170;
+var y1 = 120;
+var x2 = x1;
+var y2 = y1 + 100;
+var x3 = x1;
+var y3 = y1 + 200;
+var dx = 45;
+var dy = 25;
+var cor1 = '#eb2f06';
+var cor2 = '#079992';
+var corVetor = darkcolor;
+//
+function desenhar(){	
+	clear();	
+	rectangleRound(5, 305, canvas.width - 10, canvas.height - 10, 5, 1.5, 0, nocolor, darkcolor);
+	//------------------------------------------>	
+	figura(x1, y1, 'A', darkcolor);
+	//
+	if(validar1 == true){
+		vector(x1 + 15, y1 - 10, 30, -30, 1.5, darkcolor);
+		figura(x1 + dx, y1 - dy, 'C', darkcolor);
+	}
+	//
+	if(validar2 == true){
+		vector(x1 + dx + 15, y1 - dy - 10, 30, -30, 1.5, darkcolor);
+		figura(x1 + 2*dx, y1 - 2*dy + 2, '1', darkcolor);
+	}
+	if(validar3 == true){
+		vector(x1 + dx + 15, y1 - dy + 5, 30, 30, 1.5, darkcolor);
+		figura(x1 + 2*dx, y1 - 2*dy + 50, '2', darkcolor);
+	}
+	//
+	//
+	if(validar4 == true){
+		vector(x1 + 15, y1 + 5, 30, 30, 1.5, darkcolor);
+		figura(x1 + dx, y1 + dy, 'D', darkcolor);
+	}		
+	//------------------------------------------>
+	/*
+	figura(x2, y2, 'B', darkcolor);
+	//
+	if(validar3 == true){
+		vector(x2 + 15, y2 - 10, 30, -30, 1.5, darkcolor);
+		figura(x2 + dx, y2 - dy, 'C', darkcolor);
+	}
+	//
+	if(validar4 == true){
+		vector(x2 + 15, y2 + 5, 30, 30, 1.5, darkcolor);
+		figura(x2 + dx, y2 + dy, 'D', darkcolor);
+	}
+	*/
+	
+}
+desenhar();
+</script>
+<!-- ------------------------------------------------------------------------ -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+

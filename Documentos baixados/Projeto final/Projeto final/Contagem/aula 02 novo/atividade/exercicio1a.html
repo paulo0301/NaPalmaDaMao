@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<canvas id="myCanvas" width="380px" height="110px"></canvas>
+<link rel="stylesheet" href="cssAnimation.css">
+<link rel="stylesheet" href="classes.css">
+<script src="PSlibrary20192.js"></script>	
+<script>
+//***********************************************//
+function validar(){
+	var n1 = document.formulario.resposta1.value;	
+	if(n1 == 132 || n1 == 312){		
+		document.formulario.resposta1.disabled = 1;			
+		comentario('1');
+	} else{
+		
+		document.formulario.resposta1.disabled = 1;				
+		comentario('2');
+	}
+}
+
+function liberar(){		
+	document.formulario.resposta1.value = "";	
+	document.formulario.resposta1.disabled = 0;		
+	comentario('3');	
+}
+
+function comentario(condicao){	
+	var condicao;	
+	if(condicao == '1'){		
+		right(x + 160, y - 15, 1.5, 5, corC);
+	}
+	if(condicao == '2'){
+		clear();
+		error(x + 160, y - 15, corE);
+		desenhar();	
+	}
+	if(condicao == '3'){
+		clear();		
+		desenhar();	
+	}
+}
+
+var x = 40;
+var y = 40;
+var corE = '#eb2f06';
+var corC = '#079992';
+function desenhar(){		
+	// ESTRUTURA ------------------------------	
+	rectangleRound(5, 105, canvas.width - 50, canvas.height - 10, 5, 1.5, 0, nocolor, darkcolor);	
+	textStyle1('Resposta =', '10', 'verdana', x, y, darkcolor);				
+}
+desenhar();
+</script>
+
+<!-- ------------------------------------------------------------------------ -->
+<form name="formulario">
+	<div style="position:absolute; left:140px; top:33px;" >
+		<input style="width:50px; text-align:center" maxlength="5" autocomplete="off" type="text" name="resposta1" >
+	</div>		
+	
+	<div style="position:absolute; left:38px; top:70px">		
+		<input type="button" class="botao" value="Confirmar" onClick="validar();">
+		<input type="button" class="botao" value="Apagar" onClick="liberar();">				
+	</div>	
+	
+</form>	
+</html>
+
+
+
+
+
+
+
+
+

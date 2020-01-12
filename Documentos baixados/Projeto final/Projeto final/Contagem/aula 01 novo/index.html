@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Princípio fundamental da contagem: atividade 1</title>
+	<link rel="icon" href="imagens/iconMathLibras.png">
+	<link rel="stylesheet" type="text/css" href="estilos/main.css">
+	<link rel="stylesheet" type="text/css" href="estilos/objetivas.css">
+	<link rel="stylesheet" type="text/css" href="estilos/conteudo.css">
+</head>
+<body>
+	<div class="button">
+		<button onclick="Mudarfonte(1)">Aumentar fonte [1]</button>
+		<button onclick="Mudarfonte(2)">Diminuir fonte [2]</button>
+	</div>
+
+	<header>
+		<h1><a href="http://napalmadamao.ifrn.edu.br/mathlibras.html"><img src="imagens/MathLibras.png" alt="logo do site"/>Math Libras</a></h1>
+		<h2>Aula de matemática básica</h2>
+
+		<nav>
+		  <ol>
+		    <li><a href="#">AULAS</a></li>
+		    <li><a href="#">ANIMAÇÕES</a></li>
+		    <li><a href="#">LISTAS</a></li>
+		    <li><a href="#">OBJETOS</a></li>
+		  </ol>
+		</nav>
+	</header>
+
+	<div class="aulas">
+		<a href="../Aula 01 novo/exercicio.html">Exercício anterior</a> <b>|</b>
+		<a href="#">Próximo exercício</a>
+	</div>
+
+	<main>
+		<h3>Princípios fundamentais da contagem: atividade 1</h3>
+
+		<section>
+			<h4>Exercício 01</h4>
+
+			<div class="instrucoes">
+				<div>
+					<video src="video/" controls="controls" preload="auto" width="220" height="220"></video>
+				</div>
+
+				<div>
+					<ol>
+						<li>Nesse exercício você precisa selecionar apenas números com 3 algarismos.</li>
+						<li>É possível que várias alternativas estejam corretas.</li>
+						<li>Clique no botão Confirmar para verificar se acertou todas as opções. Se não acertar, você pode tentar novamente.</li>
+						<li>Se não acertar, você pode tentar novamente.</li>
+					</ol>
+				</div>
+			</div>
+
+			<form name="ex01" class='alternativa'>
+				<div>
+					<input type="checkbox" name="opcao" id="a1" class="
+					checkmark" onclick="btn1()">
+					<label>a) 123</label>
+				</div>	
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="b1" onclick="btn1()" />
+					<label>b) 6543</label>
+				</div>			
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="c1" onclick="btn1()" />
+					<label>c) 307</label>
+				</div>
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="d1" onclick="btn1()" />
+					<label>d) 2570</label>
+				</div>
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="e1" onclick="btn1()" />
+					<label>e) 200</label>
+				</div>
+
+				<div>
+					<input class = "btn btn-padrao" type = "button" onclick="validar1()"  	value="Confirmar"/>		
+				</div>
+			</form>
+		</section>
+
+		<section>
+			<h4>Exercício 02</h4>
+
+			<div class="instrucoes">
+				<div>
+					<video src="video/" controls="controls" preload="auto" width="220" height="220"></video>
+				</div>
+
+				<div>
+					<ol>
+						<li>Nesse exercício você precisa selecionar apenas os números que não possuem algarismos repetidos.</li>
+					</ol>
+				</div>
+			</div>
+
+			<form name="ex02" class='alternativa'>
+				<div>
+					<input type="checkbox" name="opcao" id="a2" class="
+					checkmark" onclick="btn2()">
+					<label>a) 1258</label>
+				</div>	
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="b2" onclick="btn2()" />
+					<label>b) 9879</label>
+				</div>			
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="c2" onclick="btn2()" />
+					<label>c) 722</label>
+				</div>
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="d2" onclick="btn2()" />
+					<label>d) 3265</label>
+				</div>
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="e2" onclick="btn2()" />
+					<label>e) 432653</label>
+				</div>
+
+				<div>
+					<input class = "btn btn-padrao" type = "button" onclick="validar2()"  	value="Confirmar"/>		
+				</div>
+			</form>
+		</section>
+
+		<section>
+			<h4>Exercício 03</h4>
+
+			<div class="instrucoes">
+				<div>
+					<video src="video/" controls="controls" preload="auto" width="220" height="220"></video>
+				</div>
+
+				<div>
+					<ol>
+						<li>Selecione os números que possuem algarismos repetidos.</li>
+					</ol>
+				</div>
+			</div>
+
+			<form name="ex03" class='alternativa'>
+				<div>
+					<input type="checkbox" name="opcao" id="a3" class="
+					checkmark" onclick="btn3()">
+					<label>a) 1687</label>
+				</div>	
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="b3" onclick="btn3()" />
+					<label>b) 1654</label>
+				</div>			
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="c3" onclick="btn3()" />
+					<label>c) 6235</label>
+				</div>
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="d3" onclick="btn3()" />
+					<label>d) 195489</label>
+				</div>
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="e3" onclick="btn3()" />
+					<label>e) 35753</label>
+				</div>
+
+				<div>
+					<input class = "btn btn-padrao" type = "button" onclick="validar3()"  	value="Confirmar"/>		
+				</div>
+			</form>
+		</section>
+
+		<section>
+			<h4>Exercício 04</h4>
+
+			<div class="instrucoes">
+				<div>
+					<video src="video/" controls="controls" preload="auto" width="220" height="220"></video>
+				</div>
+
+				<div>
+					<ol>
+						<li>Selecione os números com 4 algarismos, que não possuem algarismos repetidos.</li>
+					</ol>
+				</div>
+			</div>
+
+			<form name="ex04" class='alternativa'>
+				<div>
+					<input type="checkbox" name="opcao" id="a4" class="
+					checkmark" onclick="btn4()">
+					<label>a) 195</label>
+				</div>	
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="b4" onclick="btn4()" />
+					<label>b) 4657</label>
+				</div>			
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="c4" onclick="btn4()" />
+					<label>c) 9634</label>
+				</div>
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="d4" onclick="btn4()" />
+					<label>d) 1231</label>
+				</div>
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="e4" onclick="btn4()" />
+					<label>e) 75845</label>
+				</div>
+
+				<div>
+					<input class = "btn btn-padrao" type = "button" onclick="validar4()"  	value="Confirmar"/>		
+				</div>
+			</form>
+		</section>
+
+		<section>
+			<h4>Exercício 05</h4>
+
+			<div class="instrucoes">
+				<div>
+					<video src="video/" controls="controls" preload="auto" width="220" height="220"></video>
+				</div>
+
+				<div>
+					<ol>
+						<li>Selecione a sequência com apenas 4 letras. As letras não podem estar repetidas.</li>
+					</ol>
+				</div>
+			</div>
+
+			<form name="ex05" class='alternativa'>
+				<div>
+					<input type="checkbox" name="opcao" id="a5" class="
+					checkmark" onclick="btn5()">
+					<label>a) ABCE</label>
+				</div>	
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="b5" onclick="btn5()" />
+					<label>b) XRFG</label>
+				</div>			
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="c5" onclick="btn5()" />
+					<label>c) TRD</label>
+				</div>
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="d5" onclick="btn5()" />
+					<label>d) GHIG</label>
+				</div>
+
+				<div>
+					<input class="checkmark" type="checkbox" name="opcao" id="e5" onclick="btn5()" />
+					<label>e) JPRTT</label>
+				</div>
+
+				<div>
+					<input class = "btn btn-padrao" type = "button" onclick="validar5()"  	value="Confirmar"/>		
+				</div>
+			</form>
+		</section>
+
+		<div class="aulasfooter">
+			<a href="../Aula 01 novo/exercicio.html">Exercício anterior</a> <b>|</b>
+			<a href="#">Próximo exercício</a>
+		</div>
+	</main>
+
+	<footer>
+		<div class="endereco">
+			<address>
+				<ol>
+					<li><img src="imagens/pointer.png" alt="Endereço físico"> IFRN | Natal - Central</li></br>
+					<li><img src="imagens/telefone.png" alt="Telefone"> (84) 9 8797 - 2102</li></br>
+					<li><img src="imagens/email.png" alt="Email"> geraldo.felipe@ifrn.edu.br</li>
+				</ol>
+			</address>
+		</div>
+
+		<div class="logo">
+			<h1><a href="http://napalmadamao.ifrn.edu.br/"><img src="imagens/logo.png" alt="logo do site"/>EDUCAÇÃO NA <br/>PALMA DA MÃO</a></h1>
+			<h2>Repositório de objetos de aprendizagem</h2>
+		</div>
+
+		<div class="creditos">
+			<p>Prof.Geraldo Felipe | IFRN/CNAT</p>
+			<p>Prof. José Roberto Barboza Júnior<br>(Departamento de Educação de Dois Córregos/SP)</p>
+			<p>Intérprete: Mariana Didone<br>(Departamento de Educação de Dois Córregos/SP)</p>
+		</div>
+	</footer>
+</body>
+</html>
