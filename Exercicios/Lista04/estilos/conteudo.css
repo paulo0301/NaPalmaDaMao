@@ -194,7 +194,14 @@ section input{
 	text-align: center;
 	color: rgb(0,0,100);
 }
-
+.containerBotoes{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.questao{
+	border-bottom: 1px solid #0d1321;
+}
 input[value="Confirmar"]{
 	width: 7em;
 	background-color: #30ad23;
@@ -205,6 +212,7 @@ input[value="Confirmar"]{
 	border-radius: 10px;
 	border: 0px;
 	height: 2em;
+	margin-right: 5px;
 }
 
 input[value="Limpar"]{

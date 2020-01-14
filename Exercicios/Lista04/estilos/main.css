@@ -148,7 +148,8 @@ footer .creditos{
 
 .aulas{
   text-align: right;
-  margin: 1.5em 36em;
+  width: 45em;
+  margin: 1em auto;
 }
 
 .aulas a{
@@ -175,7 +176,6 @@ footer .creditos{
 .aulasfooter a:hover{
   background-color: #b3cfe5;
 }
-
 .button{
   background-color: #002a4e;
   margin-top: 0;
