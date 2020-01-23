@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Termodinâmica 01</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
+	<script src="js/navegacao.js"></script>
+</head>
+<script>
+	var slideIndex = 1;
+</script>
+<body onkeydown="whichButton(event)">
+	<section>
+		<!-- -----------------------------1-------------------------------- -->
+		
+		<div class="mySlides">
+			<!-- TÍTULO  -->
+			<div style="position:relative; top:30px; left:20px; width:500px" >
+				<p class="quadro1" >Combinação de Algarismos</p> 			
+			</div>		
+			<!-- VÍDEO  -->		
+			<div style="position:relative; top:-20px; left:-20px">
+				<video class="videoLibras" src="videos/exemplo.mp4"  controls="controls" preload="auto"></video>
+			</div>	
+			<!-- FIGURA  -->		
+			<div style="position:relative; top:-175px; left:260px">
+				<img class="sombra" src="images/figura01.png" width=""/>
+			</div>			
+		</div>
+		<!------------------------------2-------------------------------->
+		<div class="mySlides">
+			<!-- TÍTULO  -->
+			<div style="position:relative; top:30px; left:0px; width:500px" >
+				<p class="quadro1" >Combinação de Algarismos</p> 			
+			</div>		
+			<!-- VÍDEO  -->		
+			<div style="position:relative; top:-20px; left:-20px">
+				<video class="videoLibras" src="videos/exemplo.mp4"  controls="controls" preload="auto"></video>
+			</div>	
+			<!-- FIGURA  -->		
+			<div style="position:relative; top:-175px; left:260px">
+				<img class="sombra" src="images/figura02.png" width=""/>
+			</div>			
+		</div>
+		<!------------------------------3-------------------------------->
+		<div class="mySlides">
+			<!-- TÍTULO  -->
+			<div style="position:relative; top:30px; left:0px; width:500px" >
+				<p class="quadro1" >Combinação de Algarismos</p> 			
+			</div>		
+			<!-- VÍDEO  -->		
+			<div style="position:relative; top:-20px; left:-20px">
+				<video class="videoLibras" src="videos/exemplo.mp4"  controls="controls" preload="auto"></video>
+			</div>	
+			<!-- FIGURA  -->		
+			<div style="position:relative; top:-175px; left:260px">
+				<img class="sombra" src="images/figura03.png" width=""/>
+			</div>		
+		</div>
+		<!------------------------------4-------------------------------->
+		<div class="mySlides">
+			<!-- TÍTULO  -->
+			<div style="position:relative; top:30px; left:0px; width:500px" >
+				<p class="quadro1" >Combinação de Algarismos</p> 			
+			</div>		
+			<!-- VÍDEO  -->		
+			<div style="position:relative; top:-20px; left:-20px">
+				<video class="videoLibras" src="videos/exemplo.mp4"  controls="controls" preload="auto"></video>
+			</div>	
+			<!-- FIGURA  -->		
+			<div style="position:relative; top:-175px; left:260px">
+				<img class="sombra" src="images/figura04.png" width=""/>
+			</div>			
+		</div>
+		<!------------------------------5-------------------------------->
+		<div class="mySlides">
+			<!-- TÍTULO  -->
+			<div style="position:relative; top:30px; left:0px; width:500px" >
+				<p class="quadro1" >Combinação de Algarismos</p> 			
+			</div>		
+			<!-- VÍDEO  -->		
+			<div style="position:relative; top:-20px; left:-20px">
+				<video class="videoLibras" src="videos/exemplo.mp4"  controls="controls" preload="auto"></video>
+			</div>	
+			<!-- FIGURA  -->		
+			<div style="position:relative; top:-175px; left:260px">
+				<img class="sombra" src="images/figura05.png" width=""/>
+			</div>			
+		</div>
+		<!-- *************************************************  -->
+		<!--                          ação                 -->
+	</section>
+	<div class="paginacao"> 
+		<button class="prev" onclick="reduzir(-1)"></button>
+		<ol>
+			<li><a class="dot" onclick="currentSlide(1)"></a></li>
+			<li><a class="dot" onclick="currentSlide(2)"></a></li>
+			<li><a class="dot" onclick="currentSlide(3)"></a></li>
+			<li><a class="dot" onclick="currentSlide(4)"></a></li>
+			<li><a class="dot" onclick="currentSlide(5)"></a></li>
+		</ol>
+		<button class="next" onclick="avancar(1)"></button>
+	</div>
+	<section id="containerAnotacoes">
+		<h2>Anotações</h2>
+		<div id="anotacoes">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, voluptas.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, sequi sit nobis est cum blanditiis perspiciatis distinctio a vitae debitis ipsa dicta magni quidem, quae iure tempore iste consectetur accusamus.</p>
+			<ol>
+				<li>Lorem ipsum dolor sit.</li>
+				<li>Lorem ipsum dolor sit.</li>
+				<li>Lorem ipsum dolor sit.</li>
+				<li>Lorem ipsum dolor sit.</li>
+			</ol>
+		</div>
+	</section>
+	<!--------------------------------------------------------->
+	<script>
+		//var slideIndex = 1;
+		showSlides(slideIndex);
+	</script>
+</body>
+</html>

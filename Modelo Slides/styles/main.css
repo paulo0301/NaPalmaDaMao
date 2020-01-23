@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Karla');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Verdana, sans-serif;
+  background-color: #f2f2f2;
+}
+/* OPÇÕES PARA POSICIONAMENTO E ESTILO */
+.img_left{ 
+  display: block; 
+  margin: 0.7em;
+  padding: 0.2em;
+  float: left;
+}
+
+.img_right{
+  position:relative;	
+  top:20px;  
+  display: block; 
+  margin: 0.7em;
+  padding: 0.2em;
+  float: right;  
+}
+
+.img_center{
+  text-align:center;
+  position:relative;
+  top:25px;
+  margin: 0 auto;
+  padding: 0.2em; 
+}
+
+.text_left{ 
+  position:relative;	
+  top:20px;  	
+  width:270px;	
+  display: block; 
+  margin: 0.7em;
+  padding: 0.2em;
+  float: left;
+}
+
+.text_normal{ 
+  position:relative;	
+  top:20px;  	
+  width:600px;	
+  display: block; 
+  margin: 0.7em;
+  padding: 0.2em;
+  float: left;
+}
+
+.quadro{
+  position:relative;	
+  padding: 0.7em;    
+  color: #34495e;  
+}
+
+.quadro1{
+  position:relative;	
+  padding: 0.7em;
+  background-color: #2D5C80;
+  border-radius: 20px 7px 20px 7px;
+  color: white;  
+}
+.quadro2{
+  padding: 0.7em;
+  background-color: rgb(41, 120, 160);
+  border-radius: 10px 10px 10px 10px;
+  color: rgb(255, 255, 255);  
+}
+.quadro3{
+  padding: 0.7em;
+  background-color: #2D7B80;
+  border-radius:  10px 1px 20px 1px;
+  color: white;  
+}
+.quadro_peq1{
+  display: inline-flex;
+  max-width: 39em;
+  padding: 0.7em;
+  background-color: #2D5C80;
+  border-radius: 20px 7px 20px 7px;
+  color: white;
+  margin-top:0.5em;
+}
+.quadro_peq4{
+  display: inline-block;
+  max-width: 39em;
+  padding: 0.5em;
+  border: 2px solid #2D5C80;
+  border-radius: 15px 10px 15px 10px;
+  color: black;  
+  margin-top: 0.5em;
+}
+/* área dos slides */
+section:first-child{
+  background-image: url("../images/papel.png");
+  background-repeat: repeat-y;
+  background-position: left;
+  background-color: white;
+  width: 681px;
+  height: 360px;
+  margin: 1em auto 0;
+}
+.mySlides {
+  height: 360px;
+  width: 640px;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+/* paginação */
+div.paginacao{
+  width: 681px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.paginacao ol{
+  list-style-type: none;
+  display: flex;
+}
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px 4px;
+  background-color: #7aa8b7;
+  border-radius: 45%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #2a647c;
+}
+/* setas */
+button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 22px; 
+  user-select: none;
+}
+/* seta para esquerda */
+button.prev{
+  background-image: url('../images/seta_esq.png');
+  background-repeat: no-repeat; 
+}
+/* seta para direita */
+button.next {
+  background-image: url('../images/seta_dir.png');
+  background-repeat: no-repeat;
+}
+/* movimento setas */
+.prev:active, .next:active{
+  transform: translateY(3px);
+}
+/* ------------------------------------ */
+section h1{
+  font-size: 2em;
+  text-align: center;
+}
+section h2{
+  text-align: center;
+  font-weight: 800;
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+section h3{
+  padding-top: 0.3em; 
+  font-weight: 700;
+  font-size: 1em;
+  margin-left: 10px;
+  margin-top: 14px;
+}
+p{
+  margin: 6px 0px;
+}
+section li{
+  display: inline;
+}
+section ul{
+  text-align: center;
+}
+td, th{
+  border: 1px solid #000000;
+  padding: 1em;
+  text-align: center;
+  font-weight: 600;
+}
+table{
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+figure{
+  display: flex;
+  align-items: center;
+}
+p{
+  line-height:25px;
+}
+section div#anotacoes{
+  width: 681px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 1em;
+  height: 190px;
+  overflow-y: scroll;
+}
+section div#anotacoes ol li{
+  display: block;
+  margin-top: 5px;
+}
+.videoLibras{
+  position:relative;
+  left:10px;	
+  width:220px;
+  height:220px;
+  border-style: solid;
+  border-width: 2px;	
+  border-color: #2980b9;		
+}
+
+/* diminuir o tamanho do texto em telas menores */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}}
+  
+  .fundoAzul1{
+    border-radius: 15px 10px 15px 10px;
+    background-color: #7f8fa6;
+  }
+  
+  
+  /* ACRESCENTADAS POR GERALDO FELIPE ---------------------   */
+  .titulo {
+    width: 100vw;
+    height: 200x;   
+    display: flex;
+    padding-top:25px;
+    padding-bottom:0px;
+    justify-content: center;
+    align-items: center;	
+    color: #40739e;
+  }
+  
+  .sombra {
+    position:relative;	
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  .btnVideo {
+    position:relative;
+    left:40px;
+    -webkit-transition: all 150ms ease-out;
+    transition: all 150ms ease-out;
+    display: inline-block;
+    padding: 7px 10px;
+    background: white;
+    border-radius: 2px;
+    margin: 5px;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #5A5858;
+  }
+  
+  .btnVideo:hover {
+    cursor: pointer;
+    color:#2c3e50;
+    background: #ecf0f1;
+    outline: none;
+  }
+  
+  .videoLibras {
+    position:relative;
+    left:40px;
+    top:70px;	
+  }
