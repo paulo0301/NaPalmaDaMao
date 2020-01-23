@@ -1,0 +1,32 @@
+Questões de Digitar Valor com duas ou mais caixas de entrada
+Sinalizar v ou x para cada caixa.
+Caixas vazias: não são desabilitadas nem corrigidas.
+Botão Limpar está inicialmente invisível. Após clicar em Confirmar, 
+este botão ficará visível.
+Casos:
+1 - Não acertou nenhuma: "Mensagem 01" 
+2 - Não digitou em todas as caixas: "Mensagem 02"
+3 - Digitou em todas as caixas, mas não acertou todas: "Mensagem 03"
+*Não digitou em nenhuma caixa -> caso 02.
+
+Texto de saída:
+<p id="m1"></p>
+
+-----------------------------------------
+MANIPULAÇÃO
+- Imagem no body: configurar posição (L, H)
+- Variáveis para posicionar as caixas de texto
+- Variáveis para posicionar uma div que contém os botões e as mensagens
+-----------------------------------------
+Pasta da Atividade:
+arquivo: index
+pasta css: classes não editáveis e classe com nome "variáveis" 
+pasta js: codigo
+
+
+Geraldo: enviar códido da imagem no body e variáveis css.
+
+
+
+
+
