@@ -1,6 +1,6 @@
 /* GABARITO ----------------------------------*/
-//[01, 02, 03, 04, 05]
-var R = [1, 2, 3, 4, 5];
+//[01, 02, 03, 04]
+var R = [1, 2, 3, 4];
 /* -------------------------------------------*/
 
 // Variáveis correspondente as respostas
@@ -22,7 +22,7 @@ function ocultarMensagens(){
 }
 //Verificar se a resposta está correta
 function verificarRespostas(){
-    for(let i = 1; i < 6; i++){
+    for(let i = 1; i < 5; i++){
         var elemento = document.querySelector("span#rs0"+i);   
         var resposta = document.getElementById("0"+i);
         elemento.innerHTML = "";
@@ -46,7 +46,7 @@ function verificarRespostas(){
 function exibirMensagem(){
     ocultarMensagens();
     //Acertou todas
-    if(acertos == 5){
+    if(acertos == 4){
         m04.style.display = "block";
     }
     // Não acertou nenhuma
@@ -58,11 +58,11 @@ function exibirMensagem(){
         m02.style.display = "block";
     }
     // Digitou em todas as caixas, mas não acertou todas
-    if(vazias == 0 && acertos != 5){
+    if(vazias == 0 && acertos != 4){
         m03.style.display = "block";
     }
     // Não digitou em nenhuma caixa
-    if(vazias == 5){
+    if(vazias == 4){
         m02.style.display = "block";
     }
 }
@@ -70,7 +70,7 @@ function exibirMensagem(){
 
 //Limpar a resposta
 function limparRespostas(){
-    for(let i = 1; i < 6; i++){
+    for(let i = 1; i < 5; i++){
         var caixa = document.getElementById("0"+i);
         if(caixa.value == R[i-1])caixa.disabled = true;
         else{
@@ -94,7 +94,7 @@ limpar.onclick = function(){
 }
 
 refazer.onclick = function(){
-    for(let i = 1; i < 6; i++){
+    for(let i = 1; i < 5; i++){
         var caixa = document.getElementById("0"+i);
         caixa.disabled = false;
         var avaliacao = document.getElementById("rs0"+i);
@@ -112,11 +112,11 @@ verificar.onclick = function(){
     erros = 0;
     vazias = 0;
     verificarRespostas();
-    if(acertos != 5){
+    if(acertos != 4){
         limpar.style.display = "inline-block";
         verificar.style.display = "none";
     }
-    if(acertos == 5){
+    if(acertos == 4){
         refazer.style.display = "inline-block";
         verificar.style.display = "none";
     }
@@ -125,7 +125,7 @@ verificar.onclick = function(){
 }
 
 function travarTodas(){
-    for(let i = 1; i < 6; i++){
+    for(let i = 1; i < 5; i++){
         var caixa = document.getElementById("0"+i);
         caixa.disabled = true;
     }

@@ -1,6 +1,6 @@
 /* GABARITO ----------------------------------*/
-//[01, 02, 03, 04, 05]
-var R = [1, 2, 3, 4, 5];
+//[01]
+var R = [1];
 /* -------------------------------------------*/
 
 // Variáveis correspondente as respostas
@@ -11,18 +11,16 @@ var vazias = 0;
 //Mensagens
 var m01 = document.getElementById("m01");
 var m02 = document.getElementById("m02");
-var m03 = document.getElementById("m03");
 var m04 = document.getElementById("m04");
 
 function ocultarMensagens(){
     m01.style.display = "none";
     m02.style.display = "none";
-    m03.style.display = "none";
     m04.style.display = "none";
 }
 //Verificar se a resposta está correta
 function verificarRespostas(){
-    for(let i = 1; i < 6; i++){
+    for(let i = 1; i < 2; i++){
         var elemento = document.querySelector("span#rs0"+i);   
         var resposta = document.getElementById("0"+i);
         elemento.innerHTML = "";
@@ -45,32 +43,24 @@ function verificarRespostas(){
 //EXIBIR MENSAGEM
 function exibirMensagem(){
     ocultarMensagens();
+    // Não digitou em todas as caixas
+    if(vazias == 1){
+        m02.style.display = "block";
+    }
     //Acertou todas
-    if(acertos == 5){
+    if(acertos == 1){
         m04.style.display = "block";
     }
     // Não acertou nenhuma
-    if(acertos == 0 && vazias != 0 && erros > 0){
+    if(erros == 1){
         m01.style.display = "block";
-    }
-    // Não digitou em todas as caixas
-    if(vazias > 0 && (erros != 0 || acertos != 0)){
-        m02.style.display = "block";
-    }
-    // Digitou em todas as caixas, mas não acertou todas
-    if(vazias == 0 && acertos != 5){
-        m03.style.display = "block";
-    }
-    // Não digitou em nenhuma caixa
-    if(vazias == 5){
-        m02.style.display = "block";
     }
 }
 
 
 //Limpar a resposta
 function limparRespostas(){
-    for(let i = 1; i < 6; i++){
+    for(let i = 1; i < 2; i++){
         var caixa = document.getElementById("0"+i);
         if(caixa.value == R[i-1])caixa.disabled = true;
         else{
@@ -94,7 +84,7 @@ limpar.onclick = function(){
 }
 
 refazer.onclick = function(){
-    for(let i = 1; i < 6; i++){
+    for(let i = 1; i < 2; i++){
         var caixa = document.getElementById("0"+i);
         caixa.disabled = false;
         var avaliacao = document.getElementById("rs0"+i);
@@ -112,11 +102,11 @@ verificar.onclick = function(){
     erros = 0;
     vazias = 0;
     verificarRespostas();
-    if(acertos != 5){
+    if(acertos != 1){
         limpar.style.display = "inline-block";
         verificar.style.display = "none";
     }
-    if(acertos == 5){
+    if(acertos == 1){
         refazer.style.display = "inline-block";
         verificar.style.display = "none";
     }
@@ -125,7 +115,7 @@ verificar.onclick = function(){
 }
 
 function travarTodas(){
-    for(let i = 1; i < 6; i++){
+    for(let i = 1; i < 2; i++){
         var caixa = document.getElementById("0"+i);
         caixa.disabled = true;
     }

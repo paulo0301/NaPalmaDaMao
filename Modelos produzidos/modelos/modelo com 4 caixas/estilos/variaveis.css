@@ -20,9 +20,6 @@ body{
     /* caixa de texto 04 */
     --top4:210px;  --left4:200px;
     
-    /* caixa de texto 05 */
-    --top5:255px;  --left5:200px;
-    
     /* Botões e mensagem */
     --top6:320px; --left6:50px;
 }

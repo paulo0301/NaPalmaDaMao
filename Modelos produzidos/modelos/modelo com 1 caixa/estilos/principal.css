@@ -23,22 +23,6 @@ div:nth-child(1){
     top: var(--top1);
     left: var(--left1);
 }
-div:nth-child(2){
-    top: var(--top2);
-    left: var(--left2);
-}
-div:nth-child(3){
-    top: var(--top3);
-    left: var(--left3);
-}
-div:nth-child(4){
-    top: var(--top4);
-    left: var(--left4);
-}
-div:nth-child(5){
-    top: var(--top5);
-    left: var(--left5);
-}
 /* DIV DOS BOTÕES E DA MENSAGEM */
 div#containerBotoes{
     position: absolute;
