@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Exercício</title>
+	<meta name="viewport">    
+	<link rel="stylesheet" href="styles/estilo.css">
+	
+</head>
+<body>
+	<!--------------------------------------------------------------> 
+	<div class='borda'>	
+		<!-- BOTÕES PARA SELECIONAR  -->
+		<form name="ex01" class='alternativa'>	
+			<!-- Letra "a"  -->
+			<div>
+				<input class="checkmark"  type="radio" name="opcao1" id="a1"/>
+				<label for="a1">Positivo</label>
+			</div>
+			<!-- <label style="position:relative; left:10px; top:0px">
+				<input class="checkmark"  type="radio" name="opcao1" id="a1" onclick="btn1()" />	
+				<span style="color:#0097e6; font-size:20px;"><b>Positivo</b></span>	
+			</label>-->
+			<!-- Letra "b"  -->
+			<div>
+				<input class="checkmark"  type="radio" name="opcao1" id="b1"/> 
+				<label for="b1">Negativo</label>
+			</div>
+			<!-- <label style="position:relative; left:190px; top:0px">
+				<input class="checkmark"  type="radio" name="opcao1" id="b1" onclick="btn1()" /> 	
+				<span style="color:#0097e6; font-size:20px;"><b>Negativo</b></span>		
+			</label>-->
+		</form>		
+		
+		<!-- COMENTÁRIOS  -->	
+		<div class="comentarios">
+			<div id="comentarioA">
+				<img  class="marcador" src="imagens/marcadorC.png" alt="" />
+				<p class="posicao1"><span style="color:#00b894"><b>Correto!</b></span></p>
+				<p class="posicao2 espacoLinha"></p>
+			</div>
+			
+			<div id="comentarioE">
+				<img  class="marcador" src="imagens/marcadorE.png" alt="" />
+				<p class="posicao1"><span style="color:#e84118"><b>Cuidado!</b></span></p>
+				<p class="posicao2 espacoLinha"><b>O ponto está no lado positivo!</b></p>	
+			</div>		
+		</div>	
+	</div>
+	<!--------------------------------------------------------->
+</body>
+</html>
