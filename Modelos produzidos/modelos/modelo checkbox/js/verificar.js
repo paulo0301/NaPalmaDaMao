@@ -1,6 +1,8 @@
 // GABARITO                 
-var R = ['b', 'd', 'a'];
+var R = ['a', 'e'];
 
+//Todas as alternativas
+var alternativas = ['a', 'b', 'c', 'd', 'e'];
 
 function alternativaMarcada(){
     var alternativas = document.querySelectorAll("input[type='checkbox']");
@@ -11,16 +13,15 @@ function alternativaMarcada(){
     }
     return false;
 }
-
-var erradas = ['a', 'b', 'c', 'd', 'e'];
-
+var erradas;
 function modificarVetor(){
     for(let i = 0; i < R.length; i++){
-        var pos = erradas.indexOf(R[i]);
+        var pos = alternativas.indexOf(R[i]);
         if(pos != -1){
-            erradas.splice(pos, 1);
+            alternativas.splice(pos, 1);
         }
     }
+    erradas = alternativas.slice();
 }
 modificarVetor();
 

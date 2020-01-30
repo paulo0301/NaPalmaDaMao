@@ -28,7 +28,7 @@
 .containerQuestoes input[type="radio"] + label::before{
 	content: "";
 	border: 2px solid #3f9cef;
-	position: relative;
+	position: absolute;
 	left: 0px;
 	width: 16px;
 	height: 16px;
@@ -39,7 +39,7 @@
 	background-color: #3f9cef;
 	width: 14px;
 	height: 14px;
-	position: relative;
+	position: absolute;
 	left: 3px;
 	border-radius: 50%;
 	opacity: 0;
