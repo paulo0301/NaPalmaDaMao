@@ -1,0 +1,13 @@
+:root{
+	/* Tamanho do body(caixa com borda) */
+	--width1: 500px;			--height1: 150px;
+	/* Posição horizontal e vertical dos botões radio */
+	/* Alternativa A */
+	--left1: 20px;				--top1: 0px;
+
+	/* Alternativa B */
+	--left2: 220px;				--top2: 0px;
+
+	/* Posição horizontal e vertical da mensagem */
+	--left3: 0px;				--top3: 90px;
+}
