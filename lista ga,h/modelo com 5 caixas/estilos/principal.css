@@ -1,0 +1,113 @@
+body{
+    background-repeat: no-repeat;
+    background-position: 100px 25px;
+}
+
+/* CAIXAS DE TEXTO */
+input[type="text"]{
+    height: var(--altura1);
+    width: var(--largura1);
+    text-align: center;
+    background-color: #f5f6fa;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 2px;
+}
+form div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+div:nth-child(1){
+    top: var(--top1);
+    left: var(--left1);
+}
+div:nth-child(2){
+    top: var(--top2);
+    left: var(--left2);
+}
+div:nth-child(3){
+    top: var(--top3);
+    left: var(--left3);
+}
+div:nth-child(4){
+    top: var(--top4);
+    left: var(--left4);
+}
+div:nth-child(5){
+    top: var(--top5);
+    left: var(--left5);
+}
+/* DIV DOS BOTÕES E DA MENSAGEM */
+div#containerBotoes{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    flex-wrap: wrap;
+    top: var(--top6);
+    left: var(--left6);
+}
+
+/* BOTÃO CONFIRMAR */
+.confirmarBtn {
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	display: inline-block;
+	background-color: rgba(56, 103, 214,1.0);
+	color: white;
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: 2px;
+	border-radius: 4px;
+    z-index: 0;
+    margin-left: 8px;
+}
+.confirmarBtn:hover {
+	cursor: pointer;
+	background: rgba(56, 103, 214,0.8);
+}
+
+/* BOTÃO LIMPAR */
+.apagarBtn {
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	display: none;
+	background-color: #8395a7;
+	color: white;
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: 2px;
+	border-radius: 4px;
+	z-index: 0;
+}
+
+.apagarBtn:hover {
+	cursor: pointer;
+	background: rgba(131, 149, 167,0.8);
+}
+
+/* MENSAGEM */
+.mensagem{
+    margin-top: 8px;
+    font-weight: bold;
+    display: none;
+    width: 200px;
+    text-align: center;
+}
+p span{
+    color: red;
+}
+p span.verde{
+    color: rgb(2, 97, 31);
+    width: 100px;
+}

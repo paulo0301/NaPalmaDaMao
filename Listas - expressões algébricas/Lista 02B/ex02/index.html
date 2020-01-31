@@ -11,7 +11,7 @@
 	/* --------------------------------------------------------- */
 	/* gab = 0: Letra A está correta */
 	/* gab = 1: Letra B está correta */
-	var gab = 0;
+	var gab = 1;
 	/* NÃO ALTERAR --------------------------------------------------------- */
 	function btn1(){	
 		document.getElementById('comentarioA').hidden = true;
@@ -40,12 +40,12 @@
 			<!-- Letra "a"  -->
 			<div class="checkmark" id="alternativaA">
 				<input type="radio" name="opcao1" id="a1" onclick="btn1()"/>
-				<label for="a1">y = 16 + 9</label>
+				<label for="a1">y = 16 – 9</label>
 			</div>			
 			<!-- Letra "b"  -->
 			<div class="checkmark" id="alternativaB">
 				<input type="radio" name="opcao1" id="b1" onclick="btn1()"/>
-				<label for="b1">y = 16 – 9</label>
+				<label for="b1">-y = -9 - 16</label>
 			</div>
 		</form>		
 		
@@ -65,7 +65,7 @@
 					<img  class="marcador" src="imagens/marcadorE.png" alt=""/>
 					<p class="posicao1"><span>Cuidado!</span></p>
 				</div>
-				<p class="posicao2 espacoLinha"> O “9” passa para o outro lado com sinal positivo!</p>
+				<p class="posicao2 espacoLinha">O “16” e o “y” passam para o outro lado com sinal negativo!</p>
 			</div>		
 		</div>			
 	
