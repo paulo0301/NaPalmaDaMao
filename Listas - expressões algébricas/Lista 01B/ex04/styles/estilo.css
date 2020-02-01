@@ -86,11 +86,11 @@ input[type="radio"]:checked + label::after{
 	font-size: 0.9em;
 }
 .comentarios{
-	position:absolute;
+	position: relative;
 	left: var(--left3); 
 	top: var(--top3); 
-	width: var(--width1); 
-	height:0px;
+	max-width: 98%; 
+	margin: 0 auto;
 	font-weight: bold;
 	display: flex;
 	justify-content: center;

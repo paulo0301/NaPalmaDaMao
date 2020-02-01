@@ -200,6 +200,31 @@ audio{
     border-radius: 0px;
 }
 
+/* AJUSTE DE ESPAÇAMENTO ENTRE PARÁGRAFOS ---------------------- */
+.vertical5{
+	position:relative;
+	top:-50px;
+}
+
+.altura30{
+	padding-bottom: 30px;	
+}
+
+.espaco10{
+	padding-top:10px;
+}
+
+.espaco15{
+	padding-top:15px;
+}
+
+.espaco20{
+	padding-top:20px;
+}
+
+.recuo30{
+	padding-left:30px;
+}
 /* Paulo */
 .expressao{
 	font-weight: bold;

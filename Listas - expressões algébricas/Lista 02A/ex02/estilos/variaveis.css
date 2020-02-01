@@ -1,0 +1,31 @@
+body{
+    background-image: url("../imagens/ex02_background.png");
+    background-position: 10px 20px;
+}
+
+
+:root{
+    /* tamanho da caixa de texto*/
+    --altura1: 30px;  --largura1: 64px;
+    
+    /* caixa de texto 01 */
+    --top1:56px;  --left1:240px;
+    
+    /* caixa de texto 02 */
+    --top2:105px;  --left2:240px;
+    
+    /* caixa de texto 03 */
+    --top3:154px;  --left3:240px;
+    
+    /* caixa de texto 04 */
+    --top4:202px;  --left4:240px;
+    
+    /* caixa de texto 05 */
+    --top5:251px;  --left5:240px;
+    
+    /* Botões e mensagem */
+    --top6:320px; --left6:70px;
+
+    /* Distância entre a caixa de texto e a figura de avaliação */
+    --margin1: 20px;
+}

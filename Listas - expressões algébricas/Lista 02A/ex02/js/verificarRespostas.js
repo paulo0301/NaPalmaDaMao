@@ -1,6 +1,6 @@
 /* GABARITO ----------------------------------*/
 //[01, 02, 03, 04, 05]
-var R = [1, 2, "PPl é babaca", 4, 10];
+var R = [5, 6, 10, 7, 3];
 /* -------------------------------------------*/
 
 // Variáveis correspondente as respostas
@@ -49,8 +49,8 @@ function exibirMensagem(){
     if(acertos == 5){
         m04.style.display = "block";
     }
-    // Não acertou nenhuma
-    if(acertos == 0 && vazias != 0 && erros > 0){
+    // Digitou em todas caixas, mas não acertou nenhuma
+    if(acertos == 0 && vazias == 0 && erros > 0){
         m01.style.display = "block";
     }
     // Não digitou em todas as caixas
@@ -58,7 +58,7 @@ function exibirMensagem(){
         m02.style.display = "block";
     }
     // Digitou em todas as caixas, mas não acertou todas
-    if(vazias == 0 && acertos != 5){
+    if(vazias == 0 && acertos != 5 && erros != 5){
         m03.style.display = "block";
     }
     // Não digitou em nenhuma caixa
