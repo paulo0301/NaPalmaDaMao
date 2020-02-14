@@ -1,0 +1,20 @@
+body{
+	background-image: url("../imagens/fundo.png");
+	background-repeat: no-repeat;
+	background-position: 70px 10px;
+}
+
+:root{
+	/* Tamanho do body */
+	--largura1: 450px;				--altura1: 180px;
+
+	/* Posição horizontal e vertical dos botões radio */
+		/* Alternativa A */
+		--left1: 92px;				--top1: 45px;
+
+		/* Alternativa B */
+		--left2: 210px;				--top2: 45px;
+
+	/* Posição vertical da mensagem */
+	--top3: 90px;
+}
