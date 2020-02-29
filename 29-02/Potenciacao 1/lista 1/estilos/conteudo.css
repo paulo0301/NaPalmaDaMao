@@ -1,0 +1,542 @@
+/*nnnnnnnnn Atividade ângulo nnnnnnnn*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+	background-color: #f2f2f2;
+	font-family: verdana, sans-serif;
+}
+
+main{
+	background-color: white;
+	width: 45em;
+	margin: 2em auto;
+	padding: 1em 3em;
+}
+
+section{
+	margin: 1.5em 1.0;
+	clear: both;
+}
+
+h3{
+	color: #40739e;
+	text-align: left;
+	margin: 1em 0;
+	float: left;
+}
+
+h4{
+	font-weight: bolder;
+	color: #40739e;
+	background-color: #f1f1f1;
+	padding: 0.5em 1em;
+	margin-bottom: 1em;
+}
+
+.instrucoes{
+	display: flex;
+}
+
+.instrucoes div{
+	margin-bottom: 1em;
+}
+
+audio{
+    width: 220px;
+    height: 40px;
+    border: 2px solid #95a5a6;
+    border-radius: 15px;
+    background-color: #ecf0f1;
+}
+
+/*TEXTO ALINHADO AO AÚDIO COM POSIÇÃO FIXA*/
+
+.destaqueVerde {
+    background-color: #0d7e83;
+    padding: 10px;
+}
+
+/*NNNNNNNNNNNNNNNNNNNNNNNN TEXTO ALINHADO COM O AÚDIO NNNNNNNNNNNNNNNNNN*/
+
+.textoLateral3{
+    width: 360px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2em;
+    position: relative;
+    left: -18px;
+    letter-spacing: 1px;
+    color: #f5f6fa;
+    padding: 5px 5px 5px 10px;
+    border-radius: 10px;
+}
+
+
+/*NNNNNNNNNNNNNNNNN TEXTO ALINHADO AO CENTRO NNNNNNNNNNNNNNNNNN*/
+
+.textoLateral2{	
+	position:relative;
+	width:360px;	
+	left:-20px;
+	font-family: 'Open Sans', sans-serif;	
+	line-height: 2em;	
+	letter-spacing: 1px;
+	color: #f5f6fa;	
+	padding: 5px 5px 5px 10px;		
+	border-radius: 10px;	
+	margin-top: 2em;
+}
+
+/*NNNNNNNNNNNNNNNNNNN TEXTO LATERAL NNNNNNNNNNNNNNNNNNNNNNNNN*/
+
+.textoLateral{	
+	position:relative;
+	width:575px;	
+	left:-35px;
+	font-family: 'Open Sans', sans-serif;
+	color: #34495e;
+	line-height: 1.7em;	
+	letter-spacing: 1px;	
+}
+
+/*NNNNNNNNNNNNNNNNNNNNN TEXTO ACIMA NNNNNNNNNNNNNNNNNNN*/
+
+.textoAcima{	
+	position:relative;
+	width:620px;
+	left:0px;
+	font-family: 'Open Sans', sans-serif;
+	color: #34495e;
+	line-height: 1.7em;
+	letter-spacing: 1px;	
+	margin-top: 1em;
+	margin-bottom:1em;
+}
+
+/*CORES E FORMATOS DOS TEXTOS DESTACADOS*/
+
+ .BordasArredondadas1{
+  border-radius: 10px;
+ }
+
+ .BordasArredondadas2{
+  border-radius: 0 2em;
+ }
+
+ .BordasArredondadas3{
+  border-radius: 0 10px 150px 0;	
+ }
+
+ .BordasArredondadas4{
+ border-radius: 0 0 30px 30px;
+ }
+
+.BordasArredondadas5{
+ border-radius: 0 35px 35px 35px;
+}
+
+.destaqueAzul{
+	background-color: #487eb0;	
+	padding: 10px;
+}
+
+.destaqueVerde{
+	background-color: #0d7e83;	
+	padding: 10px;
+}
+
+.destaqueJade{
+   background-color: #00a86b;
+   padding: 10px;
+}
+
+.destaqueLaranja{
+  background-color:#E85009;
+  padding: 10px;
+}
+
+.sombra {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.imagemLateral{	
+	position:relative;
+	left:-20px;		
+}
+
+.centralizar{	
+	text-align:center;	
+}
+
+
+/*BOTÕES ATIVIDADES, JOGOS E EXERCÍCIOS*/
+
+.exercicios{
+  display: flex;
+  margin-top: 1em;
+  justify-content: center;
+}
+
+.exercicios div{
+	margin-bottom: 0.5em;
+ }
+
+.botoes a {
+  color: white;
+  text-decoration: none;
+}
+
+.botoes div{
+  display: block;
+  padding:5px;
+  border-radius: 7px;
+  width: 12em;
+  text-align: center;
+}
+
+.botoes{
+  margin-left: 2.5em;
+  margin-top:1.5em;
+}
+
+.BotaoAtividade{
+ background-color: #22a6b3;
+}
+
+.BotaoAprendizagem{
+ background-color: #22a6b3;
+}
+
+.BotaoAplicacao{
+ background-color: #40739e;
+}
+
+.BotaoAprofundamento{
+ background-color: #22a6b3;
+}
+
+
+
+/*ÍCONE DE VÍDEO AULA*/
+
+.video-aula{
+	text-align: right;
+}
+
+.video-aula img{
+    margin-top: 1.25em;
+}
+
+.aula-em-video{
+	text-align: center;
+}
+
+/*CONFIGURAÇÃO DA VIDEO AULA*/
+.videoaula{
+	position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #2c5b84;
+    border-radius: 0px;
+}
+
+/* AJUSTE DE ESPAÇAMENTO ENTRE PARÁGRAFOS ---------------------- */
+
+/*ESPAÇO ------------------*/
+
+.espaco10{
+	padding-top:10px;
+}
+
+.espaco15{
+	padding-top:15px;
+}
+
+.espaco20{
+	padding-top:20px;
+}
+
+
+/* DESLOCAMENTO EM EM Y ------------------*/
+
+.YCima10{
+	position:relative;
+	top:10px;
+}
+
+.YCima15{
+	position:relative;
+	top:15px;
+}
+
+.YCima20{
+	position:relative;
+	top:20px;
+}
+
+.YCima25{
+	position:relative;
+	top:25px;
+}
+
+.YBaixo40{
+	position:relative;
+	top:-40px;
+}
+
+.YBaixo45{
+	position:relative;
+	top:-45px;
+}
+
+.YBaixo50{
+	position:relative;
+	top:-50px;
+}
+
+.YBaixo55{
+	position:relative;
+	top:-55px;
+}
+
+.YBaixo60{
+	position:relative;
+	top:-60px;
+}
+
+.YBaixo65{
+	position:relative;
+	top:-65px;
+}
+
+.YBaixo70{
+	position:relative;
+	top:-50px;
+}
+
+.YBaixo75{
+	position:relative;
+	top:-75px;
+}
+
+.YBaixo80{
+	position:relative;
+	top:-80px;
+}
+
+.YBaixo85{
+	position:relative;
+	top:-85px;
+}
+
+.YBaixo90{
+	position:relative;
+	top:-90px;
+}
+
+.YBaixo95{
+	position:relative;
+	top:-95px;
+}
+
+.YBaixo100{
+	position:relative;
+	top:-100px;
+}
+
+.YBaixo105{
+	position:relative;
+	top:-105px;
+}
+
+.YBaixo110{
+	position:relative;
+	top:-110px;
+}
+
+.YBaixo115{
+	position:relative;
+	top:-115px;
+}
+
+.YBaixo120{
+	position:relative;
+	top:-120px;
+}
+
+.YBaixo125{
+	position:relative;
+	top:-125px;
+}
+
+/* DESLOCAMENTO EM EM X ------------------*/
+
+.XEsquerda10{
+	position:relative;
+	left:10px;
+}
+
+.XEsquerda15{
+	position:relative;
+	left:15px;
+}
+
+.XEsquerda20{
+	position:relative;
+	left:20px;
+}
+
+.XEsquerda25{
+	position:relative;
+	left:25px;
+}
+
+.XDireita40{
+	position:relative;
+	left:-40px;
+}
+
+.XDireita45{
+	position:relative;
+	left:-45px;
+}
+
+.XDireita50{
+	position:relative;
+	left:-50px;
+}
+
+.XDireita55{
+	position:relative;
+	left:-55px;
+}
+
+.XDireita60{
+	position:relative;
+	left:-60px;
+}
+
+.XDireita65{
+	position:relative;
+	left:-65px;
+}
+
+.XDireita70{
+	position:relative;
+	left:-50px;
+}
+
+.XDireita75{
+	position:relative;
+	left:-75px;
+}
+
+.YBaixo80{
+	position:relative;
+	left:-80px;
+}
+
+.YBaixo85{
+	position:relative;
+	left:-85px;
+}
+
+.YBaixo90{
+	position:relative;
+	left:-90px;
+}
+
+.YBaixo95{
+	position:relative;
+	left:-95px;
+}
+
+.YBaixo100{
+	position:relative;
+	left:-100px;
+}
+
+.YBaixo105{
+	position:relative;
+	left:-105px;
+}
+
+.YBaixo110{
+	position:relative;
+	left:-110px;
+}
+
+.YBaixo115{
+	position:relative;
+	left:-115px;
+}
+
+.YBaixo120{
+	position:relative;
+	left:-120px;
+}
+
+.YBaixo125{
+	position:relative;
+	left:-125px;
+}
+
+/* DESLOCAMENTO EM X E EM Y ------------------*/
+
+.link{
+	text-decoration: none;
+	color: white;
+	padding:2px 7px 2px 7px;
+	border-radius: 7px;	
+	background-color: #95a5a6;
+}
+
+/* ******************************** */
+.areatexto{
+  width: 80%;
+  height:220px;
+  color: #292929;
+  font-size: 18px;
+  line-height: 2;
+  /*background-color: #E9E9E9;*/
+  background-color:rgba(200,200,255,0.1);	
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 8px; 
+   padding: 3px 3px 3px 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc; 
+  font-family: "Arial", Times, serif;
+  resize: vertical;  
+}
+
+/* ----------------------------------------------- */
+
+.btnSalvar {
+  -webkit-transition: all 150ms ease-out;
+          transition: all 150ms ease-out;
+  display: inline-block;
+  padding: 2px 5px;
+  background: white;
+  border-radius: 3px;
+  margin: 2px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  color: #34495e;
+  border: 2px solid #2c3e50;
+}
+
+.btn:active {
+  background: #ebebeb;
+  outline: none;
+}
+
+/*nnnnnnnnnnnnnnnnnnnnnn CARD ENORME ALINHADO AO CENTRO NNNNNNNNNNNNNNNNNNN*/
+
+.card{
+	margin: 1em 0;
+}

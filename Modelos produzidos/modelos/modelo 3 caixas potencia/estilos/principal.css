@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
     background-repeat: no-repeat;
+    position: absolute;
 }
 
 /* CAIXAS DE TEXTO */
 input[type="text"]{
     text-align: center;
     background-color: transparent;
-    padding: 3px;
+    padding: 2px;
     font-weight: bold;
     font-size: 15px;
-    margin-right: 2px;
     border: 1px solid rgb(85, 64, 81);
 }
 input[type="text"]:disabled{
@@ -24,18 +28,30 @@ input[type="text"].expoente{
     height: var(--altura2);
     width: var(--largura2);
 }
-form div{
-    position: absolute;
+fieldset{
+    width: 32em;
+    height: 12em;
+    border-radius: 8px;
 }
-div:nth-child(1){
+legend{
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+form fieldset div{
+    position: relative;
+    height: var(--altura1);
+    width: var(--largura1);
+}
+fieldset div:nth-child(1){
     top: var(--top1);
     left: var(--left1);
 }
-div:nth-child(2){
+fieldset div:nth-child(2){
     top: var(--top2);
     left: var(--left2);
 }
-div:nth-child(3){
+fieldset div:nth-child(3){
     top: var(--top3);
     left: var(--left3);
 }
@@ -84,15 +100,15 @@ figure{
 	display: inline-block;
 	background-color: rgba(56, 103, 214,1.0);
 	color: white;
-	padding: 5px 20px 5px 20px;
+	padding: 5px 0px;
 	text-decoration: none;
 	box-sizing: border-box;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	border: 2px;
-	border-radius: 4px;
+    border-radius: 4px;
+    width: 9em;
     z-index: 0;
-    margin-left: 8px;
 }
 .confirmarBtn:hover {
 	cursor: pointer;
@@ -107,12 +123,13 @@ figure{
 	display: none;
 	background-color: #8395a7;
 	color: white;
-	padding: 5px 20px 5px 20px;
+	padding: 5px 0px;
 	text-decoration: none;
 	box-sizing: border-box;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	border: 2px;
+    border: 2px;
+    width: 9em;
 	border-radius: 4px;
 	z-index: 0;
 }
@@ -120,20 +137,4 @@ figure{
 .apagarBtn:hover {
 	cursor: pointer;
 	background: rgba(131, 149, 167,0.8);
-}
-
-/* MENSAGEM */
-.mensagem{
-    margin-top: 8px;
-    font-weight: bold;
-    display: none;
-    width: 200px;
-    text-align: center;
-}
-p span{
-    color: red;
-}
-p span.verde{
-    color: rgb(2, 97, 31);
-    width: 100px;
 }

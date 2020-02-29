@@ -1,6 +1,6 @@
 body{
     background-image: url("../imagens/figura.png");
-    background-position: 100px 75px;
+    background-position: 100px 60px;
 }
 
 
@@ -12,11 +12,11 @@ body{
     --altura2: 23px;  --largura2: 30px;
     
     /* caixa de texto 01 e marcador*/
-    --top1:88px;      --left1:270px;
+    --top1: 0px;      --left1:270px;
     --topM1: 32px;    --leftM1: -41px;
 
     /* caixa de texto 02 e marcador */
-    --top2:88px;  --left2:340px;
+    --top2: 55px;  --left2:250px;
     --topM2: 32px;    --leftM2: -41px;
     
     /* caixa de texto 03 e marcador*/
@@ -24,10 +24,10 @@ body{
     --topM3: 0px;    --leftM3: 0px;
    
     /* vezes */
-    --top4:78px;  --left4: 278.5px;
+    --top4:-52px;  --left4: 262px;
     
     /* Botões e mensagem */
-    --top6:180px; --left6:160px;
+    --top6:160px; --left6:160px;
     
     /* Distancia do marcador */
     --margin1: 3px;
