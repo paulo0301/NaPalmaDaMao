@@ -25,4 +25,7 @@ body{
     
     /* Botões e mensagem */
     --top6:320px; --left6:50px;
+
+    /* Distancia do marcador */
+    --margin1: 3px;
 }

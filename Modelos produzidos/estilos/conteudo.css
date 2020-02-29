@@ -1,5 +1,4 @@
-﻿/*nnnnnnnnn Atividade ângulo nnnnnnnn*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body{
 	background-color: #f2f2f2;
@@ -88,7 +87,7 @@ section li{
 	margin: 1.5em 7em;
 }
 
-object{
+.containerObject{
 	margin: 1em 0;
 }
 
