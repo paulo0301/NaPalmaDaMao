@@ -1,0 +1,20 @@
+:root{
+	/* caixa de texto 01 */
+	--dy:58px;
+	--top1:34px;  --left1:240px;
+
+    /* caixa de texto 02 */
+	--top2:calc(var(--top1) + var(--dy)); --left2:calc(var(--left1));	
+
+    /* caixa de texto 03 */
+	--top3:calc(var(--top2) + var(--dy));  --left3:calc(var(--left1));
+	
+    /* caixa de texto 04 */
+	--top4:calc(var(--top3) + var(--dy));  --left4:calc(var(--left1) + 25px);
+
+    /* caixa de texto 05 */
+	--top5:calc(var(--top4) + var(--dy)); --left5:calc(var(--left1) + 5px);
+
+    /* Botões e mensagem */
+	--top6:340px; --left6:50px;
+}

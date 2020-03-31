@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+/* CAIXAS DE TEXTO */
+input[type="text"]{
+    text-align: center;
+    background-color: transparent;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid rgb(85, 64, 81);
+}
+input[type="text"]:disabled{
+    background-color: rgb(235,235,228);
+}
+input[type="text"].base{
+    height: var(--altura1);
+    width: var(--largura1);
+}
+input[type="text"].expoente{
+    height: var(--altura2);
+    width: var(--largura2);
+}
+fieldset{
+    width: 32em;
+    height: 12em;
+    border-radius: 8px;
+}
+legend{
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+form fieldset div{
+    position: relative;
+    height: var(--altura1);
+    width: var(--largura1);
+}
+fieldset div:nth-child(1){
+    top: var(--top1);
+    left: var(--left1);
+}
+fieldset div:nth-child(2){
+    top: var(--top2);
+    left: var(--left2);
+}
+fieldset div:nth-child(3){
+    top: var(--top3);
+    left: var(--left3);
+}
+/* DIV DOS BOTÕES E DA MENSAGEM */
+div#containerBotoes{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    flex-wrap: wrap;
+    top: var(--top6);
+    left: var(--left6);
+}
+label{
+    font-size: 1.1em;
+    font-family: 'Open Sans';
+}
+.marcador{
+    position: relative;
+}
+div:nth-child(1) span{
+    top: var(--topM1);
+    left: var(--leftM1);
+}
+div:nth-child(2) span{
+    top: var(--topM2);
+    left: var(--leftM2);
+}
+div:nth-child(3) span{
+    top: var(--topM3);
+    left: var(--leftM3);
+}
+
+figure{
+    position: relative;
+    top: var(--top4);
+    left: var(--left4);
+    height: 5px;
+    width: 5px;
+}
+/* BOTÃO CONFIRMAR */
+.confirmarBtn {
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	display: inline-block;
+	background-color: rgba(56, 103, 214,1.0);
+	color: white;
+	padding: 5px 0px;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: 2px;
+    border-radius: 4px;
+    width: 9em;
+    z-index: 0;
+}
+.confirmarBtn:hover {
+	cursor: pointer;
+	background: rgba(56, 103, 214,0.8);
+}
+
+/* BOTÃO LIMPAR */
+.apagarBtn {
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	display: none;
+	background-color: #8395a7;
+	color: white;
+	padding: 5px 0px;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+    border: 2px;
+    width: 9em;
+	border-radius: 4px;
+	z-index: 0;
+}
+
+.apagarBtn:hover {
+	cursor: pointer;
+	background: rgba(131, 149, 167,0.8);
+}

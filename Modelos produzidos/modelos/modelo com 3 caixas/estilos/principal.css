@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 body{
     background-repeat: no-repeat;
-    background-position: 100px 25px;
 }
 
 /* CAIXAS DE TEXTO */
@@ -41,7 +41,13 @@ div#containerBotoes{
     top: var(--top6);
     left: var(--left6);
 }
-
+label{
+    font-size: 1.1em;
+    font-family: 'Open Sans';
+}
+span.marcador{
+    margin-left: var(--margin1);
+}
 /* BOTÃO CONFIRMAR */
 .confirmarBtn {
 	-webkit-transition: all 100ms ease-in-out;

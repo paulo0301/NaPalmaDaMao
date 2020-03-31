@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8"/>
+<canvas id="myCanvas" width="1600px" height="600px"></canvas>
+<!--   <script src=""></script>	-->
+<script src="C:\Users\Usuario\Documents\PSlibrary2019/PSlibrary20192.js"></script> 
+<script src="PSlibrary20192.js"></script> 
+<script>
+//***********************************************//
+//QUADRO DE CORES
+var corBorda = '#bdc3c7';
+var vermelho1 = '#e84118';
+var azul ='#0097e6';
+var cinza = '#bdc3c7';
+var laranja = '#d35400';
+var verde = '#00b300';
+var vermelho2 = '#ff0000';
+var escuro = '#535c68';
+//
+
+function potencia10(x, y, exp, fonte, color){
+	var x, y, exp, fonte, color;
+	textBold('10', fonte, 'verdana', x, y, color);	
+	textBold(exp, fonte - 2, 'verdana', x + 28, y - 10, color);		
+}
+
+function potencia(x, y, base, exp, fonte, color){
+	var x, y, exp, fonte, color;
+	textBold(base, fonte, 'verdana', x, y, color);	
+	textBold(exp, fonte - 2, 'verdana', x + 17, y - 10, color);		
+}
+//********************************************************************************
+//CARD 01 --------------------------------
+ctx.translate(40,80)
+x = 100; 
+y = 100;
+textBold('Card 01', '10', 'verdana', 0, -30, darkcolor);
+//rectangle(0, 0, 360, 220, 1, 0, corBorda, nocolor);	
+//
+potencia(x, y, 2, 3, 14, escuro);
+textBold('=  2   2   2  = 8', '14', 'verdana', x + 40, y, escuro);
+textBold('.    .', '14', 'verdana', x + 90, y - 5, escuro);
+
+
+chave(x + 107, y + 20, 35, 0, vermelho2);
+textBold('Multiplicação', '10', 'verdana', x + 110, y + 40, vermelho2);
+arcArrow2(x + 7, y + 12, 50, 120, 0,azul);
+textBold('Base', '11', 'verdana', x + 45, y + 65, azul);
+arcArrow(x + 23, y - 30, 50, 120, 20,azul);
+textBold('Expoente', '11', 'verdana', x + 72, y - 57, azul);
+
+
+
+//CARD 02 --------------------------------
+ctx.translate(400,0)
+x = 100; 
+y = 100;
+textBold('Card 02', '10', 'verdana', 0, -30, darkcolor);
+//rectangle(0, 0, 360, 220, 1, 0, corBorda, nocolor);	
+//
+potencia(x, y, 2, 3, 14, escuro);
+textBold('=  2   2   2  = 8', '14', 'verdana', x + 40, y, escuro);
+textBold('.    .', '14', 'verdana', x + 90, y - 5, escuro);
+
+y = 150;
+potencia(x, y, 3, 4, 14, escuro);
+textBold('=  3   3   3   3  = 81', '14', 'verdana', x + 40, y, escuro);
+textBold('.    .    .', '14', 'verdana', x + 90, y - 5, escuro);
+
+y = 200;
+potencia(x, y, 5, 2, 14, escuro);
+textBold('=  5   5  = 25', '14', 'verdana', x + 40, y, escuro);
+textBold('.', '14', 'verdana', x + 90, y - 5, escuro);
+
+/*
+chave(x + 110, y + 20, 40, 0, vermelho2);
+textBold('Multiplicação', '10', 'verdana', x + 110, y + 40, vermelho2);
+arcArrow2(x + 7, y + 12, 50, 120, 0,azul);
+textBold('Base', '11', 'verdana', x + 45, y + 65, azul);
+arcArrow(x + 23, y - 30, 50, 120, 20,azul);
+textBold('Expoente', '11', 'verdana', x + 72, y - 57, azul);
+*/
+
+
+
+
+
+
+
+
+
+	
+</script>
+<!-- ------------------------------------------------------------------------ -->
+</html>
+
+
+
+
+
+
+
+
+

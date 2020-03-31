@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<canvas id="myCanvas" width="500px" height="220px"></canvas>
+
+<link rel="stylesheet" href="style.css">
+<script src="PSlibrary20192.js"></script>	
+<style>
+	body{
+		background-repeat: no-repeat;
+		background-image: url("figura.png");
+		background-position: 70px 82px;
+	}
+</style>
+<body>	
+<script>
+//***********************************************//
+var R1 = 24;
+var R2 = 6;
+var R3 = 8;
+//
+var validar1 = true;
+var validar2 = true;
+var validar3 = true;
+function validar(){
+	document.getElementById("btn1").hidden = true;
+	document.getElementById("btn2").hidden = false;		
+	var n1 = document.formulario.resposta1.value;
+	var n2 = document.formulario.resposta2.value;
+	var n3 = document.formulario.resposta3.value;	
+	//
+	document.formulario.resposta1.disabled = 1;	
+	document.formulario.resposta2.disabled = 1;	
+	document.formulario.resposta3.disabled = 1;	
+	//	
+	if(n1 == R1){			
+		validar1 = false;
+	}else{
+		error(x[0], y[0], corE);
+	}
+	//
+	if(n2 == R2){			
+		validar2 = false;	
+	}else{
+		error(x[1], y[1], corE);
+	} 
+	//
+	if(n3 == R3){				
+		validar3 = false;	
+	}else{
+		error(x[2], y[2], corE);
+	} 	
+	desenhar();
+}
+
+function liberar(){	
+	document.getElementById("btn1").hidden = false;
+	document.getElementById("btn2").hidden = true;	
+	clear();
+	if(validar1 == true){	
+		document.formulario.resposta1.value = "";	
+		document.formulario.resposta1.disabled = 0;
+	}
+	if(validar2 == true){	
+		document.formulario.resposta2.value = "";	
+		document.formulario.resposta2.disabled = 0;	
+	}
+	if(validar3 == true){	
+		document.formulario.resposta3.value = "";	
+		document.formulario.resposta3.disabled = 0;	
+	}
+	if(validar1 == true){	
+		document.formulario.resposta1.value = "";	
+		document.formulario.resposta1.disabled = 0;
+	}	
+	if(validar3 == true){	
+		document.formulario.resposta3.value = "";	
+		document.formulario.resposta3.disabled = 0;	
+	}
+	if(validar1 == false && validar2 == false && validar3 == false){	
+		document.formulario.resposta1.value = "";	
+		document.formulario.resposta1.disabled = 0;
+		document.formulario.resposta2.value = "";	
+		document.formulario.resposta2.disabled = 0;	
+		document.formulario.resposta3.value = "";	
+		document.formulario.resposta3.disabled = 0;
+		validar1 = true;
+		validar2 = true;
+		validar3 = true;
+	}	
+	desenhar();	
+}
+//
+var dx = 300;
+var x = [dx, dx + 60, dx + 140];
+var y = [125, 125, 50];
+var corE = '#eb2f06';
+var corC = '#079992';
+function desenhar(){	
+	//clear();	
+	rectangleRound(5, canvas.height - 5, canvas.width - 10, canvas.height - 10, 5, 1.5, 0, nocolor, darkcolor);	
+	circle(342, 98, 2, 1, darkcolor, darkcolor);
+	textBold('d)', '12', 'verdana', 20,30, darkcolor);
+	if(validar1 == false){	
+		right(x[0], y[0], 1, 5, corC);	
+	}
+	if(validar2 == false){	
+		right(x[1], y[1], 1, 5, corC);	
+	}
+	if(validar3 == false){	
+		right(x[2], y[2], 1, 5, corC);	
+	}			
+}
+desenhar();
+
+</script>
+
+<!-- ------------------------------------------------------------------------ -->
+<style>
+:root{ 	
+	/* caixa de texto 01 */
+	--top1:90px;  --left1:300px;	
+	
+	/* caixa de texto 02 */
+	--top2:calc(var(--top1)); --left2:calc(var(--left1) + 60px);
+	
+	/* caixa de texto 03 */
+	--top3:calc(var(--top1) - 20px); --left3:calc(var(--left2) + 50px);	
+	
+	/* Botão Confimar */
+	--top4:180px; --left4:160px;
+	
+	/* Botão Apagar */
+	--top5:calc(var(--top4)); --left5:calc(var(--left4) + 120px);
+}
+</style>
+
+<form name="formulario">
+	<div style="position:absolute; left:var(--left1); top:var(--top1);" >
+		<input class="resposta" maxlength="2" autocomplete="off" type="text" name="resposta1" > 
+	</div>	
+
+	<div style="position:absolute; left:var(--left2); top:var(--top2);" >
+		<input class="resposta" maxlength="2" autocomplete="off" type="text" name="resposta2" >
+	</div>	
+	
+	<div style="position:absolute; left:var(--left3); top:var(--top3);" >
+		<input class="expoente" maxlength="2" autocomplete="off" type="text" name="resposta3" >
+	</div>	
+	
+	<!--   -->
+
+	<div id="btn1" style="position:absolute; left:var(--left5); top:var(--top5)">		
+		<input type="button" class="confirmarBtn" value="Confirmar" onClick="validar();">			
+	</div>		
+	<div id="btn2" style="position:absolute; left:var(--left5); top:var(--top4)" hidden>		
+		<input  type="button" class="apagarBtn" value="Apagar" onClick="liberar();">				
+	</div>	
+</form>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
