@@ -1,0 +1,47 @@
+Na biblioteca tem uma função chamada "partícula". É uma bolinha que oscila aleatoriamente nos eixos x e y. A frequência de oscilação é uma variável que representa, didaticamente, a temperatura de um molécula.
+
+Preciso de uma malha retangular de partículas (um retângulo com lado maior que a altura, representando uma barra de ferro na direção horizontal).
+​
+Na extremidade da direita, vamos acrescentar uma fonte térmica (que também já existe). Quando ligada, aquece primeiro as partículas da extremidade. Contudo, gradativamente, a temperatura vai aumentando nas bolinhas da esquerda. Isso se chama transmissão de calor por condução.
+
+particle(x0 + 170, y0 + 14, t[0], 2, darkcolor);
+    particle(x0 + 166, y0 + 14, t[1], 2, darkcolor);
+    particle(x0 + 162, y0 + 14, t[2], 2, darkcolor);
+    particle(x0 + 158, y0 + 14, t[3], 2, darkcolor);
+    particle(x0 + 154, y0 + 14, t[4], 2, darkcolor);
+    particle(x0 + 150, y0 + 14, t[5], 2, darkcolor);
+    particle(x0 + 146, y0 + 14, t[6], 2, darkcolor);
+    particle(x0 + 142, y0 + 14, t[7], 2, darkcolor);
+    particle(x0 + 138, y0 + 14, t[8], 2, darkcolor);
+    particle(x0 + 134, y0 + 14, t[9], 2, darkcolor);
+    particle(x0 + 130, y0 + 14, t[10], 2, darkcolor);
+    particle(x0 + 126, y0 + 14, t[11], 2, darkcolor);
+    particle(x0 + 122, y0 + 14, t[12], 2, darkcolor);
+    particle(x0 + 118, y0 + 14, t[13], 2, darkcolor);
+    particle(x0 + 114, y0 + 14, t[14], 2, darkcolor);
+    particle(x0 + 110, y0 + 14, t[15], 2, darkcolor);
+    particle(x0 + 106, y0 + 14, t[16], 2, darkcolor);
+    particle(x0 + 102, y0 + 14, t[17], 2, darkcolor);
+    particle(x0 + 98, y0 + 14, t[18], 2, darkcolor);
+    particle(x0 + 94, y0 + 14, t[19], 2, darkcolor);
+    particle(x0 + 90, y0 + 14, t[20], 2, darkcolor);
+    particle(x0 + 86, y0 + 14, t[21], 2, darkcolor);
+    particle(x0 + 82, y0 + 14, t[22], 2, darkcolor);
+    particle(x0 + 78, y0 + 14, t[23], 2, darkcolor);
+    particle(x0 + 74, y0 + 14, t[24], 2, darkcolor);
+    particle(x0 + 70, y0 + 14, t[25], 2, darkcolor);
+    particle(x0 + 66, y0 + 14, t[26], 2, darkcolor);
+    particle(x0 + 62, y0 + 14, t[27], 2, darkcolor);
+    particle(x0 + 58, y0 + 14, t[28], 2, darkcolor);
+    particle(x0 + 54, y0 + 14, t[29], 2, darkcolor);
+    particle(x0 + 50, y0 + 14, t[30], 2, darkcolor);
+    particle(x0 + 46, y0 + 14, t[31], 2, darkcolor);
+    particle(x0 + 42, y0 + 14, t[32], 2, darkcolor);
+    particle(x0 + 38, y0 + 14, t[33], 2, darkcolor);
+    particle(x0 + 34, y0 + 14, t[34], 2, darkcolor);
+    particle(x0 + 30, y0 + 14, t[35], 2, darkcolor);
+    particle(x0 + 26, y0 + 14, t[36], 2, darkcolor);
+    particle(x0 + 22, y0 + 14, t[37], 2, darkcolor);
+    particle(x0 + 18, y0 + 14, t[38], 2, darkcolor);
+    particle(x0 + 14, y0 + 14, t[39], 2, darkcolor);
+    particle(x0 + 10, y0 + 14, t[40], 2, darkcolor);
