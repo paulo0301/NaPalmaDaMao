@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilo/main.css">
+</head>
+<body onload="desenhar()" ontouchstart="touchCell(event)" ontouchmove="touchCell(event)" ontouchend="removeTouch(event)" class="desativar">
+	<canvas id="myCanvas" width="470" height="400" onmousemove="listener(event)" onmousedown="clicked()" onmouseup="noclicked()"></canvas>   
+	<!--<script src="C:\Users\Usuario\Documents\PSlibrary2019\PSlibrary20192.js"></script> -->	
+	<script src="js/PSlibrary20192.js"></script>	
+	<script src="js/codigoComplementar.js"></script> 
+	<!--   -->
+	<div>	
+		<input class="btnRecomecar clouds" type="button" onclick="refazer()" value = "Recomeçar"/>
+	</div>
+	<script>
+		// VARIÁVEIS ---------------------------------
+		//AS RESPOSTAS VARIAM DE 0 A 4
+		var r1 = 2;
+		var r2 = 0;
+		var r3 = 3;
+		var r4 = 1;
+		//
+		var px = 20;
+		var py = 50;	
+		var L = 180;
+		var dxR = 380;
+		var cor1 = '#1dd1a1';
+		var cor2 = '#48dbfb';
+		var cor6 = '#3498db';
+		//--------------------------------------------
+		function desenhar(){	
+			clear();
+			//ESQUEMA GRÁFICO **********************//		
+			for(var i = 0; i <= 3; i++){
+				circle(xE, yp[i], D1, 1.5, corCirculoE, corCirculoE);
+				circle(xD, yp[i], D1, 1.5, corCirculoD, corCirculoD);	
+			}	
+			//---------------------------------------------------------	
+			arrastar();
+			//**********************//	
+			animationFrame(desenhar); 	
+		}
+		draw(desenhar);
+		
+	</script>
+	<!-- -------------------------------------------- -->
+</body>	
+</html>
+
+
+
+
+
+
+
+
+

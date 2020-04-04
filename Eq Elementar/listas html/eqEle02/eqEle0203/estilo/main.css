@@ -1,0 +1,297 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url("../figura.png");
+	background-position: 15px 25px;
+	background-repeat: no-repeat;
+	width: 520px;
+	border: 2px solid #002a4e;
+	border-radius: 8px;
+}
+:root{ 
+	/* Button Confirmar */
+	--left2:20px;
+	--top2:20px; 	
+	
+	/* Button Confirmar */
+	--left3:220px;
+	--top3:260px; 	
+	
+	/* Button Próximo */
+	--left4:calc(var(--left3) + 110px);
+	--top4:calc(var(--top3)); 
+}
+
+.titulo {
+	width: 100vw;
+    height: 200x;   
+	display: flex;
+    padding-top:25px;
+	padding-bottom:0px;
+    justify-content: center;
+	align-items: center;	
+	color: #40739e;
+}
+
+.principal{
+	position: relative;	
+	left:-30px;
+	top:-7px;
+	width: 640px;
+	height: 360px;
+}
+
+.explicacao{
+	width: 720px;
+	margin: 1.0em auto 0;
+	position:relative;
+	text-align:left;
+	padding-left:40px;
+	color: #34495e;
+}
+
+.confirmarBtn {
+	position:absolute;
+	width:120px;
+	height:25px;		
+	border-radius: 5px;
+	color:white;
+	font-size: 13px;	
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.confirmarBtn:hover {
+	cursor: pointer;
+	color:#2c3e50;
+	background: white;
+	outline: none;
+}
+
+.btnIniciar {
+	position:absolute;
+	width:60px;
+	height:25px;		
+	border-radius: 5px;
+	color:white;
+	font-size: 13px;	
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.btnIniciar:hover {
+	cursor: pointer;
+	color:#2c3e50;
+	background: white;
+	outline: none;
+}
+
+.btnIniciar:active { 
+  outline: none;
+}
+
+.btnRecomecar {
+	position:absolute;
+	width:80px;
+	height:20px;
+	left:225px;
+	top:15px;
+	border-radius: 5px;
+	color:#7f8c8d;
+	font-size: 11px;
+	outline: none;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.btnRecomecar:hover {
+	cursor: pointer;
+	color:#2c3e50;
+	border: 2px solid #bdc3c7;
+	background: white;
+	outline: none;
+}
+
+.blue{
+	border: 2px solid #2980b9;
+	background-color:#2980b9;
+}
+
+.orange{
+	border: 2px solid #d35400;
+	background-color:#d35400;
+}
+
+.green {
+	border: 2px solid #16a085;
+	background-color:#16a085;
+}
+
+.elementos {
+	background-color:#576574;
+	position:absolute;
+	width:160px;
+	height:25px;		
+	border-radius: 5px;
+	border: 2px solid #576574;	
+	color:white;
+	font-size: 13px;	
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.elementos:hover {
+	cursor: pointer;
+	color:#2c3e50;
+	background: white;
+	outline: none;
+}
+
+.elementos:active { 
+	background: #dfe6e9;
+	/* color:white; */
+}
+
+.checkbox{
+	position:absolute;		 
+	padding: 8px 10px 10px 30px;	
+	text-align:left;
+	color: #2c3e50;
+	letter-spacing: 2px;
+	text-indent: 0px;
+	font-family: "verdana";
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.checkbox input {
+  position: absolute;
+  top:3px;
+  left:0px;
+  opacity: 0.7;  
+  cursor: pointer;
+  height: 20px;
+  width: 20px; 
+}
+
+
+.tituloSlider{
+	position: absolute;
+	font-family: "verdana";
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+	color: #2c3e50;
+	
+}
+
+.slider {
+  position:absolute;		
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 25px;
+  background: #95a5a6;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+/* -------------------------------- */
+
+.btnControle {
+	position:absolute;
+	width:25px;
+	height:25px;		
+	border-radius: 5px;
+	color:white;
+	font-size: 18px;	
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+.btnControle:hover {
+	cursor: pointer;
+	color:#2c3e50;
+	background: white;
+	outline: none;
+}
+
+.btnControle:active { 
+  outline: none;
+}
+
+/* ------------------------------- */
+
+.cor1{
+	border: 2px solid #192a56;
+	background-color:#192a56;
+}
+
+.cor2{
+	border: 2px solid #e84118;
+	background-color:#e84118;
+}
+
+.blue{
+	border: 2px solid #2980b9;
+	background-color:#2980b9;
+}
+
+.orange{
+	border: 2px solid #d35400;
+	background-color:#d35400;
+}
+
+.green {
+	border: 2px solid #16a085;
+	background-color:#16a085;
+}
+
+
+.stormpetrel {
+	border: 2px solid #8395a7;
+	background-color:#8395a7;
+}
+
+.jadedust {
+	border: 2px solid #00d2d3;
+	background-color:#00d2d3;
+}
+
+.peace {
+	border: 2px solid #a4b0be;
+	background-color:#a4b0be;
+}
+
+.clouds {	
+	border: none;
+	background-color:#f5f6fa;	
+}	
+
+.desativar {
+  touch-action:none;
+}
+
+
+
+

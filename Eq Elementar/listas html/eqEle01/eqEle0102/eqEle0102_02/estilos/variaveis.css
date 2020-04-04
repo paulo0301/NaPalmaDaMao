@@ -1,0 +1,22 @@
+body{
+    background-image: url("../imagens/b.png");
+    background-position: 25px 25px;
+}
+
+
+:root{
+    /* tamanho da caixa de texto*/
+    --altura1: 22px;  --largura1: 27px;
+    
+    /* caixa de texto 01 */
+    --top1:25px;  --left1:277px;
+    
+    /* caixa de texto 02 */
+    --top2:63px;  --left2:277px;
+    
+    /* Botões e mensagem */
+    --top6:120px; --left6:60px;
+    
+    /* Distancia do marcador */
+    --margin1: 3px;
+}

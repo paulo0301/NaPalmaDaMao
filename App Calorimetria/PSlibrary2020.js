@@ -1282,7 +1282,7 @@ function particle(x ,y, temp, radius, color){
     var x; y; temp; radius; color;   
 	var x1;
 	var y1;
-	if(temp < 0)temp = 0.5;
+	if(temp < 0)temp = 0.3;
     //
     valor_sinal1 = Math.random();
     valor_sinal2 = Math.random();

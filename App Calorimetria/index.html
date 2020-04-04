@@ -15,16 +15,36 @@
         canvas{
             border: 1px solid black;
         }
-        #chama{
+        button{
             position: absolute;
-            top: 320px;
-            left: 560px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            padding: 0.5em 0;
+            width: 100px;
+        }
+        .ligar{
+            transition: 0.5s ease-in all;
+            background-color: #c23616;
+            color: white;
+            top: 135px;
+            left: 420px;
+            font-weight: bold;
+        }
+        .recomecar{
+            transition: 0.5s ease-in all;
+            background-color: #636e72;
+            font-weight: bold;
+            top: 170px;
+            left: 420px;
+            color: white;
         }
     </style>
 </head>
 <body onload="desenhar()">
     <canvas id="myCanvas" width="640" height="360"></canvas>
-    <button id="chama">Ligar</button>
+    <button id="chama" class="ligar">Ligar fonte</button>
+    <button id="recomecar" class="recomecar">Recomeçar</button>
 </body>
 <script src="PSlibrary2020.js"></script>
 <script src="app.js"></script>
