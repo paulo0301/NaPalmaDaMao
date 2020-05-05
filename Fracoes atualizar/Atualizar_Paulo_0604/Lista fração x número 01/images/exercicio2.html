@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<canvas id="myCanvas" width="380px" height="180px"></canvas>
+<link rel="stylesheet" href="cssAnimation.css">
+<link rel="stylesheet" href="classes.css">
+<script src="PSlibrary20192.js"></script>	
+<script>
+//***********************************************//
+function validar(){
+	var n1 = document.formulario.resposta1.value;
+	var n2 = document.formulario.resposta2.value;
+	//document.formulario.VF.disabled = "disabled";
+	if(n1 == 6 && n2 == 8 || n1 == 3 && n2 == 4){
+		//document.formulario.VF.value = "Correto";	
+		document.formulario.resposta1.disabled = 1;	
+		document.formulario.resposta2.disabled = 1;			
+		comentario('1');
+	} else{
+		//document.formulario.VF.value = "Errado";
+		document.formulario.resposta1.disabled = 1;	
+		document.formulario.resposta2.disabled = 1;				
+		comentario('2');
+	}
+}
+
+function liberar(){		
+	document.formulario.resposta1.value = "";
+	document.formulario.resposta2.value = "";
+	document.formulario.resposta1.disabled = 0;			
+	document.formulario.resposta2.disabled = 0;			
+	//document.formulario.VF.value = "";	
+	comentario('3');	
+}
+
+function comentario(condicao){	
+	var condicao;
+	var xf = 90;
+	var yf = 130
+	if(condicao == '1'){
+		fraction(xf, yf, 6, 8, darkcolor);
+		textBold('=', '10', 'verdana', xf + 25, yf + 12, darkcolor);
+		fraction(xf + 50, yf, 3, 4, darkcolor);
+		textBold('Correto!', '11', 'verdana', xf + 140, yf + 12, darkcolor);
+	}
+	if(condicao == '2'){
+		clear();
+		textBold('Errado...', '10', 'verdana', xf + 140, yf - 20, darkcolor);
+		desenhar();	
+	}
+	if(condicao == '3'){
+		clear();		
+		desenhar();	
+	}
+}
+
+var x = 100;
+var y = 50;
+var valor = 'Correto!';
+function desenhar(){		
+	// ESTRUTURA ------------------------------	
+	rectangle(5, 5, canvas.width - 10, canvas.height - 10, 1, 0, darkcolor, nocolor);
+	lineAngle(x, y, 50, 0, 2, darkcolor);
+	textBold('= ', '12', 'verdana', x - 17, y + 5, darkcolor);
+	textStyle1('Fração', '10', 'verdana', x - 75, y + 4, darkcolor);		
+}
+desenhar();
+</script>
+
+<!-- ------------------------------------------------------------------------ -->
+<form name="formulario">
+	<div style="position:absolute; left:115px; top:30px;" >
+		<input style="width:30px; text-align:center" type="text" name="resposta1" >
+	</div>	
+	
+	<div style="position:absolute; left:115px; top:65px;" >
+		<input style="width:30px; text-align:center" type="text" name="resposta2" >
+	</div>		
+	
+	<div style="position:absolute; left:180px; top:50px">	
+		<input type="button" class="botao" value="Apagar" onClick="liberar();">		
+		<input type="button" class="botao" value="Confirmar" onClick="validar();">		
+	</div>	
+	
+</form>	
+</html>
+
+
+
+
+
+
+
+
+

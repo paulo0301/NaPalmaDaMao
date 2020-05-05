@@ -1,0 +1,14 @@
+:root{   
+    
+    /* Posição da caixa de texto 01 */
+    --top1:27px;  --left1:145px;
+    
+    /* Botões e mensagem */
+    --top6:80px; --left6:30px;
+	
+	/* tamanho da caixa de texto*/
+    --altura1: 25px;  --largura1: 40px;
+
+    /* Distancia do marcador */
+    --margin1: 15px;
+}

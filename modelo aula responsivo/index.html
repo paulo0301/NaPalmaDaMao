@@ -1,0 +1,260 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">	
+    <link rel="stylesheet" href="estilos/auxiliar.css">		
+    <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="estilos/estiloResponsivo.css">	
+    <title>Dilatação01</title>
+</head>
+<body onresize="resizeTela()">
+    <div class="btnFonte">
+        <button onclick="Mudarfonte(1)">Aumentar fonte [1]</button>
+        <button onclick="Mudarfonte(2)">Diminuir fonte [2]</button>
+    </div>
+    
+    <header>
+        <h1><a href="http://napalmadamao.ifrn.edu.br/mathlibras.html"><img src="images/fisica.png" height="80px" alt="logo do site"/>Math Libras</a></h1>
+        <h2>Aulas de matemática básica</h2>
+        <nav><ol></ol></nav>
+    </header>
+    
+    <div class="aulas">			
+        <a href="#"><b>Lista 01</b></a> <b>|</b>
+        <a href="lista0102.html"  target="_blank">Lista 02</a> <b>|</b>	
+        <a href="lista0103.html"  target="_blank">Lista 03</a> <b>|</b>			
+    </div>
+    
+    <main class="corpo-aula px720">
+        <h3 class="titulo titulo-aula">Termodinâmica: Aula 01</h3>	
+        <h3 class="titulo titulo-aula">Dilatação e Contração Térmica</h3>	
+        
+        <!-- INÍCIO DA AULA /////////////////////////////////////////////////////////////////////////// -->	
+        
+        <h3 class="titulo topico-aula">1. Introdução</h3>
+        
+        <p class="padding10">No capítulo anterior vimos que, para a maioria das substâncias, um aumento de temperatura acarreta na dilatação térmica do corpo. Consequentemente, uma diminuição na temperatura acarreta a contração térmica do corpo.</p>
+        
+        <img class="imagem" src="images/card01.png">
+        
+        <!--  SEÇÃO -->		
+        
+        <section class="padding20">
+            <br><hr>
+            <p> Nesse capítulo, vamos estudar a expressão matemática que descreve esse comportamento térmico, partindo da observação experimental de que a dilatação ou contração térmica de um corpo depende dos seguintes fatores:</p>						
+            
+            <p class="tab10"> a) tipo de material do qual o corpo é feito; </p>
+            
+            <p class="tab10"> b) volume inicial do corpo, </p>
+            
+            <p class="tab10"> e) variação de temperatura do corpo. </p>
+        </section>
+        
+        <!--   -->
+        
+        
+        <section class="padding20">	
+            
+            <h3 class="titulo topico-aula">2. Coeficiente de Dilatação Volumétrico</h3>
+            
+            <p class="padding10"> Quando corpo dilata ou contrai, todas as suas dimensões mudam de tamanho. A animação abaixo ilustra esse fato para dilatação térmica de um paralelepípedo.</p>	
+            
+            <div class="centralizar">
+                <object data="animations/dilatacaoVolumetrica.html" width="360" height="200" id="animationVisible">		
+                </object>
+                <img src="images/rode.png" id="rotationImagem" alt="Rode o celular"/>
+            </div>	
+            
+            <br><hr>
+            
+            <p> Analisando dados de experimentos onde corpos de diferentes materiais e com diferentes volumes iniciais são submetidos a diferentes variações de temperatura, percebe-se que, em uma determinada faixa de temperatura, a seguinte relação se apresenta constante: </p>
+            
+            <img class="imagem" src="images/formula01.png">
+            
+            <p>Onde:</p>
+            
+            <img class="imagem" src="images/formula02.png">
+            
+            <p> Essa fórmula nos diz que a variação de volume de um determinado material, dividido pelo produto entre o volume inicial e a variação de temperatura, é constante dentre uma determinada faixa de temperatura. </p>
+            
+            <br><hr>
+            
+            <p> Essa relação matemática é válida para determinada faixa de valores de temperatura, sendo utilizada para definir o <b>coeficiente de dilatação volumétrico</b> do material (γ), dentro de dessa faixa de temperatura. </p>
+            
+            <img class="imagem" src="images/formula03.png">
+            <p class="unidade"><i>Unidade: m<sup>3</sup>/(m<sup>3</sup> ⋅ °C) ou simplesmente °C <sup>-1</sup>.</i>  </p>
+            
+            <br><hr><br>
+            
+            <p class="padding10"> Conhecido o valor do coeficiente  γ, é possível determinar a variação de volume de um corpo, a partir de seu volume inicial e da variação de temperatura sofrida. </p>
+            
+            <img class="imagem sombra" src="images/formula04.png">
+            
+            <p class="round azul"> A variação de volume é diretamente proporcional ao coeficiente dilatação, ao volume inicial e à variação de temperatura.</p>
+            
+        </section>
+        
+        <!-- SEÇÃO  -->
+        
+        <section class="padding20">
+            <h3 class="titulo topico-aula">3. Coeficiente de Dilatação Superficial</h3>
+            
+            <p> Se um corpo sofre dilatação ou contração térmica, todas as suas dimensões variam. Contudo, a variação é proporcional ao tamanho de cada dimensão.</p>
+            
+            <p class="padding10"> Logo, se temos uma placa com uma altura muito menor do que seu comprimento e largura, a dilatação volumétrica será desprezível quando comparada a sua <b>dilatação superficial</b>, uma vez que a altura praticamente não varia de tamanho, conforme ilustrado abaixo.</p>	
+            
+            <div class="centralizar">
+                <object data="animations/dilatacaoSuperficial.html" width="370" height="180" id="animationVisible"></object>
+                <img src="images/rode.png" id="rotationImagem" alt="Rode o celular"/>
+            </div>	
+            
+            <br><hr><br>
+            
+            <p class="padding10"> Para essas situações, sendo relevante apenas a dilatação da superfície do corpo, definimos o <b>coeficiente de dilatação superficial (β)</b>, tal que:</p>
+            
+            <img class="imagem " src="images/formula05.png">
+            <p class="centralizar"><i>Unidade: m<sup>2</sup>/(m<sup>2</sup> ⋅ °C) ou simplesmente °C <sup>-1</sup>.</i>  </p>
+            
+            <p> Onde: </p>
+            <img class="imagem" src="images/formula05a.png">	
+            
+            <br><hr><br>
+            
+            <p> Conhecido o valor do coeficiente  β, é possível determinar a variação de área de superfície de uma placa, a partir de sua área inicial e da variação de temperatura sofrida.</p>
+            
+            <img class="imagem sombra" src="images/formula06.png">	
+            
+            <p class="round azul"> A variação da área de superfície é diretamente proporcional ao coeficiente dilatação, à área inicial e à variação de temperatura.</p>
+            
+        </section>
+        
+        <!-- SEÇÃO  -->
+        
+        <section class="padding20">
+            <h3 class="titulo topico-aula">4. Coeficiente de Dilatação Linear</h3>
+            
+            <p class="padding10"> Agora, se temos um corpo no qual seu comprimento é muito maior que sua largura e altura, a única variação de tamanho relevante será no seu comprimento. Nesse caso, temos a dilatação linear do corpo.</p>
+            
+            <div class="centralizar padding10">
+                <object data="animations/dilatacaoLinear.html" width="300" height="150" id="animationVisible"></object>
+                <img src="images/rode.png" id="rotationImagem" alt="Rode o celular"/>
+            </div>	
+            
+            <br><hr><br>
+            
+            <p class="padding10"> Para essas situações, como só é relevante a dilatação do comprimento do corpo, definimos o <b>coeficiente de dilatação linear (α)</b>, tal que: </p>
+            
+            <img class="imagem" src="images/formula07.png">	
+            
+            <p> Onde: </p>
+            
+            <img class="imagem" src="images/formula07a.png">	
+            
+            <br><hr><br>
+            
+            <p class="padding10"> Conhecido o valor de α, é possível determinar a variação de comprimento de um corpo, a partir de seu comprimento inicial e da variação de temperatura sofrida. </p>
+            
+            <img class="imagem sombra" src="images/formula08.png">	
+            
+            <p class="round azul"> A variação de comprimento é diretamente proporcional ao coeficiente dilatação, ao comprimento inicial e à variação de temperatura.</p>
+            
+        </section>	
+        
+        <!--   -->
+        
+        <section class="padding20">
+            <h3 class="titulo topico-aula">5. Tabela com os coeficientes de dilatação linear de alguns materiais</h3>
+            
+            <img class="imagem" src="images/tabela.png">	
+            
+        </section>	
+        
+        <!--   -->
+        
+        <section class="padding20">
+            <h3 class="titulo topico-aula">6. Relação entre os Coeficientes de Dilatação</h3>
+            
+            <p class="padding10"> É possível demonstrar algebricamente a seguinte relação:</p>
+            
+            <img class="imagem sombra" src="images/formula09.png">	
+            
+        </section>	
+        
+        <section hidden="">
+            <h3 class="titulo topico-aula">Exercícios</h3>
+            <div class="exercicios">
+                <img class="" src="images/personagem4.png" height="220">	
+                <div class="botoes">
+                    <a href="" target="_blank"><div class="BotaoAtividade">Aprendizagem I</div></a>
+                    <a href="" target="_blank"><div class="BotaoAtividade">Aprendizagem II</div></a>
+                    <a href="" target="_blank"><div class="BotaoAtividade">Aprendizagem III</div></a>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        <!-- INÍCIO DA NAVEGAÇÃO DO FIM DA AULA -->
+        <nav class="nav-fim-aula">
+            <a href=""><span class="seta seta-anterior"></span></a>
+            <a href="#"><span class="seta seta-top"></span></a>
+            <a href="http://www.fisicainvertida.com/termodinamica_aulas/aula_02/termodinamica_aula_02.html"><span class="seta seta-prox"></span></a>
+        </nav>
+        <!-- Fim navegação fim da aula -->
+        <hr>		
+        <p class="autor">Prof. Geraldo Felipe / IFRN-CNAT (2014-2018)</p>
+        <br>			
+        <!-- FIM DA AULA ****************************************************** -->			
+        
+    </main>
+    
+    <footer>		
+        
+        <div class="">
+            <picture>
+                <source media="(max-width: 415px)" srcset="images/contato1.png"/>
+                <img  class="" src="images/contato.png"/>
+            </picture>
+        </div>	
+        
+        <div>
+            <picture>
+                <source media="(max-width: 415px)" srcset="images/logo02_2.png"/>
+                <img  class="" src="images/logo02.png" alt="" />
+            </picture>
+        </div>	
+            
+            <div class="creditos">
+                <p>Prof.Geraldo Felipe | IFRN/CNAT</p>				
+                <p>Março de 2020</p>
+            </div>
+        </footer>
+        
+    </body>
+    <script>
+        function resizeTela(){
+            if(window.innerHeight > window.innerWidth){
+                var aV = document.querySelectorAll('#animationVisible');
+                var imag = document.querySelectorAll('#rotationImagem');
+                for(i = 0; i < aV.length; i++){
+                    aV[i].style.display = 'none';
+                    imag[i].style.display = 'block';
+                }
+            }
+            else if(document.querySelectorAll('#rotationImagem')[0].style.display != 'none'){
+                var aV = document.querySelectorAll('#animationVisible');
+                var imag = document.querySelectorAll('#rotationImagem');
+                for(i = 0; i < aV.length; i++){
+                    aV[i].style.display = 'block';
+                    imag[i].style.display = 'none';
+                }
+            }
+        }
+        resizeTela();
+    </script>
+    </html>

@@ -1,0 +1,170 @@
+.resposta {  	
+	margin-top:0px;
+	width:70px;	
+	background-color:#f5f6fa;	
+	padding:3px;
+	font-weight:bold;
+	font-size: 15px;
+	text-align:center;
+}	
+
+.areatextonome {         
+	margin-top:0px;
+	width:80%;
+	height:40px;
+	color:rgb(0,0,100);
+	background-color:rgba(200,200,255,0.1);	
+	padding: 3px 3px 3px 10px;
+	font-weight:bold;
+	font-size: 17px;
+	text-align:left;
+	line-height: 2;
+	resize: none;
+}
+
+
+.areatexto{
+  width: 80%;
+  height:220px;
+  color: #292929;
+  font-size: 18px;
+  line-height: 2; 
+  background-color:rgba(200,200,255,0.1);	
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 8px; 
+   padding: 3px 3px 3px 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc; 
+  font-family: "Arial", Times, serif;
+  resize: vertical;
+  
+}
+
+@media (max-width: 600px) {
+	.areatexto{
+	  width: 300px;
+	  height: 320px;
+	  resize: none;
+	  /*display:none;*/	  
+	}
+}
+
+
+.nome {         
+	margin-top:0px;
+	width:630px;
+	height:40px;
+	color:rgb(0,0,100);
+	background-color:rgba(200,200,255,0.1);	
+	padding:3px;
+	font-weight:bold;
+	font-size: 17px;
+	text-align:left;
+	line-height: 2;
+	resize: vertical
+}
+
+/* --------------- CLASSES DOS BOTÕES ------------------ */
+
+.botao{
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	display: inline-block;	
+	color: white;
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: 0px;
+	border-radius: 4px;
+}
+.botao.num{
+	background: rgba(149, 165, 166,1.0);
+}
+
+.botao:hover {	
+	cursor: pointer;	
+}
+
+.btn {
+  -webkit-transition: all 150ms ease-out;
+          transition: all 150ms ease-out;
+  display: inline-block;
+  padding: 7px 20px;
+  background: white;
+  border-radius: 5px;
+  margin: 5px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #34495e;
+  border: 2px solid #2c3e50;
+}
+.btn:hover {
+  background: #dfe6e9;
+}
+.btn:active {
+  background: #ebebeb;
+  outline: none;
+}
+
+.btn-padrao:hover {
+  border: 1px solid gray;
+}
+/* ----------------------------------------------- */
+
+.btn2 {
+  -webkit-transition: all 150ms ease-out;
+          transition: all 150ms ease-out;
+  display: inline-block;
+  padding: 7px 10px;
+  background: white;
+  border-radius: 5px;
+  margin: 5px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  color: #2c3e50;
+  border: 2px solid #2c3e50;
+}
+.btn2:hover {
+  background: #f5f6fa;
+}
+.btn2:active {
+  background: #ebebeb;
+  outline: none;
+}
+
+.btn2-padrao:hover {
+  border: 1px solid gray;
+}
+
+/* ------------------------------------ */
+
+
+
+.px1b{
+	position:relative;
+	left:300px;
+}
+
+/* ------------------------------------ */
+.azul {
+	background: #00a8ff;
+}	
+
+.laranja{
+	background:#e84118;
+}
+
+
+

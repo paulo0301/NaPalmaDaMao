@@ -1,0 +1,47 @@
+/*** OBJECT - COMPRIMENTO E ALTURA ***/
+.objSelecR2{	
+	width:700px;	
+	height:180px;	
+}
+
+.objSelecR4{	
+	padding-left:20px;
+	padding-top:10px;
+	width:320px;	
+	height:300px;	
+}
+
+.objSelecR5{	
+	padding-left:20px;
+	padding-top:10px;	
+}
+
+
+/*** POSIÇÃO DA ATIVIDADE COM 1 CAIXA DE TEXTO ***/
+
+.pos{
+	position: relative;
+	left:300px;
+	top:-60px;
+	width:150px;
+	height:120px;	
+}
+
+
+
+/* -------------------------- */
+
+.padding20{
+	padding-bottom:20px;
+}
+
+.padding30{
+	padding-bottom:30px;
+}
+
+
+.padding40{
+	padding-bottom:30px;
+}
+
+

@@ -1,0 +1,24 @@
+:root{
+   /* --top2:calc(var(--top1) + var(--dy)); --left2:calc(var(--left1)); */
+   --dx:130px; 
+    
+    /* tamanho da caixa de texto expoente*/
+    --altura2: 23px;  --largura2: 30px;
+	
+	/* tamanho da caixa de texto base*/
+    --altura1: 25px;  --largura1: 40px;
+    
+    /* caixa de texto 01 e marcador*/
+    --top1:45px;       --left1:calc(20px + var(--dx)); 
+    --topM1: -25px;    --leftM1: 15px;
+
+    /* caixa de texto 02 e marcador */
+    --top2:30px;  	  --left2:calc(80px + var(--dx)); 
+    --topM2: 5px;     --leftM2: 45px;
+    
+    /* Botão Confirmar */
+    --top6:100px; --left6:calc(-20px + var(--dx)); 
+	
+	 /* Comprimento da borda do exercício */
+    --Lfd: 300px;
+}

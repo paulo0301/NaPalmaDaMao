@@ -1,5 +1,5 @@
 body{
-	background-image: url(../imagens/fund);
+	background-image: url('../imagens/background.png');
 }
 
 :root{
@@ -8,10 +8,10 @@ body{
 
 	/* Posição horizontal e vertical dos botões radio */
 		/* Alternativa A */
-		--left1: 10px;				--top1: 20px;
+		--left1: 10px;				--top1: 40px;
 
 		/* Alternativa B */
-		--left2: 190px;				--top2: 20px;
+		--left2: 170px;				--top2: 40px;
 
 	/* Posição vertical da mensagem */
 	--top3: 100px;

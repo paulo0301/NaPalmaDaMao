@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos/principal.css" type="text/css">
+    <title>radio</title>
+</head>
+<body class="containerQuestoes">
+    <form action="">
+        <div>
+            <input type="radio" name="ex01" id="a">
+            <label for="a"><b>a)</b>flui temperatura da chama para a substância termométrica.
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="ex01" id="b">
+            <label for="b"><b>b)</b>flui temperatura da substância termométrica para a chama.
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="ex01" id="c">
+            <label for="c"><b>c)</b>não flui temperatura entre os corpos.
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="ex01" id="d">
+            <label for="d"><b>d)</b>a chama perde temperatura e a substância termométrica ganha temperatura.
+            </label>
+        </div>
+        <input type="button" class="confirmarBtn" id="confirmar" onclick="verificar('c')" value="Confirmar">
+        <span id="avaliacao"></span>
+    </form>
+</body>
+<script src="js/verificar.js"></script>
+</html>

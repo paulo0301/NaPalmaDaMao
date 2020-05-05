@@ -1,0 +1,56 @@
+.dimObj{
+	width:380px;
+	height:160px;	
+}
+
+.dimObj2{
+	width:415px;
+	height:160px;	
+}
+
+.L0102N{
+	width:450px;
+	height:180px;	
+}
+
+.L0102G{
+	width:465px;
+	height:180px;	
+}
+
+.L0103N{
+	width:300px;
+	height:180px;	
+}
+
+.L0103G{
+	width:320px;
+	height:180px;	
+}
+
+.L0103GG{
+	width:360px;
+	height:180px;	
+}
+
+.L01033{
+	width:460px;
+	height:180px;	
+}
+
+.pos03{
+	position: relative;
+	left:250px;
+	height:30px;
+	top:-160px;
+}
+
+.pos0304{
+	position: relative;
+	left:250px;
+	top:-110px;
+	height:90px;
+	
+}
+
+

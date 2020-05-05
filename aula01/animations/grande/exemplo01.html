@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8"/>
+<canvas id="myCanvas" width="640px" height="230px"></canvas>
+<link rel="stylesheet" type="text/css" href="estilos/estilo.css">	
+<script src="js/auxiliar.js"></script> 
+<script src="js/cronometroJs.js"></script>
+<script src="C:\Users\Usuario\Documents\PSlibrary2019/PSlibrary2020.js"></script> 
+<script src="PSlibrary2020.js"></script> 
+<script>
+//***********************************************
+var vp = 5/6;
+var x0 = 20;
+var y0 = 160;
+var px01 = (4)*20;
+var vx1 = (1)*vp;
+var px1 = px01 + vx1*timeValue;
+var px02 = (16)*20;
+var vx2 = 1;
+var px2 = px02 + vx2*timeValue;
+var limite = 4;
+
+function grafico(){
+	rectangle(5, 5, 634, 220, 1.5, 0, corBorda, nocolor);	
+	//-----------------------------------------------	
+	if(validarCronometro == true){		
+		timeValue = cronometro();
+		px1 = px1 + vx1;
+		px2 = px2 + vx2;
+	}	
+	textBold('Cronômetro', '10','verdana',xcron - 20,ycron,darkcolor);
+	textBold(timeValue.toFixed(2) + ' s', '10','verdana',xcron,ycron + 20,darkcolor);	
+	if(timeValue >= limite){
+		validarCronometro = false;
+		timeValue = limite;
+	}	
+	//-----------------------------------------------
+	vector(610, y0, 40, 0, 2, darkcolor);	
+	vector(x0 - 10, y0, 610, 0, 2, darkcolor);
+	graduatedScale(x0, y0 + 10, 580, 20, 5, 0, 2, darkcolor);	
+	numberScalePosX(x0 - 4, y0 + 25, 14, 4, 40, darkcolor);	
+	carFromSideBasic(x0 + px01, y0 - 7, transp,    transp, 0);  //SOMBRA
+	carFromSideBasic(x0 + px1, y0 - 7,  '#34495e', carro, 0);//CARRINHO	
+}
+draw(desenhar);	
+</script>
+<!-- ------------------------------------------------------------------------ -->
+<body class="desativar">
+	<div class="posicao1" >
+		<input class="btn1 blue" type="button" onclick="iniciar()" value = "|| / >>">
+	</div>	
+	<div class="posicao2" >
+		<input class="btn1 stormpetrel" type="button" onclick="voltar()" value = "<<">
+	</div>		
+</body>
+</html>
+
+
+
+
+
+
+
+
+

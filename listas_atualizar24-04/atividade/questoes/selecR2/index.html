@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Exercício</title>
+	<meta name="viewport">    
+	<link rel="stylesheet" href="styles/estilo.css">
+	<link rel="stylesheet" href="styles/variaveis.css">
+</head>
+<script>
+	/* --------------------------------------------------------- */
+	/* gab = 0: Letra A está correta */
+	/* gab = 1: Letra B está correta */
+	var gab = 0;
+	/* NÃO ALTERAR --------------------------------------------------------- */
+	function btn1(){	
+		document.getElementById('comentarioA').hidden = true;
+		document.getElementById('comentarioE').hidden = true;	
+		var n1 = document.getElementById('a1').checked;
+		var n2 = document.getElementById('b1').checked;		
+		R = "";
+		if(n1 == true){R = 0};
+		if(n2 == true){R = 1};	
+		validar1();
+	}
+	
+	function validar1(){			
+		if(R == gab){			
+			document.getElementById('comentarioA').hidden = false;
+		}else{			
+			document.getElementById('comentarioE').hidden = false;
+		}	
+	}
+	/* --------------------------------------------------------- */
+</script>
+<body onkeydown="whichButton(event)">
+	<!--------------------------------------------------------------> 
+	
+	<div class='borda'>	
+		<!-- BOTÕES PARA SELECIONAR  -->
+		<form name="ex01" class='alternativa'>
+			<!-- Letra "a"  -->
+			<div class="checkmark" id="alternativaA">
+				<input type="radio" name="opcao1" id="a1" onclick="btn1()"/>
+				<label for="a1">Positivo</label>
+			</div>			
+			<!-- Letra "b"  -->
+			<div class="checkmark" id="alternativaB">
+				<input type="radio" name="opcao1" id="b1" onclick="btn1()"/>
+				<label for="b1">Negativo</label>
+			</div>
+		</form>		
+		
+		<!-- COMENTÁRIOS  -->	
+		<div class="comentarios">
+			
+			<div hidden id="comentarioA">
+				<img  class="marcador" src="imagens/marcadorC.png" alt="" />
+				<p class="posicao1"><span style="color:#00b894"><b>Correto!</b></span></p>
+				<p class="posicao2 espacoLinha"></p>
+			</div>
+			
+			<div hidden id="comentarioE">
+				<img  class="marcador" src="imagens/marcadorE.png" alt="" />
+				<p class="posicao1"><span style="color:#e84118"><b>Cuidado!</b></span></p>
+				<p class="posicao2 espacoLinha"><b>O ponto está no lado positivo!</b></p>	
+			</div>		
+		</div>	
+	</div>			
+	
+	<!--------------------------------------------------------->
+</body>
+</html>

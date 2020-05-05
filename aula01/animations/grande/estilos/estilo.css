@@ -1,0 +1,62 @@
+﻿.posicao1{
+	position:absolute;
+	top:20px;
+	left:570px;
+}
+
+.posicao2{
+	position:absolute;
+	top:20px;
+	left:500px;
+}
+
+.btn1 {
+	position:absolute;
+	width:60px;
+	height:35px;		
+	border-radius: 5px;
+	color:white;
+	font-size: 15px;	
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:600;
+}
+
+.btn1:hover {
+	cursor: pointer;
+	color:#576574;
+	background: white;
+	outline: none;
+}
+
+.btn1:active { 
+  outline: none;
+}
+
+.blue{
+	border: 2px solid #2980b9;
+	background-color:#2980b9;
+}
+
+.orange{
+	border: 2px solid #d35400;
+	background-color:#d35400;
+}
+
+.green {
+	border: 2px solid #16a085;
+	background-color:#16a085;
+}
+
+.stormpetrel{
+	border: 2px solid #8395a7;
+	background-color:#8395a7;
+}	
+
+.desativar {
+  touch-action:none;
+}
+
+	
+	
+
+

@@ -1,0 +1,130 @@
+body{	
+	font-family: verdana, sans-serif;
+	font-size: 17px;
+	width: 400px;
+}
+
+.espacoLinha{
+	position:relative;	
+	top:-15px;
+}
+
+.borda{
+	border: 2px solid #487eb0;	
+	border-radius: 10px;	
+	height:150px;	
+	width:500px;
+}
+
+.borda2{
+	border: 2px solid #487eb0;	
+	border-radius: 10px;	
+	height:180px;	
+	width:500px;
+}
+.alternativa {
+  font-family: "Open Sans", sans-serif;	
+  margin: 20px 15px;
+  font-size: 17px;
+  line-height: 2.0;
+  text-align: justify;
+}
+div.checkmark{
+	display: inline-flex;
+	align-items: center;
+}
+input[type="radio"]{
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  display: none; 
+}
+#alternativaA{
+	position: relative;
+	left: var(--left1);
+	top: 0;
+}
+#alternativaB{
+	position: relative;
+	left: var(--left2);
+	top: 0;
+}
+label{
+	color:#0097e6;
+	font-size:20px;
+	font-weight: bold;
+}
+input[type="radio"] + label{
+	position: relative;
+	padding: 0 0 0 30px;
+	cursor: pointer;
+}
+input[type="radio"] + label::before{
+	content: "";
+	border: 2px solid #3f9cef;
+	position: absolute;
+	left: 0px;
+	top: 10px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+}
+input[type="radio"] + label::after{
+	content: "";
+	background-color: #3f9cef;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 3px;
+	top: 13px;
+	border-radius: 50%;
+	opacity: 0;
+}
+input[type="radio"]:checked + label::after{
+	opacity: 1;
+}
+
+.confirmarBtn {
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	display: inline-block;
+	background-color: rgba(56, 103, 214,1.0);
+	color: white;
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: 2px;
+	border-radius: 4px;
+	z-index: 0;
+}
+.confirmarBtn:hover {	
+	cursor: pointer;
+	background: rgba(56, 103, 214,0.8);
+}
+
+/* ------------------------------- COMENTÁRIOS -------------------------------*/
+
+.posicao1{
+	position:relative;
+	left:100px;
+}
+
+.posicao2{
+	position:relative;
+}
+
+.comentarios{
+	position:absolute;
+	left: var(--left3); 
+	top: var(--top3); 
+	width:300px; 
+	height:0px;
+}
+
+.marcador{
+	position:absolute;
+	left:75px;
+}

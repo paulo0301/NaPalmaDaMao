@@ -1,0 +1,674 @@
+/*nnnnnnnnn Atividade ângulo nnnnnnnn*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+	background-color: #f2f2f2;
+	font-family: verdana, sans-serif;
+}
+
+main{
+	background-color: white;
+	width: 45em;
+	margin: 2em auto;
+	padding: 1em 3em;
+}
+
+section{
+	margin: 1.5em 1.0;
+	clear: both;
+}
+
+h3{
+	color: #40739e;
+	text-align: left;
+	margin: 1em 0;
+	float: left;
+}
+
+h4{
+	font-weight: bolder;
+	color: #40739e;
+	background-color: #f1f1f1;
+	padding: 0.5em 1em;
+	margin-bottom: 1em;
+}
+
+.instrucoes{
+	display: flex;
+}
+
+.instrucoes div{
+	margin-bottom: 1em;
+}
+
+audio{
+    width: 220px;
+    height: 40px;
+    border: 2px solid #95a5a6;
+    border-radius: 15px;
+    background-color: #ecf0f1;
+}
+
+
+
+/*NNNNNNNNNNNNNNNNNNN TEXTO LATERAL NNNNNNNNNNNNNNNNNNNNNNNNN*/
+
+.textoLateral{	
+	position:relative;
+	width:600px;	
+	left:-20px;
+	font-family: 'Open Sans', sans-serif;
+	color: #34495e;
+	line-height: 1.7em;	
+	letter-spacing: 1px;	
+}
+
+.textoLateralN1{	
+	position:relative;
+	width:600px;	
+	left:-20px;
+	top:40px;
+	font-family: 'Open Sans', sans-serif;
+	color: #34495e;
+	line-height: 1.7em;	
+	letter-spacing: 1px;	
+}
+
+/*NNNNNNNNNNNNNNNNNNNNN TEXTO ACIMA NNNNNNNNNNNNNNNNNNN*/
+
+.textoAcima{	
+	position:relative;
+	width:620px;
+	left:0px;
+	font-family: 'Open Sans', sans-serif;
+	color: #34495e;
+	line-height: 1.7em;
+	letter-spacing: 1px;	
+	margin-top: 1em;
+	margin-bottom:1em;
+}
+
+/*CORES E FORMATOS DOS TEXTOS DESTACADOS*/
+
+.destaque{	
+	position:relative;
+	width:560px;	
+	left:-20px;
+	font-family: 'Open Sans', sans-serif;	
+	line-height: 2em;	
+	letter-spacing: 1px;
+	color: #f5f6fa;		
+	border-radius: 10px;	
+	margin-top: 10px;	
+}
+
+.destaqueSimples{		
+	font-family: 'Open Sans', sans-serif;	
+	line-height: 2em;	
+	letter-spacing: 1px;
+	color: #f5f6fa;		
+	border-radius: 10px;
+	padding: 10px 10px 15px 20px;
+}
+
+
+ .BordasArredondadas1{
+  border-radius: 10px;
+  padding: 10px 10px 15px 20px;
+}
+
+.BordasArredondadas2{
+	border-radius: 0 2em;
+	padding: 10px 10px 15px 20px;
+}
+
+.BordasArredondadas3{
+	border-radius: 0 10px 150px 0;	
+	padding: 10px 10px 15px 20px;
+}
+
+ .BordasArredondadas4{
+	border-radius: 0 0 30px 30px;	
+	padding: 10px 10px 15px 20px;
+ }
+  
+
+.BordasArredondadas5{
+	border-radius: 0 35px 35px 35px;
+	padding: 10px;
+}
+
+.destaqueAzul{
+	background-color: #487eb0;
+	
+}
+
+.destaqueVerde{
+	background-color: #0d7e83;		
+	
+}
+
+.destaqueVerde {
+    background-color: #0d7e83;
+   
+}
+
+
+.destaqueJade{
+   background-color: #00a86b;  
+}
+
+.destaqueLaranja{
+  background-color:#E85009;  
+}
+
+.sombra {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.imagemLateral380{	
+	position:relative;
+	left:-10px;		
+}
+
+.imagemLateral380b{	
+	position:relative;
+	left:-10px;
+	top:40px;	
+}
+
+.imagemLateral360{	
+	position:relative;
+	left:-20px;		
+	top:40px;
+}
+
+.R1Lateral{	
+	position:relative;
+	text-align:center;
+	left:-80px;		
+	top:50px;
+	height:150px;
+}
+
+.R2Lateral{	
+	position:relative;
+	text-align:center;
+	left:-80px;		
+	top:50px;
+	height:200px;
+}
+
+.R3Lateral{	
+	position:relative;
+	text-align:center;
+	left:-80px;		
+	top:0px;
+	height:260px;
+}
+
+
+
+
+.centralizar{	
+	text-align:center;	
+}
+
+
+/*BOTÕES ATIVIDADES, JOGOS E EXERCÍCIOS*/
+
+.exercicios{
+  display: flex;
+  margin-top: 1em;
+  justify-content: center;
+}
+
+.exercicios div{
+	margin-bottom: 0.5em;
+ }
+
+.botoes a {
+  color: white;
+  text-decoration: none;
+}
+
+.botoes div{
+  display: block;
+  padding:5px;
+  border-radius: 7px;
+  width: 12em;
+  text-align: center;
+}
+
+.botoes{
+  margin-left: 2.5em;
+  margin-top:1.5em;
+}
+
+.BotaoAtividade{
+ background-color: #22a6b3;
+}
+
+.BotaoAprendizagem{
+ background-color: #22a6b3;
+}
+
+.BotaoAplicacao{
+ background-color: #40739e;
+}
+
+.BotaoAprofundamento{
+ background-color: #22a6b3;
+}
+
+
+
+/*ÍCONE DE VÍDEO AULA*/
+
+.video-aula{
+	text-align: right;
+}
+
+.video-aula img{
+    margin-top: 1.25em;
+}
+
+.aula-em-video{
+	text-align: center;
+}
+
+/*CONFIGURAÇÃO DA VIDEO AULA*/
+.videoaula{
+	position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #2c5b84;
+    border-radius: 0px;
+}
+
+.link{
+	text-decoration: none;
+	color: white;
+	padding:2px 7px 2px 7px;
+	border-radius: 7px;	
+	background-color: #95a5a6;
+}
+
+/* ******************************** */
+.areatexto{
+  width: 80%;
+  height:60px;
+  color: #292929;
+  font-size: 18px;
+  line-height: 2;
+  /*background-color: #E9E9E9;*/
+  background-color:rgba(200,200,255,0.1);	
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 8px; 
+   padding: 3px 3px 3px 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc; 
+  font-family: "Arial", Times, serif;
+  resize: vertical;  
+}
+
+/* ----------------------------------------------- */
+
+.btnSalvar {
+  -webkit-transition: all 150ms ease-out;
+          transition: all 150ms ease-out;
+  display: inline-block;
+  padding: 2px 5px;
+  background: white;
+  border-radius: 3px;
+  margin: 2px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  color: #34495e;
+  border: 2px solid #2c3e50;
+}
+
+.btn:active {
+  background: #ebebeb;
+  outline: none;
+}
+
+/*nnnnnnnnnnnnnnnnnnnnnn CARD ENORME ALINHADO AO CENTRO NNNNNNNNNNNNNNNNNNN*/
+
+.card{
+	margin: 1em 0;
+}
+
+
+
+/* AJUSTE DE ESPAÇAMENTO ENTRE PARÁGRAFOS ---------------------- */
+
+.estilo{
+	position:relative;
+}
+
+/*ESPAÇO ------------------*/
+
+.espaco10{
+	padding-top:10px;
+}
+
+.espaco15{
+	padding-top:15px;
+}
+
+.espaco20{
+	padding-top:20px;
+}
+
+
+/* DESLOCAMENTO EM EM Y ------------------*/
+
+.Ymais10{
+	position:relative;
+	top:10px;
+}
+
+.Ymais15{
+	position:relative;
+	top:15px;
+}
+
+.Ymais20{
+	position:relative;
+	top:20px;
+}
+
+.Ymais25{
+	position:relative;
+	top:25px;
+}
+
+.Ymais30{
+	position:relative;
+	top:30px;
+}
+
+.Ymais35{
+	position:relative;
+	top:35px;
+}
+
+.Ymais40{
+	position:relative;
+	top:40px;
+}
+
+.Ymais45{
+	position:relative;
+	top:45px;
+}
+
+.Ymais50{
+	position:relative;
+	top:50px;
+}
+
+.Ymais55{
+	position:relative;
+	top:55px;
+}
+
+.Ymais60{
+	position:relative;
+	top:60px;
+}
+
+.Ymais65{
+	position:relative;
+	top:65px;
+}
+
+.Ymais70{
+	position:relative;
+	top:70px;
+}
+
+.Ymais75{
+	position:relative;
+	top:75px;
+}
+
+.Ymais80{
+	position:relative;
+	top:80px;
+}
+
+/* --------------  */
+
+.Ymenos5{
+	position:relative;
+	top:-5px;
+}
+
+.Ymenos10{
+	position:relative;
+	top:-10px;
+}
+
+.Ymenos15{
+	position:relative;
+	top:-15px;
+}
+
+.Ymenos20{
+	position:relative;
+	top:-20px;
+}
+
+.Ymenos25{
+	position:relative;
+	top:-25px;
+}
+
+.Ymenos30{
+	position:relative;
+	top:-30px;
+}
+
+.Ymenos35{
+	position:relative;
+	top:-35px;
+}
+
+.Ymenos40{
+	position:relative;
+	top:-40px;
+}
+
+.Ymenos45{
+	position:relative;
+	top:-45px;
+}
+
+
+.Ymenos50{
+	position:relative;
+	top:-50px;
+}
+
+
+.Ymenos55{
+	position:relative;
+	top:-55px;
+}
+
+.Ymenos60{
+	position:relative;
+	top:-60px;
+}
+
+.Ymenos65{
+	position:relative;
+	top:-65px;
+}
+
+.Ymenos70{
+	position:relative;
+	top:-70px;
+}
+
+.Ymenos75{
+	position:relative;
+	top:-75px;
+}
+
+.Ymenos80{
+	position:relative;
+	top:-80px;
+}
+
+.Ymenos85{
+	position:relative;
+	top:-85px;
+}
+
+.Ymenos90{
+	position:relative;
+	top:-90px;
+}
+
+.Ymenos95{
+	position:relative;
+	top:-95px;
+}
+
+.Ymenos100{
+	position:relative;
+	top:-100px;
+}
+
+.Ymenos105{
+	position:relative;
+	top:-105px;
+}
+
+.Ymenos110{
+	position:relative;
+	top:-110px;
+}
+
+.Ymenos115{
+	position:relative;
+	top:-115px;
+}
+
+.Ymenos120{
+	position:relative;
+	top:-120px;
+}
+
+.Ymenos125{
+	position:relative;
+	top:-125px;
+}
+
+/* DESLOCAMENTO EM EM X ------------------*/
+
+.XEsquerda5{
+	position:relative;
+	left:-5px;
+}
+
+
+.XEsquerda10{
+	position:relative;
+	left:-10px;
+}
+
+.XEsquerda15{
+	position:relative;
+	left:-15px;
+}
+
+.XEsquerda20{
+	position:relative;
+	left:-20px;
+}
+
+.XEsquerda25{
+	position:relative;
+	left:-25px;
+}
+
+.XEsquerda30{
+	position:relative;
+	left:-30px;
+}
+
+.XEsquerda40{
+	position:relative;
+	left:-40px;
+}
+
+.XEsquerda50{
+	position:relative;
+	left:-50px;
+}
+
+/* --------------  */
+
+.XDireita40{
+	position:relative;
+	left:40px;
+}
+
+.XDireita40{
+	position:relative;
+	left:40px;
+}
+
+.XDireita45{
+	position:relative;
+	left:45px;
+}
+
+.XDireita50{
+	position:relative;
+	left:50px;
+}
+
+.XDireita55{
+	position:relative;
+	left:55px;
+}
+
+.XDireita60{
+	position:relative;
+	left:60px;
+}
+
+.XDireita65{
+	position:relative;
+	left:65px;
+}
+
+.XDireita70{
+	position:relative;
+	left:70px;
+}
+
+.XDireita75{
+	position:relative;
+	left:75px;
+}
+
+/*  ------------------*/
+
+/*nnnnnnnnnnnnnnnnnnnnnn  DESATIVAR TOUCH  NNNNNNNNNNNNNNNNNNN*/
+/*nnnnnnnnnnnnnnnnnnnnnn Inserir no <body> NNNNNNNNNNNNNNNNN*/
+.desativar {
+	 touch-action:none;
+}
+

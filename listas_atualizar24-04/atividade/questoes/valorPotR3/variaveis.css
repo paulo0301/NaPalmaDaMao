@@ -1,0 +1,36 @@
+:root{
+    /* --top2:calc(var(--top1) + var(--dy)); --left2:calc(var(--left1)); */
+    --dx:230px; 
+    
+    /* tamanho da caixa de texto expoente*/
+    --altura2: 23px;  --largura2: 30px;
+    
+    /* caixa de texto 01 e marcador*/
+    --top1:45px;      --left1:calc(20px + var(--dx)); 
+    --topM1: 32px;    --leftM1: -41px;
+
+    /* caixa de texto 02 e marcador */
+    --top2:var(--top1);  --left2:calc(90px + var(--dx)); 
+    --topM2: 32px;    --leftM2: -41px;
+    
+    /* caixa de texto 03 e marcador*/
+    --top3:calc(var(--top1) - 20px);  --left3:calc(150px + var(--dx)); 
+    --topM3: 0px;    --leftM3: 0px;
+   
+    /* vezes */
+    --top4:20px;  --left4: calc(12px + var(--dx)); 
+	
+	
+	/* tamanho da caixa de texto base*/
+    --altura1: 25px;  --largura1: 40px;
+    
+    /* Botão Confirmar */
+    --top6:120px; --left6:calc(-10px + var(--dx)); 
+    
+    /* Distancia do marcador */
+    --margin1: 3px;
+	
+	/* Comprimento e altura da borda do exercício */
+    --Lfd: 420px;
+	--Hfd: 135px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<body class="desativar">
+<meta charset="UTF-8">
+<canvas id="myCanvas" width="640px" height="360px"></canvas>
+<link rel="stylesheet" href="classes.css">
+<script src="C:\Users\Usuario\Documents\PSlibrary2019/PSlibrary2020.js"></script> 
+<!-- <script src="PSlibrary20192.js"></script> -->
+<script src="cronometroJs2.js"></script>
+
+<script>
+//***********************************************//
+//iniciarCronometro(); - Dentro da função que inicia a animação
+//zerarCronometro(); - Dentro da função que retorna a animação ao início
+//timeValue = 0; - Dentro da função que retorna a animação ao início
+//timeValue = 0; - Variável declarada antes da função de animação
+function iniciar(){	
+	iniciarCronometro();
+}
+//
+function voltar(){		
+	zerarCronometro();
+	timeValue = 0;
+}
+// VARIÁVEIS ---------------------------------
+//POSIÇÃO DO CRONÔMETRO -------------->
+var xcron = 20;
+var ycron = 20;
+//------------------------->
+//
+function grafico(){	
+	rectangle(5, 5, canvas.width - 10, canvas.height - 10, 1, 0, darkcolor, nocolor);	
+	// CRONÔMETRO --------------------------------------------------------------------	
+	if(validarCronometro == true){		
+		timeValue = cronometro();
+	}	
+	textBold(timeValue.toFixed(2) + ' s', '8','verdana',xcron,ycron + 20,darkcolor);	
+	// -------------------------------------------------------------------------------	
+	
+}
+draw(desenhar);
+</script>
+<!-- ------------------------------------------------------------------------ -->
+	<!-- BUTTON  -->	
+	<input style="top:20px; left:570px;" class="btnIniciar blue" type="button" onclick="iniciar()" value = "|| / >">	
+	<input style="top:20px; left:500px;" class="btnIniciar green" type="button" onclick="voltar()" value = "Voltar">	
+<body>	
+</html>
+
+
+
+
+
+
+
+
+

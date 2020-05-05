@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div.custom-select{
+    position: absolute;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div:nth-child(1){
+    top: var(--top1);
+    left: var(--left1);
+}
+div:nth-child(2){
+    top: var(--top2);
+    left: var(--left2);
+}
+div:nth-child(3){
+    top: var(--top3);
+    left: var(--left3);
+}
+div:nth-child(4){
+    top: var(--top4);
+    left: var(--left4);
+}
+div:nth-child(5){
+    top: var(--top5);
+    left: var(--left5);
+}
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.confirmarBtn {
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	display: inline-block;
+	background-color: rgba(56, 103, 214,1.0);
+	color: white;
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: 2px;
+	border-radius: 4px;
+    z-index: 0;
+    margin-left: 8px;
+}
+.confirmarBtn:hover {
+	cursor: pointer;
+	background: rgba(56, 103, 214,0.8);
+}
+
+/* BOTĆO LIMPAR */
+.apagarBtn {
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	display: none;
+	background-color: #8395a7;
+	color: white;
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: 2px;
+	border-radius: 4px;
+	z-index: 0;
+}
+
+.apagarBtn:hover {
+	cursor: pointer;
+	background: rgba(131, 149, 167,0.8);
+}
+div#containerBotoes{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: var(--topButton);
+    left: var(--leftButton);
+}

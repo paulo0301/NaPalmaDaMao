@@ -1,0 +1,23 @@
+form{
+    width: 19em;
+}
+div.questao{
+    display: flex;
+    align-items: center;
+    margin: 15px 2px;
+    justify-content: flex-start;
+}
+div.questao p{
+    margin: 0 5px;
+}
+div.questao input{
+    height: 1.5em;
+    width: 4em;
+    text-align: center;
+}
+div#resultado{
+    width: 19em;
+    display: flex;
+    justify-content: space-around;
+}
+

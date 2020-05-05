@@ -1,0 +1,96 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.containerQuestoes{
+	background-color: transparent;	
+}
+.containerQuestoes form{
+	line-height: 2.5em;
+	font-family: 'Open Sans', sans-serif;
+	color: #34495e;
+}
+.containerQuestoes form div{
+	display: flex;
+	align-items: center;
+}
+.containerQuestoes label{
+	display: flex;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+.containerQuestoes input[type="radio"]{
+	display: none;
+}
+.containerQuestoes input[type="radio"] + label{
+	position: relative;
+	padding: 0 0 0 30px;
+	cursor: pointer;
+}
+.containerQuestoes input[type="radio"] + label::before{
+	content: "";
+	border: 2px solid #3f9cef;
+	position: absolute;
+	left: 0px;
+	width: 16px;
+	height: 16px;
+	top: 3px;
+	border-radius: 50%;
+}
+b{
+	margin-right: 5px;
+}
+.containerQuestoes input[type="radio"] + label::after{
+	content: "";
+	background-color: #3f9cef;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 3px;
+	border-radius: 50%;
+	opacity: 0;
+	top: 6px;
+}
+.containerQuestoes input[type="radio"]:checked + label::after{
+	opacity: 1;
+}
+.containerQuestoes figure{
+	box-shadow: none;
+	margin: 0 0 0 10px;
+	height: 50px;
+	border: 3px solid #ffffff;
+}
+.letra-pequena{
+	font-size: 1em;
+}
+.containerQuestoes span{
+	font-weight: 900;
+	font-size: 1.2em;
+	margin-left: 1em;
+}
+/* BOTÃO CONFIRMAR */
+.confirmarBtn {
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+	display: inline-block;
+	background-color: rgba(56, 103, 214,1.0);
+	color: white;
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: 2px;
+	border-radius: 4px;
+    z-index: 0;
+    margin-left: 8px;
+}
+.confirmarBtn:hover {
+	cursor: pointer;
+	background: rgba(56, 103, 214,0.8);
+}
+.errado{
+	color: #e84118;
+}
+.correto{
+	color: #27ae60;
+}

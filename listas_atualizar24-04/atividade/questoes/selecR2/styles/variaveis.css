@@ -1,0 +1,11 @@
+:root{
+	/* Posição horizontal dos botões radio */
+	/* Alternativa A */
+	--left1: 10px;
+
+	/* Alternativa B */
+	--left2: 190px;
+
+	/* Posição horizontal e vertical da mensagem */
+	--left3: 100px;				--top3: 80px;
+}

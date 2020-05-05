@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<body onload="desenhar()" ontouchstart="touchCell(event)" ontouchmove="touchCell(event)" ontouchend="removeTouch(event)" class="desativar">
+<canvas id="myCanvas" width="480" height="400" onmousemove="listener(event)" onmousedown="clicked()" onmouseup="noclicked()"></canvas>   
+<link rel="stylesheet" href="classes.css">
+<!--<script src="C:\Users\Usuario\Documents\PSlibrary2019\PSlibrary20192.js"></script> -->	
+<script src="PSlibrary20192.js"></script>	
+<script src="codigoComplementar.js"></script> 
+<!--   -->
+<style>
+	body{
+		background-repeat: no-repeat;
+		background-image: url("figura.png");
+		background-position: 30px 40px;
+	}
+</style>
+<script>
+// VARIÁVEIS ---------------------------------
+//AS RESPOSTAS VARIAM DE 0 A 4
+var r1 = 2;
+var r2 = 3;
+var r3 = 1;
+var r4 = 0;
+//
+var cor1 = '#1dd1a1';
+var cor2 = '#48dbfb';
+var cor6 = '#3498db';
+//--------------------------------------------
+function desenhar(){	
+	clear();
+	rectangle(0, 0, canvas.width, canvas.height, 2.5, 0, darkcolor, nocolor); //MARCAÇÃO DAS BORDAS DA TELA	
+	//ESQUEMA GRÁFICO **********************//		
+	for(var i = 0; i <= 3; i++){
+		circle(xE, yp[i], D1, 1.5, corCirculoE, corCirculoE);
+		circle(xD, yp[i], D1, 1.5, corCirculoE, corCirculoD);	
+	}	
+	//---------------------------------------------------------	
+	arrastar();
+	//**********************//	
+	animationFrame(desenhar); 	
+}
+draw(desenhar);
+
+</script>
+<!-- -------------------------------------------- -->
+<div>	
+	<input style="position:absolute; left:200px; top:15px; width:80px"  class="btnRecomecar clouds" type="button" onclick="refazer()" value = "Recomeçar">
+</div>	
+</body>	
+</html>
+
+
+
+
+
+
+
+
+

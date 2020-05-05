@@ -1,0 +1,19 @@
+:root{
+    /* SELECT 01 */
+    --top1: 20px;           --left1: 20px;
+    
+    /* SELECT 02 */
+    --top2: 20px;            --left2: 230px;
+    
+    /* SELECT 03 */
+    --top3: 90px;            --left3: 124px;
+    
+    /* SELECT 04 */
+    --top4: 210px;            --left4: 20px;
+    
+    /* SELECT 05 */
+    --top5: 210px;            --left5: 231px;
+    
+    /* BOTÃO CONFIRMAR */
+    --topButton: 300px;      --leftButton: 39px;
+}
