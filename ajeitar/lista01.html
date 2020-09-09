@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br"/>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css"/>	
+    <link rel="stylesheet" href="arquivos/estilos/auxiliar.css"/>
+    <link rel="stylesheet" href="arquivos/estilos/main.css"/>
+    <link rel="stylesheet" href="arquivos/estilos/estiloResponsivo.css"/>	
+    <title>L01</title>
+</head>
+<body onresize="resizeTela()">
+    <div class="btnFonte" hidden>
+        <button onclick="Mudarfonte(1)">Aumentar fonte [1]</button>
+        <button onclick="Mudarfonte(2)">Diminuir fonte [2]</button>
+    </div>
+    
+    <header>
+        <h1><a href="http://napalmadamao.ifrn.edu.br/matematicabasica.html"><img src="arquivos/imagens/matematica.png" alt="logo do site"/>Matematica Básica</a></h1>
+        <h2>Revisando o ensino fundalmental</h2>	
+        <nav><ol></ol></nav>
+    </header>
+    
+    <div class="aulas">	
+        <a href="#">Aula</a> <b>|</b>
+        <a href="#"><b>Lista 01</b></a> <b>|</b>
+        <a href="#">Lista 02</a> <b>|</b>
+        <a href="#">Lista 03</a>
+    </div>
+    
+    <main class="corpo-aula px720">
+        <h3 class="titulo titulo-aula">EIXO NUMÉRICO
+            <br><small>EXERCÍCIOS DE APLICAÇÃO</small></h3>
+            <hr/>
+            
+            <!-- INÍCIO DA AULA /////////////////////////////////////////////////////////////////////////// -->	
+            <section class="padding20">			
+                <div class="centralizar">
+                    <p>Os exercícios contêm operações de soma e subtração, e devem ser resolvidos a partir de um eixo numérico, de acordo com o exemplo abaixo.</p>
+                    <figure class="centralizar espaco10">
+                        <img class="imagem" src="arquivos/imagens/exemplo01.PNG">
+                    </figure>
+                    <p class="espaco10">
+                        Para isso, vamos utilizar uma calculadora gráfica que está presente em cada exercício. Para configurar a calculadora, clique nos botões azuis para mover a bolinha que representa o número e clique nos botões verdes para mover a bolinha que determina a quantidade. A bolinha laranja que irá aparecer representa o resultado da operação.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- 01  -->		
+            <section class="padding20">
+                <h3 class="titulo topico-aula">Exercício 01</h3>			
+                <div class="centralizar">
+                    <div class="">
+                        <object data="atividades/atividade01.html" id="animationVisible" width="668x" height="260px"></object>
+                        <img src="arquivos/imagens/rode.png" id="rotationImagem" alt="Rode o celular"/>	
+                    </div>	
+                </div>
+            </section>
+            
+            <!-- 02  -->		
+            <section class="padding20">
+                <h3 class="titulo topico-aula">Exercício 02</h3>			
+                <div class="centralizar">
+                    <div class="">
+                        <object data="atividades/atividade02.html" id="animationVisible" width="668px" height="260px"></object>
+                        <img src="arquivos/imagens/rode.png" id="rotationImagem" alt="Rode o celular"/>					
+                    </div>	
+                </div>
+            </section>
+            
+            <!-- 03  -->
+            <section class="padding20">
+                <h3 class="titulo topico-aula">Exercício 03</h3>			
+                <div class="centralizar">
+                    <div class="">
+                        <object data="atividades/atividade03.html" id="animationVisible" width="668px" height="260px"></object>
+                        <img src="arquivos/imagens/rode.png" id="rotationImagem" alt="Rode o celular"/>					
+                    </div>	
+                </div>
+            </section>
+            
+            <!-- 04  -->
+            <section class="padding20">
+                <h3 class="titulo topico-aula">Exercício 04</h3>			
+                <div class="centralizar">
+                    <div class="">
+                        <object data="atividades/atividade04.html" id="animationVisible" width="668px" height="260px"></object>
+                        <img src="arquivos/imagens/rode.png" id="rotationImagem" alt="Rode o celular"/>					
+                    </div>	
+                </div>
+            </section>
+            
+            <!-- 05  -->
+            <section class="padding20">
+                <h3 class="titulo topico-aula">Exercício 05</h3>			
+                <div class="centralizar">
+                    <div class="">
+                        <object data="atividades/atividade05.html" id="animationVisible" width="668px" height="260px"></object>
+                        <img src="arquivos/imagens/rode.png" id="rotationImagem" alt="Rode o celular"/>	
+                    </div>	
+                </div>
+            </section>
+            
+            <br/>
+            <!-- INÍCIO DA NAVEGAÇÃO DO FIM DA AULA -->
+            <nav class="nav-fim-aula" hidden>
+                <a href=""><span class="seta seta-anterior"></span></a>
+                <a href="#"><span class="seta seta-top"></span></a>
+                <a href="http://www.fisicainvertida.com/termodinamica_aulas/aula_02/termodinamica_aula_02.html"><span class="seta seta-prox"></span></a>
+            </nav>
+            <!-- Fim navegação fim da aula -->
+            <hr>
+            <div class="aulas">			
+                <b>|</b><a href="#"> <b>Início</b></a> <b>|</b>					
+            </div>	
+            
+            <!-- FIM DA AULA ****************************************************** -->			
+            
+        </main>
+        
+        <footer>     
+            <figure><img src="arquivos/imagens/contato.PNG" alt="Informações de contato"/></figure>
+            <picture>
+                <source media="(max-width: 1075px)" srcset="arquivos/imagens/logo03.png"/>
+                <img src="arquivos/imagens/logo02.png" alt="Logotipo"/>
+            </picture>
+            <div class="creditos">
+                <p>Prof.Geraldo Felipe | IFRN/CNAT <br/>Junho de 2020</p>
+            </div>
+        </footer>
+        
+    </body>
+    <script>
+        function resizeTela(){
+            if(window.innerHeight > window.innerWidth){
+                var aV = document.querySelectorAll('#animationVisible');
+                var imag = document.querySelectorAll('#rotationImagem');
+                for(i = 0; i < aV.length; i++){
+                    aV[i].style.display = 'none';
+                    imag[i].style.display = 'block';
+                }
+            }
+            else if(document.querySelectorAll('#rotationImagem')[0].style.display != 'none'){
+                var aV = document.querySelectorAll('#animationVisible');
+                var imag = document.querySelectorAll('#rotationImagem');
+                for(i = 0; i < aV.length; i++){
+                    aV[i].style.display = 'block';
+                    imag[i].style.display = 'none';
+                }
+            }
+        }
+        resizeTela();
+    </script>
+    </html>

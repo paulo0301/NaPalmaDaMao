@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Karla');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, sans-serif;
+    margin:0;
+    background-color: #f2f2f2;
+}
+
+/*XXXXXXXXXXXXXXX   CABEÃ‡ALHO   XXXXXXXXXXXXXXXX*/
+
+header{
+    background: #37abd0;
+    padding-top: 1px;
+}
+header h1{
+    margin-top: 0.2em;
+    font-size: 1.7em;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+header h1 img{
+    margin-left: 4.5em;
+    float: left;
+    margin-right: 0.4em;  
+}
+@media (max-width:800px){
+    header h1 img{
+        margin: 0px 0px 5px 1em;
+    }
+}
+@media (max-width:400px){
+    header h1{
+        font-size: 1.5em;
+    }
+    header h1 span{
+        font-size: 0.5em;
+    }
+    header h1 img{
+        height: 80px;
+        margin-left: 0.5em;
+    }
+}
+header h1 a{
+    text-decoration: none;
+    color: white;
+}
+header h1 span{
+    font-size: 0.5em;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    letter-spacing: 4px;
+    display: block;
+    font-weight: normal;
+}
+
+/*XXXXXXXXXX MENU XXXXXXXXXXXXXXXXXXXXXXXX*/
+header nav ol{
+    margin-top: 1em;
+    clear: both;
+    padding: 1em;
+    background-color: #5986AC;
+    text-align: left;
+}
+
+header nav li{
+    display: inline;
+}
+
+header nav li:first-child{
+    margin-left: 7.1em;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 0.44em 0.6em;
+    font-size: 1.15em;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: #b3cfe5;
+    color: #2c5d7e;
+}
+
+h3{
+    text-decoration: none;
+}
+/*XXXXXXXXXXXXXXX FOOTER XXXXXXXXXXXXXXXXXXXX*/
+footer{
+    color: white;
+    background-color: #37abd0;
+    padding: 3.4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    vertical-align: middle;
+}
+
+@media (max-width:1075px){
+    footer{
+        padding: 3.4em 0.5em;
+    }
+}
+@media (max-width:700px){
+    footer{
+        padding: 0.4em 0.5em;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    footer picture{
+        margin: 1em 0;
+    }
+}
+@media (max-width:318px){
+    footer p{
+        font-size: 15px;
+    }
+}
+.aulas{
+    text-align: center;
+    
+    margin: 1em auto;
+}
+
+.aulas a{
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #34495e;
+}
+
+.aulas a:hover{
+    background-color: #b3cfe5;
+}
+
+.aulasfooter{
+    text-align: center;
+    margin: 3em 0;
+}
+
+.aulasfooter a{
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #34495e;
+}
+
+.aulasfooter a:hover{
+    background-color: #b3cfe5;
+}
+
+.btn{
+    background-color: #002a4e;
+    margin-top: 0;
+    padding: 0.25em 0;
+    text-align: right;
+}
+
+.btn button{
+    background-color: #002a4e;
+    color: white;
+    border: none;
+    margin-right: 1em;
+}
+
+footer h1{
+    margin-top: 0.2em;
+    font-size: 1.7em;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+
+footer h1 img{
+    margin-left: 4.5em;
+    float: left;
+    margin-right: 0.4em;  
+    vertical-align: center;
+    width: 150px;
+}
+
+footer h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+footer h2{
+    font-size: 0.8em;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    letter-spacing: 0.4em;
+    margin-left: 13.7em;
+    display: block;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+footer h1{
+    margin-top: 0.2em;
+    font-size: 1.7em;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+
+footer h1 img{
+    margin-left: 4.5em;
+    float: left;
+    margin-right: 0.4em;  
+    vertical-align: center;
+    width: 150px;
+}
+
+footer h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+footer h2{
+    font-size: 0.8em;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    letter-spacing: 0.4em;
+    margin-left: 13.7em;
+    display: block;
+    font-weight: normal;
+    text-decoration: none;
+}
+/* Iframe - youtube */
+
+iframe{
+    width: 560px;
+    height: 315px;
+}
+@media (max-width: 570px){
+    iframe{
+        width: 400px;
+        height: 315px;
+    }
+}
+@media (max-width: 420px){
+    iframe{
+        width: 320px;
+        height: 170px;
+    }
+}
+@media (max-width: 335px){
+    iframe{
+        width: 280px;
+        height: 170px;
+    }
+}
+@media (max-width: 285px){
+    iframe{
+        width: 240px;
+        height: 170px;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8"/>
+<canvas id="myCanvas" width="660" height="240px"></canvas>
+<link rel="stylesheet" type="text/css" href="estilos/jogo.css">	
+<script src="js/functionsB.js"></script> 
+<script src="C:\Users\Usuario\Documents\PSlibrary2020/PSlibrary2020.js"></script> 
+<script src="PSlibrary2020.js"></script> 
+<script>
+//***********************************************
+var Numero = 0;
+var Resultado = 6;
+var R = '?';
+//***********************************************
+function desenhar(){
+	rectangleRound(2, 230, 650, 225, 10, 2.5, '#dfe4ea', nocolor);	
+	textBold('0 + 6 = ', 15, 'verdana', 20, 40, '#009999');
+	textBold(R, 15, 'verdana', 115, 40, corLaranja);
+	//-----------------------------------------------	
+	vector(x - 15, y, 640, 0, 2.5, darkcolor);
+	graduatedScale(x + 0, y + 10, 600, 30, 5, 0, 2.2, darkcolor);
+	numberScaleX2(x + 300, y + 25, 10, 1, 30, darkcolor);
+	//
+	N1 = (x1 - x0)/30;
+	N2 = (x2 - x0)/30;
+	soma = (N2 - N1);
+	pm = (x2 - x1)/2;
+	//
+	if(soma >=0){	
+		xs = 5;
+		ang = 90;
+		sinal = '+';
+		operador = '+';
+	}else{	
+		ang = 270;
+		xs = -5;
+		sinal = '-';
+		operador = '';
+	}
+	//
+	circle(x2, y - 10 , 4, 1, corvermelho, corvermelho);
+	circle(x1, y - 10 , 4.5, 1, corazul, corazul);			
+	if(soma != 0){	
+		arrow(x2 - xs,y - 30,10,corverde,ang);
+		textBold(operador + soma, '11', 'verdana', x1 + (x2 - x1)/2 - 12 , y - 40, corverde);
+		scaleSimple(x1, y - 30, Q, 2,  0, corverde);		
+	}	
+	textBold('Quantidade', '10', 'verdana', xt - 18, yt + 50, corverde);	
+	textBold('Número', '10', 'verdana', xt - 8, yt + 10, corazul);
+	if(validar_resposta == true){
+		//equacao(390,150);
+		textBold(texto, '14', 'verdana', xResposta,160, corR);
+	}
+	
+		
+}
+desenhar();
+
+	
+</script>
+<!-- ------------------------------------------------------------------------ -->
+<body>
+	<div  style="position:absolute; left:40px; top:140px" >
+		<input class="btnAjuste1" type="button" onclick="recuar1()" value = "<">
+	</div>	
+	<div style="position:absolute; left:190px; top:140px">
+		<input  class="btnAjuste1" type="button" onclick="avancar1()" value = ">">
+	</div>		
+	
+	<div  style="position:absolute; left:40px; top:180px" >
+		<input class="btnAjuste3" type="button" onclick="recuar2()" value = "<">
+	</div>	
+	<div style="position:absolute; left:190px; top:180px">
+		<input  class="btnAjuste3" type="button" onclick="avancar2()" value = ">">
+	</div>	
+	
+	<div style="position:absolute; left:400px; top:180px;">
+		<input  class="btnConfirmar" type="button" onclick="confirmar()" value = "Confirmar">
+	</div>	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+

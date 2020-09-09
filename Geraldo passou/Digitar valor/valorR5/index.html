@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="estilos/principal.css">
+    <link rel="stylesheet" type="text/css" href="variaveis.css">
+    <title>5 caixas</title>
+</head>
+<style>
+	body{
+		background-repeat: no-repeat;
+		//background-image: url("figura.png");
+		background-position: 15px 25px;
+	}
+</style>
+<body class="desativar">
+	<div class="texto18" style="left:20px; top:20px" >
+		<p class=""><b>a) Resposta = </b> </p>	
+		<hr class="comprimento">		
+		<p class="espaco"><b>b) Resposta = </b> </p>
+		<hr class="comprimento">			
+		<p class="espaco"><b>c) Resposta = </b> </p>	
+		<hr class="comprimento">	
+		<p class="espaco"><b>d) Resposta = </b> </p>
+		<hr class="comprimento">		
+		<p class="espaco"><b>e) Resposta = </b> </p>
+		<hr class="comprimento">			
+    </div>	
+	
+    <form action="" autocomplete="off">
+        <div>
+            <input type="text" name="ex" id="01"  maxlength="2">
+            <!-- Texto opcional dentro do label -->
+            <label for="01"><b>unid</b></label>
+            <span class="marcador" id="rs01"></span>
+        </div>
+        <div>
+            <input type="text" name="ex" id="02" maxlength="2">
+            <!-- Texto opcional dentro do label -->
+            <label for="02"><b>unid</b></label>
+            <span class="marcador" id="rs02"></span>
+        </div>
+        <div>
+            <input type="text" name="ex" id="03" maxlength="2">
+            <!-- Texto opcional dentro do label -->
+            <label for="03"><b>unid</b></label>
+            <span class="marcador" id="rs03"></span>
+        </div>
+        <div>
+            <input type="text" name="ex" id="04" maxlength="3">
+            <!-- Texto opcional dentro do label -->
+            <label for="04"><b>unid</b></label>
+            <span class="marcador" id="rs04"></span>
+        </div>
+        <div>
+            <input type="text" name="ex" id="05" maxlength="1">
+            <!-- Texto opcional dentro do label -->
+            <label for="05"><b>unid</b></label>
+            <span class="marcador"  id="rs05"></span>
+        </div>
+        <div id="containerBotoes">
+            <input class="apagarBtn" type="button" id="refazer" value="Refazer">
+            <input class="apagarBtn" type="button" id="limpar" value="Tente novamente">
+            <input class="confirmarBtn" type="button" id="confirmar" value="Confirmar">
+            <p class="mensagem" id="m01"><span> </span> </p>
+            <p class="mensagem" id="m02"><span class="vermelho">Digite todas as respostas!</span> </p>
+            <p class="mensagem" id="m03"><span> </span> </p>
+            <p class="mensagem" id="m04"><span class="verde">Parabéns!</span></p>
+        </div>
+    </form>
+</body>
+<script src="verificarRespostas.js"></script>
+</html>

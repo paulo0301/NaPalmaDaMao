@@ -1,40 +1,40 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-.containerQuestoes{
+body{
 	background-color: transparent;
 	width: 600px;
 }
-.containerQuestoes form{
+form{
 	line-height: 2.5em;
 	font-family: 'Open Sans', sans-serif;
 	color: #34495e;
 }
-.containerQuestoes form div{
+form div{
 	display: flex;
 	align-items: center;
 }
-.containerQuestoes label{
+label{
 	display: flex;
 	align-items: center;
 }
-.containerQuestoes input[type="checkbox"]{
+input[type="checkbox"]{
 	display: none;
 }
-.containerQuestoes input[type="checkbox"] + label{
+input[type="checkbox"] + label{
 	position: relative;
 	padding: 0 0 0 30px;
 	cursor: pointer;
 }
-.containerQuestoes input[type="checkbox"] + label::before{
+input[type="checkbox"] + label::before{
 	content: "";
 	border: 2px solid #3f9cef;
 	position: absolute;
 	left: 0px;
 	width: 16px;
-	height: 16px;
+	height: 17px;
 	border-radius: 4px;
 }
-.containerQuestoes input[type="checkbox"] + label::after{
+input[type="checkbox"] + label::after{
 	content: "";
 	background-color: #3f9cef;
 	width: 14px;
@@ -44,10 +44,10 @@
 	border-radius: 2px;
 	opacity: 0;
 }
-.containerQuestoes input[type="checkbox"]:checked + label::after{
+input[type="checkbox"]:checked + label::after{
 	opacity: 1;
 }
-.containerQuestoes figure{
+figure{
 	box-shadow: none;
 	margin: 0 0 0 10px;
 	height: 50px;
@@ -78,11 +78,17 @@
 	cursor: pointer;
 	background: rgba(56, 103, 214,0.8);
 }
-
-.containerQuestoes span{
+.correcao{
+	display: flex;
+	align-items: center;
+	margin-top: 1em;
+}
+span{
 	font-weight: 900;
 	font-size: 1.2em;
 	margin-left: 1em;
+	height: 26.8px;
+	line-height: 27px;
 }
 .errado{
 	color: #c0392b;

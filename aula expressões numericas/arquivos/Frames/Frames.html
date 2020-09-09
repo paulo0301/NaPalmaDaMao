@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<canvas id="myCanvas" width="640" height="360"></canvas>
+<script src="C:\Users\Usuario\Documents\PSlibrary2020\PSlibrary2020.js"></script>	
+<script src="auxiliar.js"></script>	
+<script src="esquemas.js"></script>	
+<style>
+	body{
+	  background-image:url("figura.png");
+	  background-repeat:no-repeat;
+	  background-position:20px 30px;
+	}
+</style>
+<body onkeydown="whichButton(event)">
+<script>
+//***********************************************//
+/*
+conect90(x1, y1, dx, dy, rotation, mode, color);
+stickersArrow(x, y, width, scale, rotation, color);
+arcArrow (x, y, radius, ang, rotation,color);
+chave(x, y, d, rotation, color);
+error(x, y, scale, colorstroke);
+right(x,y, scale, stroke, colorstroke);
+arrow(x,y,b,color,rotation);
+grid(x,y,Nx,Ny,stroke,color);
+vector(x, y, width, rotation, stroke, colorstroke);
+lineAngle(x, y, width, rotation, stroke, colorstroke);
+*/
+/* CORES */
+vermelho = '#eb2f06';
+azul = '#2e86de';
+azulEscuro = '#4a69bd';
+laranja = '#ff9f43';
+verde1 = '#01a3a4';
+verde2 = '#10ac84';
+cinza1 = '#c8d6e5';
+cinza2 = '#8395a7';
+cinza3 = '#576574';
+dupain = '#60a3bc';  //verde-azulado
+escuro = '#576574';
+cor1 = '#';
+cor2 = '#';
+cor3 = '#';
+/* fim */
+var fonte = 'verdana';
+var x = 200;
+var y = 140;
+var cor = escuro;
+var titulo1 = 'Frações Equivalente';
+var limite = 10;
+/* ---------------------------------------------------- */
+/*
+var i = 8;
+tela[i] = 1;
+   */
+/* --------------------------------------------------- */
+function desenhar(){	
+	//----------------------------------------------------
+	rectangle(0, 0, canvas.width, canvas.height, 3, 0, darkcolor, nocolor);	
+	textBold(titulo1, 14, fonte, 15, 30, escuro);	
+	//----------------------------------------------------
+	textBold(i, 10, fonte, 620, 20, darkcolor);	
+	if(tela[1] == 1){  		
+		if(i <= 1){
+			textBold('tela 01', 14, fonte, x, y, azul);	
+		}	
+	}
+	
+	<!--   -->
+	
+	if(tela[2] == true){ 		
+		if(i <= 2){				
+			textBold('tela 02', 14, fonte, x, y, azul);	
+		}	
+	}
+	
+	<!--   -->
+	
+	if(tela[3] == true){ 
+		if(i <= 3){			
+			textBold('tela 03', 14, fonte, x, y, azul);	
+		}	
+	}
+	
+	<!--   -->
+	
+	if(tela[4] == true){ 
+		if(i <= 4){				
+			textBold('tela 04', 14, fonte, x, y, azul);	
+		}	
+	}
+	
+	<!--   -->
+	
+	if(tela[5] == true){ 
+		if(i <= 5){				
+			textBold('tela 05', 14, fonte, x, y, azul);	
+		}	
+	}
+	
+	<!--   -->
+	
+	if(tela[6] == true ){ 
+		if(i <= 6){			
+			textBold('tela 06', 14, fonte, x, y, azul);	
+		}	
+	}
+	
+	<!--   -->
+	
+	if(tela[7] == true){ 
+		if(i <= 7){			
+			textBold('tela 07', 14, fonte, x, y, azul);	
+		}	
+	}
+	
+	<!--   -->
+	
+	if(tela[8] == true){ 
+		if(i <= limite){			
+			textBold('tela 08', 14, fonte, x, y, azul);	
+		}	
+	}
+	
+	<!--   -->	
+	
+	if(tela[9] == true){ 
+		if(i <= limite){			
+			textBold('tela 10', 14, fonte, x, y, azul);	
+		}	
+	}
+	
+	<!--   -->	
+	
+	if(tela[10] == true){ 
+		if(i <= limite){			
+			textBold('tela 10', 14, fonte, x, y, azul);	
+		}	
+	}
+}
+desenhar();
+</script>
+</body>
+<!-- ------------------------------------------------------------------------ -->
+</html>
+
+
+
+
+
+
+
+
+

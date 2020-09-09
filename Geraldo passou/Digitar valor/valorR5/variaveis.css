@@ -1,0 +1,37 @@
+:root{
+	/* --top2:calc(var(--top1) + var(--dy)); --left2:calc(var(--left1)); */
+   
+    --dy:85px;
+	
+    /* caixa de texto 01 */
+    --top1:33px;  								--left1:200px;
+    
+    /* caixa de texto 02 */
+   --top2:calc(var(--top1) + var(--dy)); 		--left2:calc(var(--left1));
+    
+    /* caixa de texto 03 */
+   --top3:calc(var(--top2) + var(--dy));  		--left3:calc(var(--left1));
+    
+    /* caixa de texto 04 */
+    --top4:calc(var(--top3) + var(--dy));  		--left4:calc(var(--left1));
+    
+    /* caixa de texto 05 */
+    --top5:calc(var(--top4) + var(--dy));  		--left5:calc(var(--left1));
+	
+	/* ----------------------------------- */
+    
+    /* CONFIRMAR */
+    --top6:460px; 		--left6:80px;
+
+     /* tamanho da caixa de texto*/
+    --altura1: 25px;  	--largura1: 40px;
+	
+	/* Espaço entre as linhas de texto */
+    --espacoLinhas: 25px;
+	
+	/* Comprimento do linha */
+    --comprimentoLinha: 300px;
+	
+	/* Distancia do marcador */
+    --margin1: 5px;
+}

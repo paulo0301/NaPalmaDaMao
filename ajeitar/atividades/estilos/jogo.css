@@ -1,0 +1,106 @@
+﻿/* BOTÕES EM FORMA DE SETA -------------------------------- */
+
+.btnAjuste1{
+	position:absolute;
+	width:45px;
+	height:35px;	
+	border: #3498db;
+	border-radius: 5px;	
+	background:#3498db;
+	color:white;
+	font-size: 10px;	
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;	
+}
+
+.btnAjuste1:hover {
+	cursor: pointer;
+	color:white;
+	background: rgba(52, 152, 219,0.6);	
+	outline: none;
+}
+
+.btnAjuste1:active { 
+  outline: none;
+}
+
+/* ----------------- */
+.btnAjuste2 {
+	position:absolute;
+	width:45px;
+	height:35px;		
+	border: rgba(234, 32, 39,1.0);
+	border-radius: 5px;	
+	background:rgba(234, 32, 39,1.0);
+	color:white;
+	font-size: 10px;	
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	
+}
+
+.btnAjuste2:hover {
+	cursor: pointer;
+	color:white;
+	background:rgba(234, 32, 39,0.5);
+	outline: none;
+}
+
+.btnAjuste2:active { 
+  outline: none;
+}
+
+/* ----------------- */
+.btnAjuste3 {
+	position:absolute;
+	width:45px;
+	height:35px;		
+	border: rgba(234, 32, 39,1.0);
+	border-radius: 5px;	
+	background:rgba(0, 148, 50,1.0);
+	color:white;
+	font-size: 10px;	
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	
+}
+
+.btnAjuste3:hover {
+	cursor: pointer;
+	color:white;
+	background:rgba(0, 148, 50,0.5);
+	outline: none;
+}
+
+.btnAjuste3:active { 
+  outline: none;
+}
+
+/* -------------------------- */
+.btnConfirmar{
+	position:absolute;
+	width:120px;
+	height:35px;
+	color:white;
+	font-size: 16px;	
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;	
+	background:#47d1d1;
+	border:none;
+	border-radius: 5px;	
+	
+}
+
+.btnConfirmar:hover {	
+	cursor: pointer;
+	color:white;
+	background:#99e6e6;	
+	outline: none;
+	
+}
+
+.btnConfirmar:visited  {  
+  border-color: red;  
+}
+
+
